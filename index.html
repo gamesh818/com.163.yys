@@ -36,7 +36,9 @@
     <link rel="stylesheet" href="./lib/reset/reset.css">
     <!-- 引用swiper轮播图插件 -->
     <link rel="stylesheet" href="./lib/swiper-5.3.6/package/css/swiper.min.css">
-
+    <!-- 引用3d轮播图插件 -->
+    <script src="./lib/jQuery3Dlbt/js/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" href="./lib/jQuery3Dlbt/css/css.css">
     <link rel="stylesheet" href="./lib/customer/jquery.mCustomScrollbar.css">
     <!-- 公共样式 -->
     <link rel="stylesheet" href="./css/index.css">
@@ -454,7 +456,7 @@
                         </div>
                         <div class="lun-conter lun-add5">
                             <!-- 标题部分 -->
-                            <div class="lun-conter-title" >
+                            <div class="lun-conter-title">
                                 <span>焕新</span>
                                 <span>新皮肤上线</span>
                             </div>
@@ -464,7 +466,7 @@
                                 <p>※蟹姬皮肤·海之大将上架协同对弈玩法商店，欢迎阴阳师大人们选购！</p>
                             </div>
                         </div>
-                        <div class="lun-conter lun-add6" >
+                        <div class="lun-conter lun-add6">
                             <!-- 标题部分 -->
                             <div class="lun-conter-title">
                                 <span>携礼</span>
@@ -505,7 +507,54 @@
             <div class="main-bottom">
                 <div class="main-bottom-title"></div>
                 <!-- 轮播图 -->
-                
+                <div class="main-bottom-lun-box">
+                    <div class="in exhibition_hall">
+                        <div id="" class="roundabout_box">
+                            <ul>
+                                <li><a href="#"><img src="./images/index/index-bottom-lun1.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="./images/index/index-bottom-lun2.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="./images/index/index-bottom-lun3.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="./images/index/index-bottom-lun4.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="./images/index/index-bottom-lun5.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 主页底部 -->
+            <div class="main-footer">
+                <div class="main-footer-top">
+                    <ul>
+                        <li><a href="">分享到: </a> </li>
+                        <li><a href="">微信    </a> </li>
+                        <li><a href="">易信    </a> </li>
+                        <li><a href="">新浪微博</a> </li>
+                        <li><a href="">QQ空间  </a> </li>
+                        <li><a href="">更多    </a> </li>
+                    </ul>
+                </div>
+                <div class="main-footer-bottom">
+                    <div class="footer-bottom-one">
+                        <a href=""><img src="./images/index/index-main-footer-dd1.png" alt=""></a>
+                        <a href=""><img src="./images/index/index-main-footer-dd2.png" alt=""></a>
+                        <a href=""><img src="./images/index/index-main-footer-dd3.png" alt=""></a>
+                        <a href=""><img src="./images/index/index-main-footer-dd4.png" alt=""></a>
+                        <span>
+                           <a href="">公司简介</a> - <a href="">客户服务</a>-<a href="">网易集团隐私政策及儿童个人信息保护规则</a> - <a href="">网易游戏</a>  - <a href="">联系我们</a>  - <a href="">商务合作</a>  - <a href="">加入我们</a>  - <a href="">用户协议</a> </br> 
+                           <p>网易公司版权所有 ©1997-2020</p>
+                           <div>
+                               <a href="">点击查看家长关爱平台 ></a>
+                           </div>
+                        </span>
+                    </div>
+                    <div class="footer-bottom-two">
+                        <p>本游戏适合9岁以上的玩家进入。</p>
+                        <p>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。</p>
+                        <p>《网络游戏管理暂行办法》 文网游备字【2016】M-RPG4708号 《网络文化经营许可证》 浙网文[2019]1372-138号 批准文号：新广出审【2017】6710号 </p>
+                        <p>出版物号：ISBN 978-7-7979-9973-1 违法及不良信息举报中心 ICP备案：粤B2-20090191-18</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -529,7 +578,8 @@
     <!-- 引用swiper轮播图插件 -->
     <script src="./lib/swiper-5.3.6/package/js/swiper.min.js"></script>
 
- 
+    <!-- 引用3d轮播图插件 -->
+    <script src="./lib/jQuery3Dlbt/js/jquery.roundabout.min.js"></script>
     <!-- 插件配置 -->
     <script>
         $(function () {
@@ -545,7 +595,24 @@
                   },*/
                 direction: 'vertical', //竖屏切换
             });
+
+            // 3d轮播图插件
+			$('.roundabout_box ul').roundabout({
+				duration: 1000,
+				minScale: 0.6,
+				autoplay: true,
+				autoplayDuration: 5000,
+				minOpacity: 0,
+				maxOpacity: 1,
+				reflect: true,
+				startingChild: 3,
+				autoplayInitialDelay: 5000,
+				autoplayPauseOnHover: true,
+				enableDrag: true
+			});
         })
+        
+		
     </script>
 </body>
 
