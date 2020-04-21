@@ -11,15 +11,39 @@
     <!-- 关键字 -->
     <meta name="keywords"
         content="阴阳师下载,阴阳师官方下载,阴阳师安卓下载,阴阳师安卓官方下载,阴阳师手游,阴阳师礼包,阴阳师手游下载,阴阳师手游安卓, 阴阳师手游iOS,阴阳师手游苹果,阴阳师助手,网易手游,阴阳师手游 ios,阴阳师,阴阳师 ios,阴阳师手游ios,阴阳师手游安卓,阴阳师安卓,阴阳师 安卓,阴阳师ios,阴阳师 礼包,阴阳师礼包,阴阳师手游 安卓,阴阳师手游 礼包,阴阳师苹果,阴阳师攻略">
+
+    <style>
+        /* swiper插件样式 */
+
+        .top-nav-right .swiper-container {
+            width: 138px;
+            height: 52px;
+        }
+
+        .top-nav-right .swiper-slide {
+            width: 138px;
+            height: 52px;
+            text-align: center;
+            line-height: 52px;
+        }
+
+        .top-nav-right .swiper-slide:hover {
+            border-bottom: 1px solid pink;
+            background-color: pink;
+        }
+    </style>
     <!-- 重置样式 -->
     <link rel="stylesheet" href="./lib/reset/reset.css">
+    <!-- 引用swiper轮播图插件 -->
+    <link rel="stylesheet" href="./lib/swiper-5.3.6/package/css/swiper.min.css">
+
+    <link rel="stylesheet" href="./lib/customer/jquery.mCustomScrollbar.css">
     <!-- 公共样式 -->
     <link rel="stylesheet" href="./css/index.css">
+
 </head>
 
 <body>
-    <script src="./lib/jQuery/jquery-3.4.1.js"></script>
-    <script src="./js/index.js"></script>
     <!-- 顶部导航 -->
     <div class="top-nav">
         <!-- 游戏全目录下滑列表 -->
@@ -32,25 +56,25 @@
                 </ul>
                 <ul class="select-bottom">
                     <li>
-                    <p>角色扮演</p>
-                    <a href="" class="select-no1">梦幻西游电脑版</a>
-                    <a href="" class="select-hot">大话2经典版</a>
-                    <a href="" class="select-hot">天下3</a>
-                    <a href="" class="select-hot">新倩女幽魂</a>
-                    <a href="" class="select-hot">逆水寒</a>
-                    <a href="">天谕</a>
-                    <a href="">超激斗梦境</a>
-                    <a href="">龙魂时刻</a>
-                    <a href="" class="select-hot">泰亚史诗</a>
-                    <a href="" class="select-hot">大话2免费版</a>
-                    <a href="">新大话3经典版</a>
-                    <a href="">新大话3免费版</a>
-                    <a href="">镇魔曲</a>
-                    <a href="">镇魔曲页游</a>
-                    <a href="">大唐无双</a>
-                    <a href="">武魂2</a>
-                    <a href="">魔兽世界</a>
-                </li>
+                        <p>角色扮演</p>
+                        <a href="" class="select-no1">梦幻西游电脑版</a>
+                        <a href="" class="select-hot">大话2经典版</a>
+                        <a href="" class="select-hot">天下3</a>
+                        <a href="" class="select-hot">新倩女幽魂</a>
+                        <a href="" class="select-hot">逆水寒</a>
+                        <a href="">天谕</a>
+                        <a href="">超激斗梦境</a>
+                        <a href="">龙魂时刻</a>
+                        <a href="" class="select-hot">泰亚史诗</a>
+                        <a href="" class="select-hot">大话2免费版</a>
+                        <a href="">新大话3经典版</a>
+                        <a href="">新大话3免费版</a>
+                        <a href="">镇魔曲</a>
+                        <a href="">镇魔曲页游</a>
+                        <a href="">大唐无双</a>
+                        <a href="">武魂2</a>
+                        <a href="">魔兽世界</a>
+                    </li>
                     <li>
                         <p>竞技/休闲</p>
                         <a href="" class="select-new">我的世界</a>
@@ -65,9 +89,9 @@
                         <a href="">星际争霸Ⅱ</a>
                         <a href="">炉石传说</a>
                         <!-- 更多热门端游按钮 -->
-                        
-                            <a id="select-but" href="">更多热门端游</a>
-                        
+
+                        <a id="select-but" href="">更多热门端游</a>
+
                     </li>
                     <li>
                         <p>热门推荐</p>
@@ -92,101 +116,101 @@
                     <li>
                         <p>新品推荐</p>
                         <div class="li-box">
-                        <a href="" class="select-new">梦幻西游三维版</a>
-                        <a href="" class="select-new">海岛纪元</a>
-                        <a href="" class="select-new">风云岛行动</a>
-                        <a href="" class="select-new">一起优诺</a>
-                        <a href="" class="select-new">重装上阵</a>
-                        <a href="" class="select-new">猎手之王</a>
-                        <a href="" class="select-new">花与剑</a>
-                        <a href="" class="select-new">实况足球</a>
-                        <a href="" class="select-new">阴阳师：百闻牌</a>
-                        <a href="" class="select-new">忘川风华录</a>
-                        <a href="" class="select-new">轩辕剑龙舞云山</a>
-                        <a href="" class="select-new">量子特攻</a>
-                        <a href="" class="select-new">遇见逆水寒</a>
-                        <a href="" class="select-new">陈情令</a>
-                        <a href="" class="select-new">绿茵之巅</a>
-                        <a href="" class="select-new">最后的秘密</a>
-                        <a href="" class="select-new">堡垒前线</a>
-                    </div>
+                            <a href="" class="select-new">梦幻西游三维版</a>
+                            <a href="" class="select-new">海岛纪元</a>
+                            <a href="" class="select-new">风云岛行动</a>
+                            <a href="" class="select-new">一起优诺</a>
+                            <a href="" class="select-new">重装上阵</a>
+                            <a href="" class="select-new">猎手之王</a>
+                            <a href="" class="select-new">花与剑</a>
+                            <a href="" class="select-new">实况足球</a>
+                            <a href="" class="select-new">阴阳师：百闻牌</a>
+                            <a href="" class="select-new">忘川风华录</a>
+                            <a href="" class="select-new">轩辕剑龙舞云山</a>
+                            <a href="" class="select-new">量子特攻</a>
+                            <a href="" class="select-new">遇见逆水寒</a>
+                            <a href="" class="select-new">陈情令</a>
+                            <a href="" class="select-new">绿茵之巅</a>
+                            <a href="" class="select-new">最后的秘密</a>
+                            <a href="" class="select-new">堡垒前线</a>
+                        </div>
                         <div class="li-box">
-                        <a href="" class="select-new">第九所</a>
-                        <a href="" class="select-new">梦幻西游网页版</a>
-                        <a href="" class="select-new">河狸计划</a>
-                        <a href="" class="select-new">时空中的绘旅人</a>
-                        <a href="" class="select-new">暗黑破坏神：不朽</a>
-                        <a href="" class="select-new">阴阳师：妖怪屋</a>
-                        <a href="" class="select-new">宝可梦大探险</a>
-                        <a href="" class="select-new">黑潮之上</a>
-                        <a href="" class="select-new">绘真·妙笔千山</a>
-                        <a href="" class="select-new">光·遇</a>
-                        <a href="" class="select-new">流星群侠传</a>
-                        <a href="" class="select-new">有杀气童话2</a>
-                        <a href="" class="select-new">完售物语</a>
-                        <a href="" class="select-new">天谕手游</a>
-                        <a href="" class="select-new">Disorder</a>
-                        <a href="" class="select-new">机动都市阿尔法</a>
-                        <a href="" class="select-new">幻书启世录</a>
-                    </div>
+                            <a href="" class="select-new">第九所</a>
+                            <a href="" class="select-new">梦幻西游网页版</a>
+                            <a href="" class="select-new">河狸计划</a>
+                            <a href="" class="select-new">时空中的绘旅人</a>
+                            <a href="" class="select-new">暗黑破坏神：不朽</a>
+                            <a href="" class="select-new">阴阳师：妖怪屋</a>
+                            <a href="" class="select-new">宝可梦大探险</a>
+                            <a href="" class="select-new">黑潮之上</a>
+                            <a href="" class="select-new">绘真·妙笔千山</a>
+                            <a href="" class="select-new">光·遇</a>
+                            <a href="" class="select-new">流星群侠传</a>
+                            <a href="" class="select-new">有杀气童话2</a>
+                            <a href="" class="select-new">完售物语</a>
+                            <a href="" class="select-new">天谕手游</a>
+                            <a href="" class="select-new">Disorder</a>
+                            <a href="" class="select-new">机动都市阿尔法</a>
+                            <a href="" class="select-new">幻书启世录</a>
+                        </div>
                         <div class="li-box">
-                        <a href="">青璃</a>
-                        <a href="">孤岛先锋</a>
-                        <a href="">逗斗火柴人</a>
-                        <a href="">游戏王：决斗链接</a>
-                        <a href="">节奏空间</a>
-                        <a href="">隐世录</a>
-                        <a href="">荒野潜伏者</a>
-                        <a href="">迷室The Room</a>
-                        <a href="">永远的7日之都</a>
-                        <a href="">舰无虚发：暗星</a>
-                        <a href="">实况：王者集结</a>
-                        <a href="">战舰世界闪击战</a>
-                        <a href="">坦克世界闪击战</a>
-                        <a href="">战争怒吼</a>
-                        <a href="">极客战记(教育类)</a>
-                        <a href="">权力与纷争</a>
-                        <a href="">非人学园</a>
-                    </div>
+                            <a href="">青璃</a>
+                            <a href="">孤岛先锋</a>
+                            <a href="">逗斗火柴人</a>
+                            <a href="">游戏王：决斗链接</a>
+                            <a href="">节奏空间</a>
+                            <a href="">隐世录</a>
+                            <a href="">荒野潜伏者</a>
+                            <a href="">迷室The Room</a>
+                            <a href="">永远的7日之都</a>
+                            <a href="">舰无虚发：暗星</a>
+                            <a href="">实况：王者集结</a>
+                            <a href="">战舰世界闪击战</a>
+                            <a href="">坦克世界闪击战</a>
+                            <a href="">战争怒吼</a>
+                            <a href="">极客战记(教育类)</a>
+                            <a href="">权力与纷争</a>
+                            <a href="">非人学园</a>
+                        </div>
                         <div class="li-box">
-                        <a href="">战国志</a>
-                        <a href="">边境之旅</a>
-                        <a href="">星战前夜:无烬星河</a>
-                        <a href="">三国如龙传</a>
-                        <a href="">网易棋牌</a>
-                        <a href="">神谕文明</a>
-                        <a href="">风暴对决</a>
-                        <a href="">猎魂觉醒</a>
-                        <a href="">狼人杀</a>
-                        <a href="">魔法禁书目录</a>
-                        <a href="">秘境对决</a>
-                        <a href="">影之诗</a>
-                        <a href="">潮人篮球</a>
-                        <a href="">三国诛将录</a>
-                        <a href="">重装突击</a>
-                        <a href="">劲舞团</a>
-                        <a href="">坦克连</a>
-                    </div>
+                            <a href="">战国志</a>
+                            <a href="">边境之旅</a>
+                            <a href="">星战前夜:无烬星河</a>
+                            <a href="">三国如龙传</a>
+                            <a href="">网易棋牌</a>
+                            <a href="">神谕文明</a>
+                            <a href="">风暴对决</a>
+                            <a href="">猎魂觉醒</a>
+                            <a href="">狼人杀</a>
+                            <a href="">魔法禁书目录</a>
+                            <a href="">秘境对决</a>
+                            <a href="">影之诗</a>
+                            <a href="">潮人篮球</a>
+                            <a href="">三国诛将录</a>
+                            <a href="">重装突击</a>
+                            <a href="">劲舞团</a>
+                            <a href="">坦克连</a>
+                        </div>
                         <div class="li-box">
-                        <a href="">大话西游热血版</a>
-                        <a href="">大航海之路</a>
-                        <a href="">萌王EX</a>
-                        <a href="">秘宝猎人</a>
-                        <a href="">天下×天下</a>
-                        <a href="">永恒边境</a>
-                        <a href="">花语月</a>
-                        <a href="">乱斗西游2</a>
-                        <a href="">惊梦</a>
-                        <a href="">迷你西游</a>
-                        <a href="">实况俱乐部</a>
-                        <a href="">大唐游仙记</a>
-                        <a href="">天下HD</a>
-                        <a href="">西游神魔决</a>
-                        <a href="">有杀气童话</a>
-                        <a href="">猫和老鼠官方手游</a>
+                            <a href="">大话西游热血版</a>
+                            <a href="">大航海之路</a>
+                            <a href="">萌王EX</a>
+                            <a href="">秘宝猎人</a>
+                            <a href="">天下×天下</a>
+                            <a href="">永恒边境</a>
+                            <a href="">花语月</a>
+                            <a href="">乱斗西游2</a>
+                            <a href="">惊梦</a>
+                            <a href="">迷你西游</a>
+                            <a href="">实况俱乐部</a>
+                            <a href="">大唐游仙记</a>
+                            <a href="">天下HD</a>
+                            <a href="">西游神魔决</a>
+                            <a href="">有杀气童话</a>
+                            <a href="">猫和老鼠官方手游</a>
                         </div>
                         <!-- 更多热门手游按钮 -->
-                            <a href="" id="select-but">更多热门手游</a>
+                        <a href="" id="select-but">更多热门手游</a>
                     </li>
                     <li>
                         <a href="" class="select-hot">游品位</a>
@@ -226,7 +250,16 @@
             </a>
         </div>
         <!-- 顶部导航左边文字轮播 -->
-        <div class="top-nav-right"></div>
+        <div class="top-nav-right">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">限时领取免费课程</div>
+                    <div class="swiper-slide">25元专属卷限时领</div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
     </div>
     <!-- 左边固定定位二维码 -->
     <div class="left-erwei">
@@ -254,11 +287,266 @@
                 <a href="" class="main-top-logo"></a>
                 <a href="" class="main-top-go"></a>
             </div>
-            <!-- 主页下部分 -->
-            <div class="main-bottom">
+            <!-- 主页中部分 -->
+            <div class="main-center">
+                <!-- 头部标题 -->
+                <header class="main-center-title"></header>
+                <!-- 点击伪轮播图 -->
+                <div class="main-center-lun">
+                    <div class="lun-box1">
+                        <img src="./images/index/index-main-center-lun1.png" alt="">
+                    </div>
+                    <div class="lun-box2">
+                        <img src="./images/index/index-main-center-lun2.png" alt="">
+                    </div>
+                    <div class="lun-box3">
+                        <img src="./images/index/index-main-center-lun3.png" alt="">
+                    </div>
+                    <div class="lun-box4">
+                        <img src="./images/index/index-main-center-lun4.png" alt="">
+                    </div>
+                    <div class="lun-box5">
+                        <img src="./images/index/index-main-center-lun5.png" alt="">
+                    </div>
+                    <div class="lun-box6">
+                        <img src="./images/index/index-main-center-lun6.png" alt="">
+                    </div>
+                </div>
+                <!-- 隐藏伪轮播图 遮罩层 -->
+                <div class="lun-black"></div>
+                <!-- 伪轮播大盒子 -->
+                <div class="lun-bigbox">
+                    <!-- 关闭按钮 -->
+                    <div class="lun-stop"></div>
+                    <!-- 左右按钮 -->
+                    <div class="lun-left"></div>
+                    <div class="lun-right"></div>
+                    <!-- 中心内容 -->
+                    <div class="lun-conter-box">
+                        <div class="lun-conter lun-add1">
+                            <!-- 标题部分 -->
+                            <div class="lun-conter-title">
+                                <span>降临</span>
+                                <span>浮世青行灯</span>
+                            </div>
+                            <!-- 文字部分 -->
+                            <div class="lun-conter-text" id="text1">
+                                <p>全新SP阶式神浮世青行灯(CV：水树奈奈)降临平安京！</p>
+                                <p>※SP浮世青行灯追忆绘卷 - 秉灯焕夜，浮世当听活动开启</p>
+                                <p>※活动时间：4月15日维护后-5月5日23:59</p>
+                                <p>※活动期间，参与游戏内各项玩法，即可获得绘卷碎片道具。</p>
+                                <p>※捐献绘卷碎片即可修复追忆绘卷，每次修复绘卷都可获得随机奖励。</p>
+                                <p>※绘卷修复后，根据捐献贡献排行，发放全服奖励。</p>
+                                <p>※每章绘卷每个服务器前500名可获得SP浮世青行灯式神契约书碎片奖励，前1000名可获得头像框「浮世茕灯」奖励。</p>
+                                <p>※绘卷全部修复后无法再获得绘卷碎片和进行绘卷修复。</p>
+                            </div>
+                        </div>
+                        <div class="lun-conter lun-add2">
+                            <!-- 标题部分 -->
+                            <div class="lun-conter-title">
+                                <span>觉醒</span>
+                                <span>B <br>
+                                    L<br>
+                                    E<br>
+                                    A<br>
+                                    C<br>
+                                    H<br>
+                                    境<br>
+                                    ·<br>
+                                    界联动</span>
+                            </div>
+                            <!-- 文字部分 -->
+                            <div class="lun-conter-text" id="text2">
+                                <p>《阴阳师》×TV动画《BLEACH境·界》联动第三弹！黑崎一护、朽木露琪亚作为联动的角色登陆平安京！</p>
 
+                                <h3>神龛上新！</h3>
+                                <p>活动时间：4月15日维护后-4月22日维护前</p>
+                                <p>※活动期间，绝版限定SR朽木露琪亚将上架神龛，大人们可使用御札进行兑换，兑换数量不限。</p>
+                                <p>※活动期间，绝版限定SR朽木露琪亚碎片(×40)将上架神龛，大人们可使用御札进行兑换，兑换数量上限3组(共120片式神碎片)。</p>
+                                <p>※4月22日维护更新后，等级不低于40级的阴阳师大人可以在阴阳寮中祈愿和捐赠朽木露琪亚的式神碎片。</p>
+
+                                <h3>温馨提示：</h3>
+                                <p>※《阴阳师》×TV动画《BLEACH境·界》联动活动共三弹，此次为联动的第三弹，绝版限定SSR黑崎一护、限定SR朽木露琪亚只能通过这三次活动获取。</p>
+                                <p>※等级≥40级的阴阳师大人可以在阴阳寮中祈愿和捐赠黑崎一护的碎片</p>
+                                <p>※本次召唤活动面向所有等级≥15级的阴阳师大人开放。</p>
+                                <p>※黑崎一护、朽木露琪亚不计入式神图鉴。</p>
+
+                                <h3>活动——黑崎一护妖气副本开启！</h3>
+                                <p>活动时间：4月15日维护后-4月21日23:59</p>
+                                <p>※活动期间，阴阳师大人们通关探索副本即有概率发现黑崎一护妖气副本，通关副本后可获得黑崎一护「守护之心」皮肤碎片和朽木露琪亚「初心未改」皮肤碎片，有概率获得黑崎一护式神碎片。
+                                </p>
+                                <p>※在多次通关黑崎一护妖气副本后，金币奖励将会减少。</p>
+
+                                <h3>温馨提示：</h3>
+                                <p>通关黑崎一护联动妖气副本每日最多可获得1个联动SSR黑崎一护式神碎片、4个「守护之心」皮肤碎片和4个「初心未改」皮肤碎片。</p>
+                                <p>（应版权方要求，妖气副本中将不使用联动相关角色的怪物形象）</p>
+
+                                <h3>皮肤商店上新！</h3>
+                                <p>※绝版限定皮肤——黑崎一护·守护之心、朽木露琪亚·初心未改上架皮肤商店！各位阴阳师大人可以通过收集对应的皮肤碎片进行兑换。</p>
+                                <p>※联动第二弹的绝版限定皮肤黑崎一护·魄斩双极、朽木露琪亚·魂锁瀞灵两款皮肤碎片再次上架商店杂货铺，各位阴阳师大人可前往购买！联动第二弹绝版限定的皮肤，每位阴阳师大人限购每款50片皮肤碎片，之前已经购买这两款皮肤各50片皮肤碎片的阴阳师大人，本次将无法购买。
+                                </p>
+                                <p>※4月15日维护后-4月21日23:59，逢魔之时参与四次现世逢魔玩法、通关黑崎一护妖气副本均可额外获得黑崎一护「守护之心」皮肤碎片和朽木露琪亚「初心未改」皮肤碎片。
+                                </p>
+                                <p>※收集齐50个「守护之心」或「初心未改」皮肤碎片可前往皮肤屋中兑换对应的皮肤。在4月15日维护后-4月21日23:59兑换这两个新皮肤，可获得额外礼包奖励。</p>
+                                <p>※温馨提示：「守护之心」、「初心未改」皮肤碎片可在阴阳寮进行祈愿，每日最多祈愿1个碎片。</p>
+                            </div>
+                        </div>
+                        <div class="lun-conter lun-add3">
+                            <!-- 标题部分 -->
+                            <div class="lun-conter-title">
+                                <span>集结</span>
+                                <span>抽卡福利</span>
+                            </div>
+                            <!-- 文字部分 -->
+                            <div class="lun-conter-text" id="text3">
+                                <p>活动时间：4月15日维护后-4月26日23:59</p>
+
+                                <h3>※黑崎一护限定召唤！</h3>
+                                <p>活动期间，召唤时有机会获得绝版限定SSR—黑崎一护契约书碎片，凑齐50个碎片可召唤该联动限定SSR！更有机会直接获得黑崎一护契约书！</p>
+                                <p>以上两种概率均不受概率UP所影响。</p>
+
+                                <h3>※SP/SSR式神出现概率提升</h3>
+                                <p>召唤期内使用神秘的符咒、勾玉、现世符咒进行召唤时，SP/SSR式神出现概率提升至原来的2.5倍！每位阴阳师大人享受3次SP/SSR概率UP的机会。</p>
+
+                                <h3>※SP浮世青行灯指定概率UP阶段成长</h3>
+                                <p>召唤期内使用神秘的符咒、勾玉、现世符咒进行召唤，召唤出SP/SSR式神时，SP浮世青行灯的指定出现概率提升，且此出现概率将在召唤期内随召唤次数持续提升！此福利将在成功召唤出SP浮世青行灯后失效。
+                                </p>
+                                <p>对于4月15日维护前已达成SSR全集赏的大人们，本期指定出现概率将由初始10%持续提升并在500次召唤后提升至100%！</p>
+                                <p>对于其他大人们，本期指定出现概率将由初始的3%持续提升并在500次召唤后提升至15%！</p>
+
+                                <h3>※召唤阶段礼包</h3>
+                                <p>召唤期内使用神秘的符咒、勾玉、现世符咒进行召唤达到指定次数时，还将获得对应的阶段礼包，包含御行达摩、大量神秘的符咒、皮肤券、勾玉、自选SR等稀有道具。</p>
+
+                                <h3>※特殊福利</h3>
+                                <p>召唤期内使用神秘的符咒、勾玉、现世符咒进行召唤达到699次时，若仍未召唤出SP浮世青行灯：对于4月15日维护前已达成SSR全集赏的大人们，第700次召唤必定出现SP浮世青行灯，并额外获赠惊喜礼包一份，之后消耗该指定式神的概率UP次数。
+                                </p>
+                                <p>对于其他大人们，第700次召唤后，SP浮世青行灯指定概率UP将提升至25%。</p>
+
+                                <h3>※重要说明：</h3>
+                                <p>本次召唤活动向所有等级不低于15级的阴阳师大人开放。</p>
+                                <p>SSR全集赏以图鉴中点亮的SSR式神为准(两面佛除外)。</p>
+                                <p>SSR全集赏不包括联动限定SSR奴良陆生、卖药郎、鬼灯、犬夜叉、杀生丸、桔梗、黑崎一护。</p>
+                                <p>浮世青行灯传记、式神录动作和技能的语音会在登录正式服时补全。</p>
+                            </div>
+                        </div>
+                        <div class="lun-conter lun-add4">
+                            <!-- 标题部分 -->
+                            <div class="lun-conter-title">
+                                <span>来袭</span>
+                                <span>京都万事屋</span>
+                            </div>
+                            <!-- 文字部分 -->
+                            <div class="lun-conter-text " id="text4">
+                                <p>近来京都里发生了许多奇诡的异事，昭示百鬼间在孕育着重大的变化。</p>
+                                <p>另一方面也正值京都祭祖庆典，历来阴阳师们需要为百姓们占卜算命、祛灾避难、净化宅邸、沟通亡者。</p>
+                                <p>因此在诸位阴阳师大人的指导下，小纸人们经营的「京都万事屋」正式营业啦！</p>
+
+                                <h3>※活动时间：</h3>
+                                <p>4月15日维护后-4月28日23:59（商店于活动结束后额外延长1周兑换时间）</p>
+                                <p>活动期间，大人们需要召唤出专属的「纸人替身」，并指导它经营你的「万事屋」赚取资金。</p>
+                                <p>「资金」可以在活动商店中兑换各式奖励，其中皮肤「久次良·深海熔岩」在2021年1月前暂无其他获取途径，之后会通过其他形式投放。</p>
+                                <p>「万事屋」每日将提供基础的「素材产量」，大人们还可以通过「挑战」获取额外的素材和御魂。</p>
+                                <p>「招募」系统角色/好友的「纸人替身」并安排工作：将素材「制造」成消耗道具，然后完成百姓们的「委托」来赚取「资金」！</p>
+                                <p>小纸人们不需要大人监督，即使大人们不在线，也会持续地努力工作。</p>
+                                <p>但领取委托奖励时，小纸人们会随机禀告「惊喜任务」，需要大人们亲自出马！</p>
+                                <p>大人们！亮晃晃的财富在等着……嗯……金钱不是最重要的，重要的是为京都百姓们服务的心和这清平的庆典日子！</p>
+                            </div>
+                        </div>
+                        <div class="lun-conter lun-add5">
+                            <!-- 标题部分 -->
+                            <div class="lun-conter-title" >
+                                <span>焕新</span>
+                                <span>新皮肤上线</span>
+                            </div>
+                            <!-- 文字部分 -->
+                            <div class="lun-conter-text" id="text5">
+                                <p>※花合战·卯月活动中，购买墨染花札，可解锁少羽大天狗皮肤·无垢白羽，阴阳师大人们不要错过！</p>
+                                <p>※蟹姬皮肤·海之大将上架协同对弈玩法商店，欢迎阴阳师大人们选购！</p>
+                            </div>
+                        </div>
+                        <div class="lun-conter lun-add6" >
+                            <!-- 标题部分 -->
+                            <div class="lun-conter-title">
+                                <span>携礼</span>
+                                <span>多重活动上新</span>
+                            </div>
+                            <!-- 文字部分 -->
+                            <div class="lun-conter-text" id="text6">
+                                <h3>活动——登高望远</h3>
+                                <p>※活动时间：4月15日维护后-4月28日23:59</p>
+                                <p>※阴阳师大人们可以通过购买「登高望远活动礼包」累积「登高人数」，进行登高。「登高人数」达到石碑/鸟居时，全服所有等级达到15级的阴阳师大人都可以领取对应的丰厚奖励。
+                                </p>
+                                <p>※「登高人数」达到100万或登顶苹果应用商店畅销榜，则成功登高望远，所有购买过「登高望远活动礼包」的阴阳师大人还会获得额外的「风吕敷」奖励。</p>
+                                <p>※活动礼包中包含吸血姬头像框「鲜血之拥」。</p>
+
+                                <h3>新玩法上线——协同对弈</h3>
+                                <p>※玩法规则：与队友共同开启挑战，用随机生成的式神构建大人们的队伍，用于在全自动战斗的系列赛中取得尽量高的胜场，赢取神秘的符咒、勾玉、金币、协同荣誉等奖励。协同荣誉可用于兑换蟹姬皮肤·海之大将。具体玩法规则请于维护后前往游戏内查看。
+                                </p>
+                                <p>※开放时间：每日11:00-13:00、21:00-23:00。</p>
+                                <p>※本玩法将用于替代原协同斗技玩法，希望给大人们带来更轻松有趣的组队竞技体验。</p>
+                                <p>※本玩法仍在试运行阶段，欢迎大人们体验和反馈，寮办将根据反馈持续优化。</p>
+
+                                <h3>花合战·卯月上线！</h3>
+                                <p>※活动时间：4月15日维护后-5月13日维护前</p>
+                                <p>※活动期间，阴阳师大人们可以通过完成各式各样的任务来获得花札经验，从而提高自己的花札等级。</p>
+                                <p>※随着花札等级的提升，阴阳师大人们可以获得大量丰厚的奖励。</p>
+                                <p>※购买墨染花札，更可解锁少羽大天狗皮肤·无垢白羽等超值奖励！</p>
+                                <p>额外说明：阴阳师大人们在花合战·弥生中获得的八折券，在本期购买墨染花札时会自动生效，即墨染花札的普通礼盒和精品礼盒售价分别会降至24魂玉和54魂玉。</p>
+
+                                <h3>运势加成掉落活动开启！</h3>
+                                <p>※活动时间：4月15日0:00-4月21日23:59</p>
+                                <p>※在御魂副本、觉醒副本、探索副本战斗时，有概率掉落金币加成、经验加成、觉醒材料掉落加成和御魂掉落加成道具，快去获取运势加成效果吧！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 主页下部分 轮播图 -->
+            <div class="main-bottom">
+                <div class="main-bottom-title"></div>
+                <!-- 轮播图 -->
+                
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./lib/jQuery/jquery-3.4.1.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- 引用customer滚动条插件 -->
+    <script src="./lib/customer/jquery.mCustomScrollbar.js"></script>
+
+    <!-- 引用swiper轮播图插件 -->
+    <script src="./lib/swiper-5.3.6/package/js/swiper.min.js"></script>
+
+ 
+    <!-- 插件配置 -->
+    <script>
+        $(function () {
+            // 初始化滚动条插件     
+            $(".lun-conter-text").mCustomScrollbar();
+            // 初始化swiper插件
+            var mySwiper = new Swiper('.swiper-container', {
+                autoplay: true,//等同于以下设置 自动切换
+                /*autoplay: {
+                  delay: 3000,
+                  stopOnLastSlide: false,
+                  disableOnInteraction: true,
+                  },*/
+                direction: 'vertical', //竖屏切换
+            });
+        })
+    </script>
 </body>
+
 </html>

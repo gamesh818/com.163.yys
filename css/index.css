@@ -222,6 +222,7 @@ html, body {
   top: 0;
   right: 0;
   height: 54px;
+  border-left: 1px solid #dadada;
 }
 
 .left-erwei {
@@ -310,5 +311,256 @@ html, body {
   background: url(../images/index/index-main-go.png) no-repeat center;
   width: 189px;
   height: 59px;
+}
+
+.main .main-center {
+  position: relative;
+  min-width: 1200px;
+  max-width: 1200px;
+  height: 1100px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.main .main-center .main-center-title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 359px;
+  height: 60px;
+  background: url(../images/index/index-main-center-title.png);
+}
+
+.main .main-center .main-center-lun {
+  position: relative;
+  top: 65px;
+  width: 1200px;
+  height: 1040px;
+}
+
+.main .main-center .main-center-lun div {
+  position: absolute;
+  width: 368px;
+  height: 376px;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.main .main-center .main-center-lun .lun-box1 {
+  top: 200px;
+  left: 20px;
+}
+
+.main .main-center .main-center-lun .lun-box1:hover {
+  top: 185px;
+}
+
+.main .main-center .main-center-lun .lun-box2 {
+  top: 80px;
+  left: 410px;
+}
+
+.main .main-center .main-center-lun .lun-box2:hover {
+  top: 65px;
+}
+
+.main .main-center .main-center-lun .lun-box3 {
+  top: 0;
+  left: 812px;
+}
+
+.main .main-center .main-center-lun .lun-box3:hover {
+  top: -15px;
+}
+
+.main .main-center .main-center-lun .lun-box4 {
+  top: 656px;
+  left: 20px;
+}
+
+.main .main-center .main-center-lun .lun-box4:hover {
+  top: 641px;
+}
+
+.main .main-center .main-center-lun .lun-box5 {
+  top: 522px;
+  left: 410px;
+}
+
+.main .main-center .main-center-lun .lun-box5:hover {
+  top: 507px;
+}
+
+.main .main-center .main-center-lun .lun-box6 {
+  top: 450px;
+  left: 812px;
+}
+
+.main .main-center .main-center-lun .lun-box6:hover {
+  top: 435px;
+}
+
+.main .main-center .lun-black {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.main .main-center .lun-bigbox {
+  display: none;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  min-width: 1200px;
+  height: 650px;
+}
+
+.main .main-center .lun-bigbox .lun-conter-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.main .main-center .lun-bigbox .lun-conter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.main .main-center .lun-bigbox .lun-conter .lun-conter-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -128px;
+  margin-left: -320px;
+  width: 400px;
+  height: 360px;
+}
+
+.main .main-center .lun-bigbox .lun-conter .lun-conter-text p {
+  font-size: 16px;
+  color: #d4bb81;
+  line-height: 35px;
+}
+
+.main .main-center .lun-bigbox .lun-conter .lun-conter-text h3 {
+  color: #d8bf89;
+  margin: 5px 0;
+  font-size: 19px;
+}
+
+.main .main-center .lun-bigbox .lun-conter .lun-conter-title {
+  position: absolute;
+  left: 420px;
+  top: 180px;
+  color: #d4bb81;
+  width: 140px;
+}
+
+.main .main-center .lun-bigbox .lun-conter .lun-conter-title span {
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+}
+
+.main .main-center .lun-bigbox .lun-conter .lun-conter-title > span:nth-child(1) {
+  width: 90px;
+  font-size: 72px;
+  text-align: center;
+  font-weight: 800;
+  top: 0;
+  left: 0;
+}
+
+.main .main-center .lun-bigbox .lun-conter .lun-conter-title > span:nth-child(2) {
+  width: 50px;
+  font-size: 32px;
+  right: 0;
+  top: 0;
+}
+
+.main .main-center .lun-bigbox .lun-add1 {
+  background: url(../images/index/index-main-center-click1.png);
+}
+
+.main .main-center .lun-bigbox .lun-add2 {
+  background: url(../images/index/index-main-center-click2.png);
+}
+
+.main .main-center .lun-bigbox .lun-add3 {
+  background: url(../images/index/index-main-center-click3.png);
+}
+
+.main .main-center .lun-bigbox .lun-add4 {
+  background: url(../images/index/index-main-center-click4.png);
+}
+
+.main .main-center .lun-bigbox .lun-add5 {
+  background: url(../images/index/index-main-center-click5.png);
+}
+
+.main .main-center .lun-bigbox .lun-add6 {
+  background: url(../images/index/index-main-center-click6.png);
+}
+
+.main .main-center .lun-bigbox .lun-left, .main .main-center .lun-bigbox .lun-right {
+  width: 51px;
+  height: 65px;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+.main .main-center .lun-bigbox .lun-left {
+  background: url(../images/index/index-main-center-leftbut.png);
+  left: 250px;
+}
+
+.main .main-center .lun-bigbox .lun-right {
+  background: url(../images/index/index-main-center-rightbut.png);
+  right: 250px;
+}
+
+.main .main-center .lun-bigbox .lun-butstop {
+  opacity: 0.5;
+}
+
+.main .main-center .lun-bigbox .lun-stop {
+  position: absolute;
+  right: 320px;
+  top: 0;
+  width: 54px;
+  height: 50px;
+  background: url(../images/index/index-main-center-X.png);
+  z-index: 1;
+}
+
+.main .main-bottom {
+  width: 1260px;
+  height: 530px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main .main-bottom-title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 329px;
+  height: 60px;
+  background: url(../images/index/index-main-bottom-title.png);
 }
 /*# sourceMappingURL=index.css.map */
