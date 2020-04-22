@@ -199,6 +199,20 @@ html,body{
         right: 0;
         height: 54px;
         border-left: 1px solid#dadada;
+        overflow: hidden;
+        .swiper-slide{
+            width: 138px;
+            height: 52px;
+            text-align: center;
+            line-height: 52px;
+            box-sizing: border-box;
+            &:hover{
+                border-bottom: 2px solid red;
+                color: red;
+                background-color: rgba(0, 0, 0, 0.1);
+                transition: all 0.5s;
+            }
+        }
     }
 }
 // 左边固定二维码
@@ -238,6 +252,16 @@ html,body{
             width: 133px;
             height: 133px;
         }
+        div{
+            position: absolute;
+            background: url(../images/index/index-ewweima-jiguang.png);
+            left: 50%;
+            margin-left: -63.5px;
+            top: 15px;
+            width: 127px;
+            height: 10px;
+            animation: jiguang 2s linear infinite;
+        }
     }
     .xiazai{
         position: absolute;
@@ -248,6 +272,18 @@ html,body{
         a{
             display: block;
         }
+    }
+}
+// 二维码激光动画
+@keyframes jiguang {
+    0%{
+        top:15px
+    }
+    50%{
+        top:105px
+    }
+    100%{
+        top:15px  
     }
 }
 // 主页背景
@@ -363,6 +399,7 @@ html,body{
             height: 100%;
             background-color: black;
             opacity: 0.7;
+            z-index: 10000;
         }
         // 伪轮播图大盒子
         .lun-bigbox{
@@ -374,6 +411,7 @@ html,body{
             width: 100%;
             min-width: 1200px;
             height: 650px;
+            z-index: 10000;
             .lun-conter-box{
                 position: relative;
                 width: 100%;

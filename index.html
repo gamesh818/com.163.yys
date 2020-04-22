@@ -28,12 +28,17 @@
         }
 
         .top-nav-right .swiper-slide:hover {
-            border-bottom: 1px solid pink;
-            background-color: pink;
+            border-bottom: 2px solid red;
+            box-sizing: border-box;
+            color: red;
+            background-color: rgba(0, 0, 0, 0.1);
+            transition: all 0.5s;
         }
     </style>
     <!-- 重置样式 -->
     <link rel="stylesheet" href="./lib/reset/reset.css">
+    <!-- 引用滚动条样式 -->
+    <link rel="stylesheet" href="./lib/scrollbar-plugin-150125150551/jquery.mCustomScrollbar.css">
     <!-- 引用swiper轮播图插件 -->
     <link rel="stylesheet" href="./lib/swiper-5.3.6/package/css/swiper.min.css">
     <!-- 引用3d轮播图插件 -->
@@ -59,37 +64,37 @@
                 <ul class="select-bottom">
                     <li>
                         <p>角色扮演</p>
-                        <a href="" class="select-no1">梦幻西游电脑版</a>
-                        <a href="" class="select-hot">大话2经典版</a>
-                        <a href="" class="select-hot">天下3</a>
-                        <a href="" class="select-hot">新倩女幽魂</a>
-                        <a href="" class="select-hot">逆水寒</a>
-                        <a href="">天谕</a>
-                        <a href="">超激斗梦境</a>
-                        <a href="">龙魂时刻</a>
-                        <a href="" class="select-hot">泰亚史诗</a>
-                        <a href="" class="select-hot">大话2免费版</a>
-                        <a href="">新大话3经典版</a>
-                        <a href="">新大话3免费版</a>
-                        <a href="">镇魔曲</a>
-                        <a href="">镇魔曲页游</a>
-                        <a href="">大唐无双</a>
-                        <a href="">武魂2</a>
-                        <a href="">魔兽世界</a>
+                        <a href="javascript:void(0);" class="select-no1">梦幻西游电脑版</a>
+                        <a href="javascript:void(0);" class="select-hot">大话2经典版</a>
+                        <a href="javascript:void(0);" class="select-hot">天下3</a>
+                        <a href="javascript:void(0);" class="select-hot">新倩女幽魂</a>
+                        <a href="javascript:void(0);" class="select-hot">逆水寒</a>
+                        <a href="javascript:void(0);">天谕</a>
+                        <a href="javascript:void(0);">超激斗梦境</a>
+                        <a href="javascript:void(0);">龙魂时刻</a>
+                        <a href="javascript:void(0);" class="select-hot">泰亚史诗</a>
+                        <a href="javascript:void(0);" class="select-hot">大话2免费版</a>
+                        <a href="javascript:void(0);">新大话3经典版</a>
+                        <a href="javascript:void(0);">新大话3免费版</a>
+                        <a href="javascript:void(0);">镇魔曲</a>
+                        <a href="javascript:void(0);">镇魔曲页游</a>
+                        <a href="javascript:void(0);">大唐无双</a>
+                        <a href="javascript:void(0);">武魂2</a>
+                        <a href="javascript:void(0);">魔兽世界</a>
                     </li>
                     <li>
                         <p>竞技/休闲</p>
-                        <a href="" class="select-new">我的世界</a>
-                        <a href="" class="select-new">守望先锋</a>
-                        <a href="" class="select-new">荒野行动Plus</a>
-                        <a href="" class="select-new">EVE Online</a>
-                        <a href="" class="select-new">突击英雄</a>
-                        <a href="" class="select-new">战意</a>
-                        <a href="" class="select-new">秘境对决</a>
-                        <a href="" class="select-new">故土Nostos</a>
-                        <a href="">风暴英雄</a>
-                        <a href="">星际争霸Ⅱ</a>
-                        <a href="">炉石传说</a>
+                        <a href="javascript:void(0);" class="select-new">我的世界</a>
+                        <a href="javascript:void(0);" class="select-new">守望先锋</a>
+                        <a href="javascript:void(0);" class="select-new">荒野行动Plus</a>
+                        <a href="javascript:void(0);" class="select-new">EVE Online</a>
+                        <a href="javascript:void(0);" class="select-new">突击英雄</a>
+                        <a href="javascript:void(0);" class="select-new">战意</a>
+                        <a href="javascript:void(0);" class="select-new">秘境对决</a>
+                        <a href="javascript:void(0);" class="select-new">故土Nostos</a>
+                        <a href="javascript:void(0);">风暴英雄</a>
+                        <a href="javascript:void(0);">星际争霸Ⅱ</a>
+                        <a href="javascript:void(0);">炉石传说</a>
                         <!-- 更多热门端游按钮 -->
 
                         <a id="select-but" href="">更多热门端游</a>
@@ -97,143 +102,143 @@
                     </li>
                     <li>
                         <p>热门推荐</p>
-                        <a href="" class="select-hot">梦幻西游手游</a>
-                        <a href="" class="select-hot">大话西游手游</a>
-                        <a href="" class="select-hot">倩女幽魂手游</a>
-                        <a href="" class="select-hot">阴阳师</a>
-                        <a href="" class="select-hot">率土之滨</a>
-                        <a href="" class="select-hot">天下手游</a>
-                        <a href="" class="select-hot">镇魔曲手游</a>
-                        <a href="" class="select-hot">一梦江湖</a>
-                        <a href="" class="select-hot">决战！平安京</a>
-                        <a href="" class="select-hot">明日之后</a>
-                        <a href="" class="select-hot">荒野行动</a>
-                        <a href="" class="select-hot">第五人格</a>
-                        <a href="" class="select-hot">神都夜行录</a>
-                        <a href="">终结战场</a>
-                        <a href="">我的世界Minecraft</a>
-                        <a href="">大唐无双唯美篇</a>
-                        <a href="">光明大陆</a>
+                        <a href="javascript:void(0);" class="select-hot">梦幻西游手游</a>
+                        <a href="javascript:void(0);" class="select-hot">大话西游手游</a>
+                        <a href="javascript:void(0);" class="select-hot">倩女幽魂手游</a>
+                        <a href="javascript:void(0);" class="select-hot">阴阳师</a>
+                        <a href="javascript:void(0);" class="select-hot">率土之滨</a>
+                        <a href="javascript:void(0);" class="select-hot">天下手游</a>
+                        <a href="javascript:void(0);" class="select-hot">镇魔曲手游</a>
+                        <a href="javascript:void(0);" class="select-hot">一梦江湖</a>
+                        <a href="javascript:void(0);" class="select-hot">决战！平安京</a>
+                        <a href="javascript:void(0);" class="select-hot">明日之后</a>
+                        <a href="javascript:void(0);" class="select-hot">荒野行动</a>
+                        <a href="javascript:void(0);" class="select-hot">第五人格</a>
+                        <a href="javascript:void(0);" class="select-hot">神都夜行录</a>
+                        <a href="javascript:void(0);">终结战场</a>
+                        <a href="javascript:void(0);">我的世界Minecraft</a>
+                        <a href="javascript:void(0);">大唐无双唯美篇</a>
+                        <a href="javascript:void(0);">光明大陆</a>
                     </li>
                     <li>
                         <p>新品推荐</p>
                         <div class="li-box">
-                            <a href="" class="select-new">梦幻西游三维版</a>
-                            <a href="" class="select-new">海岛纪元</a>
-                            <a href="" class="select-new">风云岛行动</a>
-                            <a href="" class="select-new">一起优诺</a>
-                            <a href="" class="select-new">重装上阵</a>
-                            <a href="" class="select-new">猎手之王</a>
-                            <a href="" class="select-new">花与剑</a>
-                            <a href="" class="select-new">实况足球</a>
-                            <a href="" class="select-new">阴阳师：百闻牌</a>
-                            <a href="" class="select-new">忘川风华录</a>
-                            <a href="" class="select-new">轩辕剑龙舞云山</a>
-                            <a href="" class="select-new">量子特攻</a>
-                            <a href="" class="select-new">遇见逆水寒</a>
-                            <a href="" class="select-new">陈情令</a>
-                            <a href="" class="select-new">绿茵之巅</a>
-                            <a href="" class="select-new">最后的秘密</a>
-                            <a href="" class="select-new">堡垒前线</a>
+                            <a href="javascript:void(0);" class="select-new">梦幻西游三维版</a>
+                            <a href="javascript:void(0);" class="select-new">海岛纪元</a>
+                            <a href="javascript:void(0);" class="select-new">风云岛行动</a>
+                            <a href="javascript:void(0);" class="select-new">一起优诺</a>
+                            <a href="javascript:void(0);" class="select-new">重装上阵</a>
+                            <a href="javascript:void(0);" class="select-new">猎手之王</a>
+                            <a href="javascript:void(0);" class="select-new">花与剑</a>
+                            <a href="javascript:void(0);" class="select-new">实况足球</a>
+                            <a href="javascript:void(0);" class="select-new">阴阳师：百闻牌</a>
+                            <a href="javascript:void(0);" class="select-new">忘川风华录</a>
+                            <a href="javascript:void(0);" class="select-new">轩辕剑龙舞云山</a>
+                            <a href="javascript:void(0);" class="select-new">量子特攻</a>
+                            <a href="javascript:void(0);" class="select-new">遇见逆水寒</a>
+                            <a href="javascript:void(0);" class="select-new">陈情令</a>
+                            <a href="javascript:void(0);" class="select-new">绿茵之巅</a>
+                            <a href="javascript:void(0);" class="select-new">最后的秘密</a>
+                            <a href="javascript:void(0);" class="select-new">堡垒前线</a>
                         </div>
                         <div class="li-box">
-                            <a href="" class="select-new">第九所</a>
-                            <a href="" class="select-new">梦幻西游网页版</a>
-                            <a href="" class="select-new">河狸计划</a>
-                            <a href="" class="select-new">时空中的绘旅人</a>
-                            <a href="" class="select-new">暗黑破坏神：不朽</a>
-                            <a href="" class="select-new">阴阳师：妖怪屋</a>
-                            <a href="" class="select-new">宝可梦大探险</a>
-                            <a href="" class="select-new">黑潮之上</a>
-                            <a href="" class="select-new">绘真·妙笔千山</a>
-                            <a href="" class="select-new">光·遇</a>
-                            <a href="" class="select-new">流星群侠传</a>
-                            <a href="" class="select-new">有杀气童话2</a>
-                            <a href="" class="select-new">完售物语</a>
-                            <a href="" class="select-new">天谕手游</a>
-                            <a href="" class="select-new">Disorder</a>
-                            <a href="" class="select-new">机动都市阿尔法</a>
-                            <a href="" class="select-new">幻书启世录</a>
+                            <a href="javascript:void(0);" class="select-new">第九所</a>
+                            <a href="javascript:void(0);" class="select-new">梦幻西游网页版</a>
+                            <a href="javascript:void(0);" class="select-new">河狸计划</a>
+                            <a href="javascript:void(0);" class="select-new">时空中的绘旅人</a>
+                            <a href="javascript:void(0);" class="select-new">暗黑破坏神：不朽</a>
+                            <a href="javascript:void(0);" class="select-new">阴阳师：妖怪屋</a>
+                            <a href="javascript:void(0);" class="select-new">宝可梦大探险</a>
+                            <a href="javascript:void(0);" class="select-new">黑潮之上</a>
+                            <a href="javascript:void(0);" class="select-new">绘真·妙笔千山</a>
+                            <a href="javascript:void(0);" class="select-new">光·遇</a>
+                            <a href="javascript:void(0);" class="select-new">流星群侠传</a>
+                            <a href="javascript:void(0);" class="select-new">有杀气童话2</a>
+                            <a href="javascript:void(0);" class="select-new">完售物语</a>
+                            <a href="javascript:void(0);" class="select-new">天谕手游</a>
+                            <a href="javascript:void(0);" class="select-new">Disorder</a>
+                            <a href="javascript:void(0);" class="select-new">机动都市阿尔法</a>
+                            <a href="javascript:void(0);" class="select-new">幻书启世录</a>
                         </div>
                         <div class="li-box">
-                            <a href="">青璃</a>
-                            <a href="">孤岛先锋</a>
-                            <a href="">逗斗火柴人</a>
-                            <a href="">游戏王：决斗链接</a>
-                            <a href="">节奏空间</a>
-                            <a href="">隐世录</a>
-                            <a href="">荒野潜伏者</a>
-                            <a href="">迷室The Room</a>
-                            <a href="">永远的7日之都</a>
-                            <a href="">舰无虚发：暗星</a>
-                            <a href="">实况：王者集结</a>
-                            <a href="">战舰世界闪击战</a>
-                            <a href="">坦克世界闪击战</a>
-                            <a href="">战争怒吼</a>
-                            <a href="">极客战记(教育类)</a>
-                            <a href="">权力与纷争</a>
-                            <a href="">非人学园</a>
+                            <a href="javascript:void(0);">青璃</a>
+                            <a href="javascript:void(0);">孤岛先锋</a>
+                            <a href="javascript:void(0);">逗斗火柴人</a>
+                            <a href="javascript:void(0);">游戏王：决斗链接</a>
+                            <a href="javascript:void(0);">节奏空间</a>
+                            <a href="javascript:void(0);">隐世录</a>
+                            <a href="javascript:void(0);">荒野潜伏者</a>
+                            <a href="javascript:void(0);">迷室The Room</a>
+                            <a href="javascript:void(0);">永远的7日之都</a>
+                            <a href="javascript:void(0);">舰无虚发：暗星</a>
+                            <a href="javascript:void(0);">实况：王者集结</a>
+                            <a href="javascript:void(0);">战舰世界闪击战</a>
+                            <a href="javascript:void(0);">坦克世界闪击战</a>
+                            <a href="javascript:void(0);">战争怒吼</a>
+                            <a href="javascript:void(0);">极客战记(教育类)</a>
+                            <a href="javascript:void(0);">权力与纷争</a>
+                            <a href="javascript:void(0);">非人学园</a>
                         </div>
                         <div class="li-box">
-                            <a href="">战国志</a>
-                            <a href="">边境之旅</a>
-                            <a href="">星战前夜:无烬星河</a>
-                            <a href="">三国如龙传</a>
-                            <a href="">网易棋牌</a>
-                            <a href="">神谕文明</a>
-                            <a href="">风暴对决</a>
-                            <a href="">猎魂觉醒</a>
-                            <a href="">狼人杀</a>
-                            <a href="">魔法禁书目录</a>
-                            <a href="">秘境对决</a>
-                            <a href="">影之诗</a>
-                            <a href="">潮人篮球</a>
-                            <a href="">三国诛将录</a>
-                            <a href="">重装突击</a>
-                            <a href="">劲舞团</a>
-                            <a href="">坦克连</a>
+                            <a href="javascript:void(0);">战国志</a>
+                            <a href="javascript:void(0);">边境之旅</a>
+                            <a href="javascript:void(0);">星战前夜:无烬星河</a>
+                            <a href="javascript:void(0);">三国如龙传</a>
+                            <a href="javascript:void(0);">网易棋牌</a>
+                            <a href="javascript:void(0);">神谕文明</a>
+                            <a href="javascript:void(0);">风暴对决</a>
+                            <a href="javascript:void(0);">猎魂觉醒</a>
+                            <a href="javascript:void(0);">狼人杀</a>
+                            <a href="javascript:void(0);">魔法禁书目录</a>
+                            <a href="javascript:void(0);">秘境对决</a>
+                            <a href="javascript:void(0);">影之诗</a>
+                            <a href="javascript:void(0);">潮人篮球</a>
+                            <a href="javascript:void(0);">三国诛将录</a>
+                            <a href="javascript:void(0);">重装突击</a>
+                            <a href="javascript:void(0);">劲舞团</a>
+                            <a href="javascript:void(0);">坦克连</a>
                         </div>
                         <div class="li-box">
-                            <a href="">大话西游热血版</a>
-                            <a href="">大航海之路</a>
-                            <a href="">萌王EX</a>
-                            <a href="">秘宝猎人</a>
-                            <a href="">天下×天下</a>
-                            <a href="">永恒边境</a>
-                            <a href="">花语月</a>
-                            <a href="">乱斗西游2</a>
-                            <a href="">惊梦</a>
-                            <a href="">迷你西游</a>
-                            <a href="">实况俱乐部</a>
-                            <a href="">大唐游仙记</a>
-                            <a href="">天下HD</a>
-                            <a href="">西游神魔决</a>
-                            <a href="">有杀气童话</a>
-                            <a href="">猫和老鼠官方手游</a>
+                            <a href="javascript:void(0);">大话西游热血版</a>
+                            <a href="javascript:void(0);">大航海之路</a>
+                            <a href="javascript:void(0);">萌王EX</a>
+                            <a href="javascript:void(0);">秘宝猎人</a>
+                            <a href="javascript:void(0);">天下×天下</a>
+                            <a href="javascript:void(0);">永恒边境</a>
+                            <a href="javascript:void(0);">花语月</a>
+                            <a href="javascript:void(0);">乱斗西游2</a>
+                            <a href="javascript:void(0);">惊梦</a>
+                            <a href="javascript:void(0);">迷你西游</a>
+                            <a href="javascript:void(0);">实况俱乐部</a>
+                            <a href="javascript:void(0);">大唐游仙记</a>
+                            <a href="javascript:void(0);">天下HD</a>
+                            <a href="javascript:void(0);">西游神魔决</a>
+                            <a href="javascript:void(0);">有杀气童话</a>
+                            <a href="javascript:void(0);">猫和老鼠官方手游</a>
                         </div>
                         <!-- 更多热门手游按钮 -->
                         <a href="" id="select-but">更多热门手游</a>
                     </li>
                     <li>
-                        <a href="" class="select-hot">游品位</a>
-                        <a href="" class="select-hot">网易MuMu</a>
-                        <a href="" class="select-hot">会员俱乐部</a>
-                        <a href="" class="select-new">网易大神</a>
-                        <a href="" class="select-new">网易BUFF</a>
-                        <a href="">网易游戏印象</a>
-                        <a href="">网易游戏平台</a>
-                        <a href="" class="select-new">网易游戏助手</a>
-                        <a href="" class="select-hot">易次元</a>
-                        <a href="">手机将军令</a>
-                        <a href="">将军令</a>
-                        <a href="">藏宝阁</a>
-                        <a href="">网易CC</a>
-                        <a href="">自助百宝箱</a>
-                        <a href="">网易UU加速器</a>
-                        <a href="">网易白金卡</a>
-                        <a href="">客服中心</a>
+                        <a href="javascript:void(0);" class="select-hot">游品位</a>
+                        <a href="javascript:void(0);" class="select-hot">网易MuMu</a>
+                        <a href="javascript:void(0);" class="select-hot">会员俱乐部</a>
+                        <a href="javascript:void(0);" class="select-new">网易大神</a>
+                        <a href="javascript:void(0);" class="select-new">网易BUFF</a>
+                        <a href="javascript:void(0);">网易游戏印象</a>
+                        <a href="javascript:void(0);">网易游戏平台</a>
+                        <a href="javascript:void(0);" class="select-new">网易游戏助手</a>
+                        <a href="javascript:void(0);" class="select-hot">易次元</a>
+                        <a href="javascript:void(0);">手机将军令</a>
+                        <a href="javascript:void(0);">将军令</a>
+                        <a href="javascript:void(0);">藏宝阁</a>
+                        <a href="javascript:void(0);">网易CC</a>
+                        <a href="javascript:void(0);">自助百宝箱</a>
+                        <a href="javascript:void(0);">网易UU加速器</a>
+                        <a href="javascript:void(0);">网易白金卡</a>
+                        <a href="javascript:void(0);">客服中心</a>
                         <!-- logo -->
-                        <a href=""></a>
+                        <a href="javascript:void(0);"></a>
                     </li>
                 </ul>
             </div>
@@ -267,15 +272,16 @@
     <div class="left-erwei">
         <div class="click-but">
             <span class="click-shou"></span>
-            <a href="#">
+            <a href="javascript:void(0);">
                 收<br>起
             </a>
         </div>
         <div class="erweima">
             <img src="./images/index/index-erweima.png" alt="">
+            <div class="jiguang"></div>
         </div>
         <div class="xiazai">
-            <a href="">
+            <a href="javascript:void(0);">
                 <img src="./images/index/index-xiazaipc.png" alt="">
             </a>
         </div>
@@ -442,7 +448,6 @@
                                 <p>近来京都里发生了许多奇诡的异事，昭示百鬼间在孕育着重大的变化。</p>
                                 <p>另一方面也正值京都祭祖庆典，历来阴阳师们需要为百姓们占卜算命、祛灾避难、净化宅邸、沟通亡者。</p>
                                 <p>因此在诸位阴阳师大人的指导下，小纸人们经营的「京都万事屋」正式营业啦！</p>
-
                                 <h3>※活动时间：</h3>
                                 <p>4月15日维护后-4月28日23:59（商店于活动结束后额外延长1周兑换时间）</p>
                                 <p>活动期间，大人们需要召唤出专属的「纸人替身」，并指导它经营你的「万事屋」赚取资金。</p>
@@ -526,12 +531,12 @@
             <div class="main-footer">
                 <div class="main-footer-top">
                     <ul>
-                        <li><a href="">分享到: </a> </li>
-                        <li><a href="">微信    </a> </li>
-                        <li><a href="">易信    </a> </li>
-                        <li><a href="">新浪微博</a> </li>
-                        <li><a href="">QQ空间  </a> </li>
-                        <li><a href="">更多    </a> </li>
+                        <li><a href="javascript:void(0);">分享到: </a> </li>
+                        <li><a href="javascript:void(0);">微信    </a> </li>
+                        <li><a href="javascript:void(0);">易信    </a> </li>
+                        <li><a href="javascript:void(0);">新浪微博</a> </li>
+                        <li><a href="javascript:void(0);">QQ空间  </a> </li>
+                        <li><a href="javascript:void(0);">更多    </a> </li>
                     </ul>
                 </div>
                 <div class="main-footer-bottom">
@@ -572,8 +577,8 @@
 
     <script src="./lib/jQuery/jquery-3.4.1.js"></script>
     <script src="./js/index.js"></script>
-    <!-- 引用customer滚动条插件 -->
-    <script src="./lib/customer/jquery.mCustomScrollbar.js"></script>
+    <!-- 引用滚动条插件 -->
+    <script src="./lib/scrollbar-plugin-150125150551/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <!-- 引用swiper轮播图插件 -->
     <script src="./lib/swiper-5.3.6/package/js/swiper.min.js"></script>
@@ -583,8 +588,12 @@
     <!-- 插件配置 -->
     <script>
         $(function () {
-            // 初始化滚动条插件     
-            $(".lun-conter-text").mCustomScrollbar();
+            // 初始化滚动条插件   
+            $(".lun-conter-text").mCustomScrollbar({
+                theme:"minimal"
+            });
+            
+
             // 初始化swiper插件
             var mySwiper = new Swiper('.swiper-container', {
                 autoplay: true,//等同于以下设置 自动切换

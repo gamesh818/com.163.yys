@@ -223,6 +223,24 @@ html, body {
   right: 0;
   height: 54px;
   border-left: 1px solid #dadada;
+  overflow: hidden;
+}
+
+.top-nav .top-nav-right .swiper-slide {
+  width: 138px;
+  height: 52px;
+  text-align: center;
+  line-height: 52px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.top-nav .top-nav-right .swiper-slide:hover {
+  border-bottom: 2px solid red;
+  color: red;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .left-erwei {
@@ -271,6 +289,18 @@ html, body {
   height: 133px;
 }
 
+.left-erwei .erweima div {
+  position: absolute;
+  background: url(../images/index/index-ewweima-jiguang.png);
+  left: 50%;
+  margin-left: -63.5px;
+  top: 15px;
+  width: 127px;
+  height: 10px;
+  -webkit-animation: jiguang 2s linear infinite;
+          animation: jiguang 2s linear infinite;
+}
+
 .left-erwei .xiazai {
   position: absolute;
   bottom: 0px;
@@ -281,6 +311,30 @@ html, body {
 
 .left-erwei .xiazai a {
   display: block;
+}
+
+@-webkit-keyframes jiguang {
+  0% {
+    top: 15px;
+  }
+  50% {
+    top: 105px;
+  }
+  100% {
+    top: 15px;
+  }
+}
+
+@keyframes jiguang {
+  0% {
+    top: 15px;
+  }
+  50% {
+    top: 105px;
+  }
+  100% {
+    top: 15px;
+  }
 }
 
 .main {
@@ -412,6 +466,7 @@ html, body {
   height: 100%;
   background-color: black;
   opacity: 0.7;
+  z-index: 10000;
 }
 
 .main .main-center .lun-bigbox {
@@ -424,6 +479,7 @@ html, body {
   width: 100%;
   min-width: 1200px;
   height: 650px;
+  z-index: 10000;
 }
 
 .main .main-center .lun-bigbox .lun-conter-box {

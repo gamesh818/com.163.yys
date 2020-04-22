@@ -6,6 +6,7 @@ $(function(){
     $('.top-nav-select').on('mouseleave',function(){
         $('.top-nav-select').stop().delay(300).slideUp(500)
     })
+    
     // 点击二维码收起按钮 二维码向左移动
     var flag = 0
     $('.left-erwei').on('click',function(){
@@ -46,10 +47,24 @@ $(function(){
     //     },300)
     // })
 
+    /**禁用滚动条**/
+    function unScroll() {
+        var top = $(document).scrollTop();
+        $(document).on('scroll.unable',function (e) {
+            $(document).scrollTop(top);
+        })
+    }
+
+    /**启用滚动条**/
+    function removeUnScroll() {
+        $(document).unbind("scroll.unable");
+    }
 
     // 主页伪轮播图
     // 点击任意一个 小盒子显示遮罩层和大盒子
     $('.main-center-lun > div').on('click',function(){
+        // 禁用滚动条
+        unScroll()
         let index = $(this).index()
         // 隐藏二维码
         $('.left-erwei').hide()
@@ -58,12 +73,14 @@ $(function(){
         // 显示大盒子
         $('.lun-bigbox').show()
         // 显示当前点击对应的盒子 并隐藏其他同辈盒子
-        $('.lun-conter').eq(index).css("opacity", 1).siblings().css("opacity", 0)
+        $('.lun-conter').eq(index).show().siblings().hide()
         // 点击关闭按钮 隐藏盒子和遮罩层 显示二维码
         $('.lun-stop').on('click',function(){
-            // 显示遮罩层
+        // 启用滚动条
+        removeUnScroll()
+        // 隐藏遮罩层
         $('.lun-black').hide()
-        // 显示大盒子
+        // 隐藏大盒子
         $('.lun-bigbox').hide()
         // 显示二维码
         $('.left-erwei').show()
@@ -72,7 +89,7 @@ $(function(){
         $('.lun-left').on('click',function(){
             if(index !=0){
                 index--
-                $('.lun-conter').eq(index).css("opacity", 1).siblings().css("opacity", 0)
+                $('.lun-conter').eq(index).show().siblings().hide()
             }
             // 判断图片是否是第一张或者是最后一张 如果是则给响应的按钮添加样式 和禁用按钮
             if(index == 0){
@@ -87,7 +104,7 @@ $(function(){
         $('.lun-right').on('click',function(){
             if(index !=5){
                 index++
-                $('.lun-conter').eq(index).css("opacity", 1).siblings().css("opacity", 0)
+                $('.lun-conter').eq(index).show().siblings().hide()
             }
             // 判断图片是否是第一张或者是最后一张 如果是则给响应的按钮添加样式 和禁用按钮
             if(index == 0){
