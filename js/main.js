@@ -132,17 +132,50 @@ $(function () {
         $('.pingan-lun-bigbox >div').each(function (i, v) {
             // 判断id是不是当前记录id
             if ($(this).attr('id') == pingan) {
+                let add = $(this).attr('id')+1
+                let app = $(this).attr('id')-1
                 // 显示当前记录id的盒子
-                $(this).siblings().hide()
-                $(this).show()
+                // $(this).find($('.name')).animate({
+                //     "opacity":0,
+                //     "left":-200
+                // },600)
+        
+                // $(this).find($('.juese')).animate({
+                //     "opacity":0,
+                //     "right":-200
+                // },600)
+                $(this).siblings().find('.name').animate({
+                        "opacity":0,
+                        "left":-200
+                    },300,function(){
+                        
+                    })
+                $(this).siblings().find('.juese').animate({
+                        "opacity":0,
+                        "right":-200
+                    },300,function(){
+                        
+                    })
+
+                    $(this).show()
                 $(this).find($('.name')).animate({
                     "opacity":1,
                     "left":0
-                },600)
+                },600,function(){
+                    $(this).siblings().find($('.name')).css({
+                        "opacity":0,
+                        "left":-200
+                    })
+                })
                 $(this).find($('.juese')).animate({
                     "opacity":1,
                     "right":0
-                },600)
+                },600,function(){
+                    $(this).siblings().find($('.name')).css({
+                        "opacity":0,
+                        "right":-200
+                    })
+                })
                 // 获取相邻id的盒子的关键词 放到按钮中
                 guanjian ()
             }       
@@ -150,31 +183,34 @@ $(function () {
     }
     // 动态更改按钮关键词
     function guanjian (){
-        let num = pingan
-        console.log(num)
-                if(num == 10){
-                    console.log(num)
-                    leftname = $('#1').attr('value')
-                    rightname =  $(`#${--num}`).attr('value')
-                }else if(num == 1){
-                    console.log(num)
-                    rightname =  $('#10').attr('value')
-                    console.log(rightname)
-                    leftname = $(`#${num+=1}`).attr('value')
-                    console.log(leftname)
-                }else{
-                    console.log(num)
-                    leftname = $(`#${++num}`).attr('value')
-                    rightname =  $(`#${--num}`).attr('value')
-                }
-                console.log(rightname,leftname)
-                $('.pingan-lun-but-left > p').text(leftname)
-                $('.pingan-lun-but-right > p').text(rightname)
+        if(flag){
+            let num = pingan
+            console.log(num)
+                    if(num == 10){
+                        console.log(num)
+                        leftname = $('#1').attr('value')
+                        rightname =  $(`#${--num}`).attr('value')
+                    }else if(num == 1){
+                        console.log(num)
+                        rightname =  $('#10').attr('value')
+                        console.log(rightname)
+                        leftname = $(`#${num+=1}`).attr('value')
+                        console.log(leftname)
+                    }else{
+                        console.log(num)
+                        leftname = $(`#${++num}`).attr('value')
+                        rightname =  $(`#${--num}`).attr('value')
+                    }
+                    console.log(rightname,leftname)
+                    $('.pingan-lun-but-left > p').text(leftname)
+                    $('.pingan-lun-but-right > p').text(rightname)
+        }
     }
     // 初始化轮播图
     kko()
     // 点击左按钮
     $('.pingan-lun-but-left').on('click', function () {
+
         // 遍历所有元素
         $('.pingan-lun-bigbox >div').each(function (i, v) {
             // 判断id是不是当前记录id
