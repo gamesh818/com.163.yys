@@ -64,6 +64,7 @@ html,body{
     z-index: 100;
     // 下拉列表
     .two-nav-select{
+        display: none;
         background: url(../images/main/main-two-select-background.jpg)center 0 no-repeat;
         z-index: 20;
         position: absolute;
@@ -75,7 +76,9 @@ html,body{
             height: 100%;
             margin: 0 auto;
         }
+        // 盒子一
         .top-nav-select-box1{
+            display: none;
             width: 100%;
             height: 100%;
             text-align: center;
@@ -87,6 +90,338 @@ html,body{
                 width: 149.2px;
                 height: 92px;
                 margin: 0 10px;
+            }
+            i{
+                color: #fff;
+                background: #c2a060;
+                width: 15px;
+                padding: 2px 3px;
+                line-height: 18px;
+                font-weight: 400;
+                position: absolute;
+                top: 0;
+                left: 0;
+                text-align: center;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            // 遮罩层
+            span{
+                background: url(../images/main/main-nav-select-zhezhao.png) no-repeat;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            // 文字
+            p{
+                position: absolute;
+                bottom: 2px;
+                padding: 0 6px;
+                width: 100%;
+                height: auto;
+                line-height: 16px;
+                box-sizing: border-box;
+                color: #fff;
+                display: -webkit-box;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                word-break: break-all;
+                white-space: normal;
+            }
+        }
+        // 盒子二
+        .top-nav-select-box2{
+            display: none;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding: 24px 0 10px;
+            box-sizing: border-box;
+            a{
+                display: inline-block;
+                position: relative;
+                width: 149.2px;
+                height: 92px;
+                margin: 0 7px;
+            }
+            img{
+                width: 145.2px;
+                height: 88px;
+                border: 2px solid #000;
+            }
+            i{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background: #c2a060;
+                font-size: 14px;
+                color: #000;
+                display: block;
+                height: 24px;
+                line-height: 24px;
+                padding: 0 2px;
+                font-weight: 700;
+                // 字母间距
+                letter-spacing: 2px;
+            }
+        }
+        // 盒子三
+        .top-nav-select-box3{
+            display: none;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding: 24px 0 10px;
+            box-sizing: border-box;
+            a{
+                display: inline-block;
+                position: relative;
+                width: 149.2px;
+                height: 92px;
+                margin: 0 7px;
+            }
+            img{
+                width: 145.2px;
+                height: 88px;
+                border: 2px solid #000;
+            }
+            i{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background: #c2a060;
+                font-size: 14px;
+                color: #000;
+                display: block;
+                height: 24px;
+                line-height: 24px;
+                padding: 0 2px;
+                font-weight: 700;
+                // 字母间距
+                letter-spacing: 2px;
+            }
+        }
+        // 盒子四
+        .top-nav-select-box4{
+            display: none;
+            padding: 24px 0 10px;
+            box-sizing: border-box;
+            text-align: center;
+            &>a{
+                display: inline-block;
+                position: relative;
+                margin: 0 10px;
+                width: 220px;
+                height: 92px;
+                img{
+                    width: 216px;
+                    height: 88px;
+                    border: 2px solid #000;
+                }
+                span{
+                    background: url(../images/main/main-nav-select-zhezhao.png) no-repeat;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    i{
+                        position: absolute;
+                        bottom: 2px;
+                        padding: 0 6px;
+                        width: 100%;
+                        height: auto;
+                        line-height: 16px;
+                        box-sizing: border-box;
+                        color: #c2a060;
+                        display: -webkit-box;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        word-break: break-all;
+                        white-space: normal;
+                    }
+                }
+            }
+            .box4-1,.box4-2{
+                position: relative;
+                top: 5px;
+                display: inline-block;
+                width: 216px;
+                margin-left: 20px;
+                div{
+                    background-image: url(../images/main/main-top-jingling.png);
+                    background-position: -810px -870px;
+                    width: 88px;
+                    height: 19px;
+                    background-repeat: no-repeat;
+                }
+                ul{
+                    height: 60px;
+                    margin-top: 18px;
+                    overflow: hidden;
+                    li{
+                        float: left;
+                        line-height: 2;
+                        span{
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+            .box4-1{
+                border-right: 1px solid #a78442;
+            }
+            .box4-2{
+                &>div{
+                    background-position: -720px -870px;
+                }
+                li{
+                    margin-right: 8px;
+                }
+            }
+        }
+        // 盒子五
+        .top-nav-select-box5{
+            display: none;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding: 24px 0 10px;
+            box-sizing: border-box;
+            a{
+                display: inline-block;
+                position: relative;
+                width: 149.2px;
+                height: 92px;
+                margin: 0 7px;
+            }
+            img{
+                width: 145.2px;
+                height: 88px;
+                border: 2px solid #000;
+            }
+            i{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background: #c2a060;
+                font-size: 13px;
+                color: #000;
+                display: block;
+                height: 24px;
+                line-height: 24px;
+                padding: 0 2px;
+                font-weight: 700;
+                // 字母间距
+                letter-spacing: 2px;
+            }
+        }
+        // 盒子六
+        .top-nav-select-box6{
+            display: none;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding: 24px 0 10px;
+            box-sizing: border-box;
+            a{
+                display: inline-block;
+                position: relative;
+                width: 149.2px;
+                height: 92px;
+                margin: 0 7px;
+            }
+            img{
+                width: 145.2px;
+                height: 88px;
+                border: 2px solid #000;
+            }
+            i{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background: #c2a060;
+                font-size: 14px;
+                color: #000;
+                display: block;
+                height: 24px;
+                line-height: 24px;
+                padding: 0 2px;
+                font-weight: 700;
+                // 字母间距
+                letter-spacing: 2px;
+            }
+        }
+        // 盒子七
+        .top-nav-select-box10{
+            display: none;
+            padding: 16px 0 10px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            box-sizing: border-box;
+                a{
+                    float: left;
+                    position: relative;
+                    margin: 0 50px;
+                    width: 81px;
+                    p{
+                        display: inline-block;
+                        width: 100%;
+                    }
+                }
+                &>a:nth-child(3) img,
+                &>a:nth-child(4) img,
+                &>a:nth-child(5) img{
+                    border: 2px solid #a78442;
+                    border-radius: 5px;
+                    width: 100%;
+                    height: 100%;
+                }
+                .box7-2{
+                    display: inline-block;
+                    height: 100%;
+                    width: 274px;
+                    border-left: 1px solid #a78442;
+                    p{
+                        color: #000;
+                        line-height: 1.5;
+                        font-size: 14px;
+                    }
+                }
+            
+        }
+        // 盒子八
+        .top-nav-select-box11{
+            display: none;
+            padding: 16px 0 10px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            box-sizing: border-box;
+            a{
+                width: 220px;
+                height: 92px;
+                float: right;
+            }
+            p{
+                display: inline-block;
+            }
+            img{
+                border: 2px solid #000;
+                width: 216px;
+                height: 88px;
+            }
+            &>a:nth-child(1){
+                margin-left: 15px;
             }
         }
     }
@@ -111,10 +446,6 @@ html,body{
             text-align: center;
             font-size: 14px;
             font-weight: 500;
-            &:hover{
-                background: url(../images/main/main-two-nav-xuanzhong.jpg);
-                color: #000;
-            }
             &::after{
                 content: '';
                 display: block;
@@ -194,6 +525,7 @@ html,body{
         }
     }
 }
+
 // 上部分 包括一个文字轮播图
 .main-top-centent{
     margin-top: 60px;
@@ -419,6 +751,251 @@ html,body{
                         margin-left: 15px;
                         vertical-align: middle;
                         margin-bottom: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 平安世界
+.container{
+    width: 1180px;
+    margin: 43px auto 0;
+    position: relative;
+    z-index: 11;
+    .pingan{
+        position: relative;
+        margin-bottom: 70px;
+        .pingan-title{
+            background-image: url(../images/main/main-top-jingling.png);
+            background-position: -940px -532px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 54px;
+            height: 145px;
+            background-repeat: no-repeat;
+        }
+        .pingan-centent{
+            width: 1180px;
+            height: auto;
+        }
+        .pingan-qiehuan{
+            width: 292px;
+            height: 36px;
+            border: 2px solid #c2a060;
+            z-index: 10;
+            position: relative;
+            margin-left: 120px;
+            ul{
+                width: 288px;
+                height: 32px;
+                border: 2px solid #fff;
+                li{
+                    float: left;
+                    width: 96px;
+                    height: 32px;
+                    background: #fff;
+                    position: relative;
+                    color: #000;
+                    font-size: 14px;
+                    text-align: center;
+                    line-height: 32px;
+                    cursor: pointer;
+
+                    &:nth-child(1)::after,
+                    &:nth-child(2)::after{
+                        content: '';
+                        width: 1px;
+                        height: 18px;
+                        background: #c2a060;
+                        position: absolute;
+                        top: 7px;
+                        right: -1px;
+                        z-index: 10;
+                    }
+                }
+                // 选中
+                .on{
+                    background: #c2a060;
+                    color: #fff;
+                }
+            }
+        }
+        .pingan-box{
+            position: relative;
+            .shishen-xiangqing{
+                width: 1180px;
+                height: 454px;
+                padding-top: 1px;
+                position: relative;
+            }
+            .pingan-list{
+                position: absolute;
+                left: 120px;
+                top: 28px;
+                z-index: 10;
+                cursor: pointer;
+                font-size: 16px;
+                color: #c2a060;
+                i{
+                    width: 8px;
+                    height: 17px;
+                    background: url(../images/main/pingan-jiantou.png) no-repeat;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 20px;
+                }
+            }
+            .pingan-xiangqing-box{
+                width: 1180px;
+                height: 320px;
+                background: url(../images/main/pingan-lun-background.jpg) center 0 no-repeat;
+                position: relative;
+                margin-top: 128px;
+                // 左按钮
+                .pingan-lun-but-left{
+                    width: 78px;
+                    height: 318px;
+                    border: 1px solid #ecdbbd;
+                    background: url(../images/main/pingan-lun-but.png) center bottom no-repeat;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 10;
+                    transition: all 0.5s;
+                    i{
+                        background: url(../images/main/pingan-lun-jiantou-left.png);
+                    }
+                    
+                    &:hover{
+                        border-color: #c2a060;
+                        .pingan-but-text-top{
+                            background: #c2a060;
+                        }
+                        p{
+                            color: #c2a060;
+                        }
+                        .pingan-but-text-button{
+                            border-color: #c2a060;
+                            background: #c2a060;
+                            i{
+                                background: url(../images/main/pingan-lun-jiantou-left-bai.png);
+                            }
+                        }
+                    }
+                }
+                // 右按钮
+                .pingan-lun-but-right{
+                    width: 78px;
+                    height: 318px;
+                    border: 1px solid #ecdbbd;
+                    background: url(../images/main/pingan-lun-but.png) center bottom no-repeat;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 10;
+                    transition: all 0.5s;
+                    i{
+                        background: url(../images/main/pingan-lun-jiantou-right.png);
+                    }
+                    .pingan-but-text-button{
+                        left: -32px;
+                    }
+                    &:hover{
+                        border-color: #c2a060;
+                        .pingan-but-text-top{
+                            background: #c2a060;
+                        }
+                        p{
+                            color: #c2a060;
+                        }
+                        .pingan-but-text-button{
+                            border-color: #c2a060;
+                            background: #c2a060;
+                            i{
+                                background: url(../images/main/pingan-lun-jiantou-right-bai.png);
+                            }
+                        }
+                    }
+                }
+                .pingan-lun-but-left,.pingan-lun-but-right{
+                    p{
+                        width: 18px;
+                        margin: 0 auto;
+                        color: #ecdbbd;
+                        font-size: 18px;
+                        transition: all 0.5s;
+                    }
+                    
+                }
+                // 按钮中内容
+                .pingan-but-text-top{
+                    width: 1px;
+                    height: 16px;
+                    margin: 15px auto 10px;
+                    display: block;
+                    background: #ecdbbd;
+                    transition: all 0.5s;
+                }
+                .pingan-but-text-button{
+                    border: 1px solid #ecdbbd;
+                    display: block;
+                    width: 58px;
+                    height: 58px;
+                    position: absolute;
+                    top: 130px;
+                    left: 50px;
+                    background: #fff;
+                    transition: all 0.5s;
+                    i{
+                        width: 37px;
+                        height: 9px;
+                        display: block;
+                        margin: 25px auto 0;
+                        transition: all 0.5s;
+                    }
+                }
+                // margin大盒子
+                .pingan-lun-bigbox{
+                    position: relative;
+                    width: 940px;
+                    height: 320px;
+                    margin: 0 auto;
+                    &>div{
+                        display: none;
+                        width: 940px;
+                        height: 320px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        a{
+                            position: absolute;
+                            width: 50%;
+                            height: 100%;
+                            // opacity: 0;
+                        }
+                        .name{
+                            left: -200px;
+                            img{
+                                position: absolute;
+                                top: -186px;
+                                width: 1220px;
+                                height: 558px;
+                                left: -140px;
+                            }
+                        }
+                        .juese{
+                            right: -200px;
+                            img{
+                                position: absolute;
+                                top: -186px;
+                                width: 1220px;
+                                height: 558px;
+                                right: -140px;
+                            }
+                        }
                     }
                 }
             }
