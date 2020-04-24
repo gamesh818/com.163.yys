@@ -5,6 +5,17 @@ html,body{
     padding: 0;
     background-color: #fff;
 }
+.clearfix:before ,.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+   *zoom: 1;  
+}
+
 // 二维码激光动画
 @keyframes jiguang {
     0%{
@@ -52,6 +63,10 @@ html,body{
     100%{
         margin-left: 160px;
     }
+}
+// 主角轮播选中tab样式
+.zjon{
+    color: #c2a060;
 }
 // 二级顶部导航
 .two-nav{
@@ -544,7 +559,7 @@ html,body{
         width: 100%;
         height: 287px;
         position: absolute;
-        bottom: -28px;
+        bottom: 22px;
         left: 0;
         z-index: 10;
         background: url(../images/main/main-top-centent-lun-background.png) center bottom repeat-x;
@@ -825,6 +840,7 @@ html,body{
         }
         .pingan-box{
             position: relative;
+            // 式神详情
             .shishen-xiangqing{
                 width: 1180px;
                 height: 454px;
@@ -999,6 +1015,528 @@ html,body{
                     }
                 }
             }
+            // 主角录
+            .zhujue-lu{
+                display: none;
+                width: 1180px;
+                height: 454px;
+                padding-top: 1px;
+                position: relative;
+                .zhujue-liebiao{
+                    position: absolute;
+                    z-index: 10;
+                    top: 28px;
+                    left: 120px;
+                    a{
+                        position: relative;
+                        padding: 0 8px 0 15px;
+                        font-size: 18px;
+                        &::before{
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translate(0,-50%);
+                            content: '';
+                            display: block;
+                            width: 1px;
+                            height: 14px;
+                            background: #c2a060;
+                        }
+                        &:last-child{
+                            padding: 0 15px 0 15px;
+                        }
+                        &:last-child::after{
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translate(0,-50%);
+                            content: '';
+                            display: block;
+                            width: 1px;
+                            height: 12px;
+                            background: #c2a060;
+                        }
+                        span{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .zhujue-box{
+                    width: 1180px;
+                    height: 320px;
+                    background: url(../images/main/pingan-lun-background.jpg) center 0 no-repeat;
+                    position: relative;
+                    margin-top: 128px;
+                    // 左按钮
+                .zhujue-lun-but-left{
+                    width: 78px;
+                    height: 318px;
+                    border: 1px solid #ecdbbd;
+                    background: url(../images/main/pingan-lun-but.png) center bottom no-repeat;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 10;
+                    transition: all 0.5s;
+                    i{
+                        background: url(../images/main/pingan-lun-jiantou-left.png);
+                    }
+                    
+                    &:hover{
+                        border-color: #c2a060;
+                        .zhujue-but-text-top{
+                            background: #c2a060;
+                        }
+                        p{
+                            color: #c2a060;
+                        }
+                        .zhujue-but-text-button{
+                            border-color: #c2a060;
+                            background: #c2a060;
+                            i{
+                                background: url(../images/main/pingan-lun-jiantou-left-bai.png);
+                            }
+                        }
+                    }
+                }
+                // 右按钮
+                .zhujue-lun-but-right{
+                    width: 78px;
+                    height: 318px;
+                    border: 1px solid #ecdbbd;
+                    background: url(../images/main/pingan-lun-but.png) center bottom no-repeat;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 10;
+                    transition: all 0.5s;
+                    i{
+                        background: url(../images/main/pingan-lun-jiantou-right.png);
+                    }
+                    .zhujue-but-text-button{
+                        left: -32px;
+                    }
+                    &:hover{
+                        border-color: #c2a060;
+                        .zhujue-but-text-top{
+                            background: #c2a060;
+                        }
+                        p{
+                            color: #c2a060;
+                        }
+                        .zhujue-but-text-button{
+                            border-color: #c2a060;
+                            background: #c2a060;
+                            i{
+                                background: url(../images/main/pingan-lun-jiantou-right-bai.png);
+                            }
+                        }
+                    }
+                }
+                .zhujue-lun-but-left,.zhujue-lun-but-right{
+                    p{
+                        width: 18px;
+                        margin: 0 auto;
+                        color: #ecdbbd;
+                        font-size: 18px;
+                        transition: all 0.5s;
+                    }
+                    
+                }
+                // 按钮中内容
+                .zhujue-but-text-top{
+                    width: 1px;
+                    height: 16px;
+                    margin: 15px auto 10px;
+                    display: block;
+                    background: #ecdbbd;
+                    transition: all 0.5s;
+                }
+                .zhujue-but-text-button{
+                    border: 1px solid #ecdbbd;
+                    display: block;
+                    width: 58px;
+                    height: 58px;
+                    position: absolute;
+                    top: 130px;
+                    left: 50px;
+                    background: #fff;
+                    transition: all 0.5s;
+                    i{
+                        width: 37px;
+                        height: 9px;
+                        display: block;
+                        margin: 25px auto 0;
+                        transition: all 0.5s;
+                    }
+                }
+                }
+                .zhujue-lu-box{
+                    position: relative;
+                    width: 940px;
+                    height: 320px;
+                    margin: 0 auto;
+                    &>div{
+                        // display: none;
+                        width: 940px;
+                        height: 320px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        a{
+                            position: absolute;
+                            width: 50%;
+                            height: 100%;
+                            opacity: 0;
+                        }
+                        .name{
+                            left: -200px;
+                            img{
+                                position: absolute;
+                                top: -186px;
+                                width: 1220px;
+                                height: 558px;
+                                left: -140px;
+                            }
+                        }
+                        .juese{
+                            right: -200px;
+                            img{
+                                position: absolute;
+                                top: -186px;
+                                width: 1220px;
+                                height: 558px;
+                                right: -140px;
+                            }
+                        }
+                    }
+                }
+            }
+            // 声优阵
+            .pingan-shengyou{
+                display: none;
+                .shengyou-box{
+                    background: url(../images/main/pingan-shengyou-background.png) 0 0 no-repeat;
+                    width: 1060px;
+                    height: 429px;
+                    margin: 36px 0 0 120px;
+                    box-sizing: border-box;
+                    padding: 0 52px 22px;
+                    display: flex;
+                    justify-content: space-between;
+                    ul{
+                        width: auto;
+                        margin: 12px 0 0;
+                        li{
+                            font-size: 16px;
+                            line-height: 32px;
+                            height: 32px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
         }
+    }
+}
+
+// 游戏攻略
+.gonglue{
+    // 上部分盒子
+    height: 510px;
+    background: url(../images/main/youxigonglue-background.jpg) 0 174px no-repeat;
+    .gonglue-top-box{
+        overflow: hidden;
+        &>a{
+            width: 55px;
+            height: 145px;
+            float: left;
+            background-repeat: no-repeat;
+            background: url(../images/main/main-top-jingling.png);
+            background-position: -876px -532px;
+        }
+        .gonglue-top-minbox{
+            margin-left: 45px;
+            float: left;
+            height: 209px;
+            ul{
+                li{
+                    position: relative;
+                    width: 340px;
+                    height: 209px;
+                    margin-left: 20px;
+                    float: left;
+                    a{
+                        &:hover{
+                          &> .gonglue-minbox-span1{
+                            top: 0px;
+                          }
+                          &> .gonglue-minbox-span2{
+                            top: 22px;
+                        }
+                        }
+                    }
+                    .gonglue-minbox-span1{
+                        left: 18px;
+                        top: 5px;
+                    }
+                    .gonglue-minbox-span2{
+                        left: 68px;
+                        top: 27px;
+                    }
+                }
+                span{
+                    position: absolute;
+                    display: block;
+                    padding: 0 10px;
+                    width: 20px;
+                    height: 90px;
+                    background: url(https://yys.res.netease.com/pc/gw/20180913151832/img/stategy_tit_bg_3dfaee2.png) no-repeat;
+                    color: #000;
+                    text-align: center;
+                    // word-break: break-all
+                    transition: all 0.5s;
+                    
+                    em{
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        height: 20px;
+                        display: block;
+                        font-size: 14px;
+                        line-height: 18px;
+                        width: 20px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    // 中部分盒子
+    .gonglue-centent-box{
+        margin-left: 120px;
+        .gonglue-centent-minbox{
+            margin-top: 32px;
+            height: 44px;
+            position: relative;
+            &>a{
+                display: block;
+                width: 163px;
+                height: 44px;
+                border: 2px solid #fff;
+                font-size: 18px;
+                text-align: center;
+                line-height: 44px;
+                position: absolute;
+                color: #fff;
+                top: -20px;
+                right: 40px;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            ul{
+                li{
+                    float: left;
+                    width: 154px;
+                    height: 44px;
+                    text-align: center;
+                    line-height: 44px;
+                    font-size: 18px;
+                    position: relative;
+                    a{
+                        display: block;
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                    i{
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: url(../images/main/main-top-jingling.png);
+                        background-position: -1067px -870px;
+                        width: 71px;
+                        height: 4px;
+                        // display: none;
+                        margin: 0 auto;
+                        background-repeat: no-repeat;
+                    }
+                    &::after{
+                        content: '';
+                        width: 1px;
+                        height: 14px;
+                        background: #fff;
+                        position: absolute;
+                        right: -1px;
+                        z-index: 10;
+                        top: 15px;
+                    }
+                }
+                .on{
+                    line-height: 40px;
+                    background: #fff;
+                    a{
+                        color: #74bd95;
+                    }
+                }
+            }
+        }
+    }
+    // 下部分盒子
+    .gonglue-bottom-box{
+        width: 1058px;
+        height: 124px;
+        border: 2px solid #81c0a1;
+        border-top: 0;
+        padding: 30px 0 0 118px;
+        .gonglue-bottom-minbox1{
+            display: block;
+            opacity: 1;
+        }
+        &>div{
+            display: none;
+            opacity: 0;
+            li{
+                width: 320px;
+                height: 40px;
+                margin-bottom: 20px;
+                float: left;
+                margin-right: 30px;
+                overflow: hidden;
+               
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    &:hover{
+                        .gonglue-bottom-li1>i{
+                           width: 5px;
+                           background: #93c4b0;
+                       }
+                       .gonglue-bottom-li2>p{
+                           color: #93c4b0;
+                       }
+                   }
+                    .gonglue-bottom-li1{
+                        width: 5px;
+                        height: 40px;
+                        float: left;
+                        margin-right: 10px;
+                        // display: inline-block;
+                        i{
+                            width: 2px;
+                            height: 40px;
+                            background: #ccc;
+                            display: block;
+                            transition: all 0.5s;
+                        }
+                    }
+                    .gonglue-bottom-li2{
+                        width: 300px;
+                        float: left;
+                        p{
+                            color: #000;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            font-size: 14px;
+                            line-height: 1.7;
+                        }
+                        span{
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+// 同人手账
+.shouzhang{
+    height: 487px;
+    position: relative;
+    background: url(../images/main/shouzhang-background.jpg) 0 bottom no-repeat;
+    .shouzhang-title{
+        float: left;
+        width: 53px;
+        height: 144px;
+        background: url(../images/main/main-top-jingling.png);
+        background-position: -1003px -532px;
+        background-repeat: no-repeat;
+    }
+    .shouzhang-left{
+        width: 300px;
+        height: 456px;
+        float: left;
+        margin-left: 65px;
+        overflow: hidden;
+        .shouzhang-left-minbox{
+            width: 300px;
+            height: 456px;
+            float: left;
+            // 头部标题
+            .shouzhang-left-top{
+                width: 100%;
+                height: 23px;
+                overflow: hidden;
+                margin-bottom: 18px;
+                .shouzhang-left-top-title{
+                    background: url(../images/main/main-top-jingling.png);
+                    background-position: -1045px -687px;
+                    width: 95px;
+                    height: 23px;
+                    float: left;
+                    background-repeat: no-repeat;
+                }
+                .shouzhang-left-top-tab{
+                    float: right;
+                    border-left: 1px solid #ccc;
+                    height: 18px;
+                    padding-left: 10px;
+                    span{
+                        display: inline-block;
+                        width: 14px;
+                        height: 19px;
+                        cursor: pointer;
+                        background-repeat: no-repeat;
+                        background: url(../images/main/main-top-jingling.png);
+                        background-position: -900px -870px;
+                    }
+                    .on{
+                        background-position: -1150px -687px;
+                    }
+                }
+            }
+            // 底部图片轮播
+            .shouzhang-left-bottom{
+                position: relative;
+                width: 0px;
+                height: 0px;
+                &>a:nth-child(1){
+                    display: block;
+                    opacity:1;
+                }
+                a{
+                    position: absolute;
+                    width: 0px;
+                    left: 0px;
+                    top: 0px;
+                    display: none;
+                    opacity:0;
+                    img{
+                        display: block;
+                        width: 300px;
+                        height: 415px;
+                    }
+                }
+            }
+        }
+    }
+    .shouzhang-right{
+        margin-left: 20px;
+        float: right;
     }
 }

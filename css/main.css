@@ -6,6 +6,19 @@ html, body {
   background-color: #fff;
 }
 
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
 @-webkit-keyframes jiguang {
   0% {
     top: 0px;
@@ -100,6 +113,10 @@ html, body {
   100% {
     margin-left: 160px;
   }
+}
+
+.zjon {
+  color: #c2a060;
 }
 
 .two-nav {
@@ -645,7 +662,7 @@ html, body {
   width: 100%;
   height: 287px;
   position: absolute;
-  bottom: -28px;
+  bottom: 22px;
   left: 0;
   z-index: 10;
   background: url(../images/main/main-top-centent-lun-background.png) center bottom repeat-x;
@@ -1152,5 +1169,594 @@ html, body {
   width: 1220px;
   height: 558px;
   right: -140px;
+}
+
+.container .pingan .pingan-box .zhujue-lu {
+  display: none;
+  width: 1180px;
+  height: 454px;
+  padding-top: 1px;
+  position: relative;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-liebiao {
+  position: absolute;
+  z-index: 10;
+  top: 28px;
+  left: 120px;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-liebiao a {
+  position: relative;
+  padding: 0 8px 0 15px;
+  font-size: 18px;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-liebiao a::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  content: '';
+  display: block;
+  width: 1px;
+  height: 14px;
+  background: #c2a060;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-liebiao a:last-child {
+  padding: 0 15px 0 15px;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-liebiao a:last-child::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  content: '';
+  display: block;
+  width: 1px;
+  height: 12px;
+  background: #c2a060;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-liebiao a span {
+  font-size: 18px;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box {
+  width: 1180px;
+  height: 320px;
+  background: url(../images/main/pingan-lun-background.jpg) center 0 no-repeat;
+  position: relative;
+  margin-top: 128px;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-left {
+  width: 78px;
+  height: 318px;
+  border: 1px solid #ecdbbd;
+  background: url(../images/main/pingan-lun-but.png) center bottom no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-left i {
+  background: url(../images/main/pingan-lun-jiantou-left.png);
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-left:hover {
+  border-color: #c2a060;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-left:hover .zhujue-but-text-top {
+  background: #c2a060;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-left:hover p {
+  color: #c2a060;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-left:hover .zhujue-but-text-button {
+  border-color: #c2a060;
+  background: #c2a060;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-left:hover .zhujue-but-text-button i {
+  background: url(../images/main/pingan-lun-jiantou-left-bai.png);
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-right {
+  width: 78px;
+  height: 318px;
+  border: 1px solid #ecdbbd;
+  background: url(../images/main/pingan-lun-but.png) center bottom no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-right i {
+  background: url(../images/main/pingan-lun-jiantou-right.png);
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-right .zhujue-but-text-button {
+  left: -32px;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-right:hover {
+  border-color: #c2a060;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-right:hover .zhujue-but-text-top {
+  background: #c2a060;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-right:hover p {
+  color: #c2a060;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-right:hover .zhujue-but-text-button {
+  border-color: #c2a060;
+  background: #c2a060;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-right:hover .zhujue-but-text-button i {
+  background: url(../images/main/pingan-lun-jiantou-right-bai.png);
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-left p, .container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-lun-but-right p {
+  width: 18px;
+  margin: 0 auto;
+  color: #ecdbbd;
+  font-size: 18px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-but-text-top {
+  width: 1px;
+  height: 16px;
+  margin: 15px auto 10px;
+  display: block;
+  background: #ecdbbd;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-but-text-button {
+  border: 1px solid #ecdbbd;
+  display: block;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  top: 130px;
+  left: 50px;
+  background: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-box .zhujue-but-text-button i {
+  width: 37px;
+  height: 9px;
+  display: block;
+  margin: 25px auto 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-lu-box {
+  position: relative;
+  width: 940px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-lu-box > div {
+  width: 940px;
+  height: 320px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-lu-box > div a {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-lu-box > div .name {
+  left: -200px;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-lu-box > div .name img {
+  position: absolute;
+  top: -186px;
+  width: 1220px;
+  height: 558px;
+  left: -140px;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-lu-box > div .juese {
+  right: -200px;
+}
+
+.container .pingan .pingan-box .zhujue-lu .zhujue-lu-box > div .juese img {
+  position: absolute;
+  top: -186px;
+  width: 1220px;
+  height: 558px;
+  right: -140px;
+}
+
+.container .pingan .pingan-box .pingan-shengyou {
+  display: none;
+}
+
+.container .pingan .pingan-box .pingan-shengyou .shengyou-box {
+  background: url(../images/main/pingan-shengyou-background.png) 0 0 no-repeat;
+  width: 1060px;
+  height: 429px;
+  margin: 36px 0 0 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 52px 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .pingan .pingan-box .pingan-shengyou .shengyou-box ul {
+  width: auto;
+  margin: 12px 0 0;
+}
+
+.container .pingan .pingan-box .pingan-shengyou .shengyou-box ul li {
+  font-size: 16px;
+  line-height: 32px;
+  height: 32px;
+  font-weight: 600;
+}
+
+.gonglue {
+  height: 510px;
+  background: url(../images/main/youxigonglue-background.jpg) 0 174px no-repeat;
+}
+
+.gonglue .gonglue-top-box {
+  overflow: hidden;
+}
+
+.gonglue .gonglue-top-box > a {
+  width: 55px;
+  height: 145px;
+  float: left;
+  background-repeat: no-repeat;
+  background: url(../images/main/main-top-jingling.png);
+  background-position: -876px -532px;
+}
+
+.gonglue .gonglue-top-box .gonglue-top-minbox {
+  margin-left: 45px;
+  float: left;
+  height: 209px;
+}
+
+.gonglue .gonglue-top-box .gonglue-top-minbox ul li {
+  position: relative;
+  width: 340px;
+  height: 209px;
+  margin-left: 20px;
+  float: left;
+}
+
+.gonglue .gonglue-top-box .gonglue-top-minbox ul li a:hover > .gonglue-minbox-span1 {
+  top: 0px;
+}
+
+.gonglue .gonglue-top-box .gonglue-top-minbox ul li a:hover > .gonglue-minbox-span2 {
+  top: 22px;
+}
+
+.gonglue .gonglue-top-box .gonglue-top-minbox ul li .gonglue-minbox-span1 {
+  left: 18px;
+  top: 5px;
+}
+
+.gonglue .gonglue-top-box .gonglue-top-minbox ul li .gonglue-minbox-span2 {
+  left: 68px;
+  top: 27px;
+}
+
+.gonglue .gonglue-top-box .gonglue-top-minbox ul span {
+  position: absolute;
+  display: block;
+  padding: 0 10px;
+  width: 20px;
+  height: 90px;
+  background: url(https://yys.res.netease.com/pc/gw/20180913151832/img/stategy_tit_bg_3dfaee2.png) no-repeat;
+  color: #000;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.gonglue .gonglue-top-box .gonglue-top-minbox ul span em {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 20px;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  width: 20px;
+  height: auto;
+}
+
+.gonglue .gonglue-centent-box {
+  margin-left: 120px;
+}
+
+.gonglue .gonglue-centent-box .gonglue-centent-minbox {
+  margin-top: 32px;
+  height: 44px;
+  position: relative;
+}
+
+.gonglue .gonglue-centent-box .gonglue-centent-minbox > a {
+  display: block;
+  width: 163px;
+  height: 44px;
+  border: 2px solid #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 44px;
+  position: absolute;
+  color: #fff;
+  top: -20px;
+  right: 40px;
+}
+
+.gonglue .gonglue-centent-box .gonglue-centent-minbox > a:hover {
+  text-decoration: underline;
+}
+
+.gonglue .gonglue-centent-box .gonglue-centent-minbox ul li {
+  float: left;
+  width: 154px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  font-size: 18px;
+  position: relative;
+}
+
+.gonglue .gonglue-centent-box .gonglue-centent-minbox ul li a {
+  display: block;
+  color: #fff;
+  font-weight: 600;
+}
+
+.gonglue .gonglue-centent-box .gonglue-centent-minbox ul li i {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: url(../images/main/main-top-jingling.png);
+  background-position: -1067px -870px;
+  width: 71px;
+  height: 4px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+
+.gonglue .gonglue-centent-box .gonglue-centent-minbox ul li::after {
+  content: '';
+  width: 1px;
+  height: 14px;
+  background: #fff;
+  position: absolute;
+  right: -1px;
+  z-index: 10;
+  top: 15px;
+}
+
+.gonglue .gonglue-centent-box .gonglue-centent-minbox ul .on {
+  line-height: 40px;
+  background: #fff;
+}
+
+.gonglue .gonglue-centent-box .gonglue-centent-minbox ul .on a {
+  color: #74bd95;
+}
+
+.gonglue .gonglue-bottom-box {
+  width: 1058px;
+  height: 124px;
+  border: 2px solid #81c0a1;
+  border-top: 0;
+  padding: 30px 0 0 118px;
+}
+
+.gonglue .gonglue-bottom-box .gonglue-bottom-minbox1 {
+  display: block;
+  opacity: 1;
+}
+
+.gonglue .gonglue-bottom-box > div {
+  display: none;
+  opacity: 0;
+}
+
+.gonglue .gonglue-bottom-box > div li {
+  width: 320px;
+  height: 40px;
+  margin-bottom: 20px;
+  float: left;
+  margin-right: 30px;
+  overflow: hidden;
+}
+
+.gonglue .gonglue-bottom-box > div li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gonglue .gonglue-bottom-box > div li a:hover .gonglue-bottom-li1 > i {
+  width: 5px;
+  background: #93c4b0;
+}
+
+.gonglue .gonglue-bottom-box > div li a:hover .gonglue-bottom-li2 > p {
+  color: #93c4b0;
+}
+
+.gonglue .gonglue-bottom-box > div li a .gonglue-bottom-li1 {
+  width: 5px;
+  height: 40px;
+  float: left;
+  margin-right: 10px;
+}
+
+.gonglue .gonglue-bottom-box > div li a .gonglue-bottom-li1 i {
+  width: 2px;
+  height: 40px;
+  background: #ccc;
+  display: block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.gonglue .gonglue-bottom-box > div li a .gonglue-bottom-li2 {
+  width: 300px;
+  float: left;
+}
+
+.gonglue .gonglue-bottom-box > div li a .gonglue-bottom-li2 p {
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.gonglue .gonglue-bottom-box > div li a .gonglue-bottom-li2 span {
+  color: #666;
+}
+
+.shouzhang {
+  height: 487px;
+  position: relative;
+  background: url(../images/main/shouzhang-background.jpg) 0 bottom no-repeat;
+}
+
+.shouzhang .shouzhang-title {
+  float: left;
+  width: 53px;
+  height: 144px;
+  background: url(../images/main/main-top-jingling.png);
+  background-position: -1003px -532px;
+  background-repeat: no-repeat;
+}
+
+.shouzhang .shouzhang-left {
+  width: 300px;
+  height: 456px;
+  float: left;
+  margin-left: 65px;
+  overflow: hidden;
+}
+
+.shouzhang .shouzhang-left .shouzhang-left-minbox {
+  width: 300px;
+  height: 456px;
+  float: left;
+}
+
+.shouzhang .shouzhang-left .shouzhang-left-minbox .shouzhang-left-top {
+  width: 100%;
+  height: 23px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.shouzhang .shouzhang-left .shouzhang-left-minbox .shouzhang-left-top .shouzhang-left-top-title {
+  background: url(../images/main/main-top-jingling.png);
+  background-position: -1045px -687px;
+  width: 95px;
+  height: 23px;
+  float: left;
+  background-repeat: no-repeat;
+}
+
+.shouzhang .shouzhang-left .shouzhang-left-minbox .shouzhang-left-top .shouzhang-left-top-tab {
+  float: right;
+  border-left: 1px solid #ccc;
+  height: 18px;
+  padding-left: 10px;
+}
+
+.shouzhang .shouzhang-left .shouzhang-left-minbox .shouzhang-left-top .shouzhang-left-top-tab span {
+  display: inline-block;
+  width: 14px;
+  height: 19px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background: url(../images/main/main-top-jingling.png);
+  background-position: -900px -870px;
+}
+
+.shouzhang .shouzhang-left .shouzhang-left-minbox .shouzhang-left-top .shouzhang-left-top-tab .on {
+  background-position: -1150px -687px;
+}
+
+.shouzhang .shouzhang-left .shouzhang-left-minbox .shouzhang-left-bottom {
+  position: relative;
+  width: 0px;
+  height: 0px;
+}
+
+.shouzhang .shouzhang-left .shouzhang-left-minbox .shouzhang-left-bottom > a:nth-child(1) {
+  display: block;
+  opacity: 1;
+}
+
+.shouzhang .shouzhang-left .shouzhang-left-minbox .shouzhang-left-bottom a {
+  position: absolute;
+  width: 0px;
+  left: 0px;
+  top: 0px;
+  display: none;
+  opacity: 0;
+}
+
+.shouzhang .shouzhang-left .shouzhang-left-minbox .shouzhang-left-bottom a img {
+  display: block;
+  width: 300px;
+  height: 415px;
+}
+
+.shouzhang .shouzhang-right {
+  margin-left: 20px;
+  float: right;
 }
 /*# sourceMappingURL=main.css.map */
