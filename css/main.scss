@@ -1538,5 +1538,266 @@ html,body{
     .shouzhang-right{
         margin-left: 20px;
         float: right;
+        .shouzhang-right-title{
+            position: relative;
+            width: 100%;
+            height: 23px;
+            overflow: hidden;
+            div{
+                background: url(../images/main/main-top-jingling.png);
+                background-position: -615px -870px;
+                width: 95px;
+                height: 23px;
+                display: block;
+                margin-left: 20px;
+                background-repeat: no-repeat;
+            }
+            ul{
+                position: absolute;
+                right: 0;
+                top: 5px;
+                height: 12px;
+                display: block;
+                li{
+                    float: left;
+                    padding: 0 20px;
+                    border-right: 1px solid #ccc;
+                    height: 12px;
+                    line-height: 12px;
+                    a{
+                        color: #bf9962;
+                    }
+                }
+            }
+        }
+        .shouzhang-right-box{
+            margin-top: 17px;
+            width: 720px;
+            .shouzhang-right-minbox{
+                position: relative;
+                width: 720px;
+                height: 447px;
+                &>ul:nth-child(1){
+                    display: block;
+                    opacity: 1;
+                }
+                ul{
+                    position: absolute;
+                    width: 720px;
+                    left: 0px;
+                    top: 0px;
+                    display: none;
+                    opacity: 0;
+                    li{
+                        float: left;
+                        width: 220px;
+                        height: 443px;
+                        margin-left: 20px;
+                        .shouzhang-right-img{
+                            img{
+                                width: 220px;
+                                height: 351px;
+                                display: block;
+                            }
+                        }
+                        .shouzhang-right-text{
+                            margin-top: 10px;
+                            border-left: 1px solid #000;
+                            padding-left: 15px;
+                            margin-left: 20px;
+                            &>p:nth-child(1){
+                                width: 160px;
+                                margin-bottom: 2px;
+                                font-weight: 700;
+                                font-size: 14px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                            p>&:nth-child(2){
+                                font-weight: 700;
+                                font-size: 14px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+                        .shouzhang-right-huo{
+                            line-height: 18px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            margin-left: 35px;
+                            padding-left: 26px;
+                            color: #999;
+                            margin-top: 5px;
+                            background: url(../images/main/main-huo.png) no-repeat;
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+            .shouzhang-huan{
+                display: block;
+                box-sizing: border-box;
+                width: 100%;
+                height: auto;
+                text-align: right;
+                font-size: 0;
+                height: 35px;
+                line-height: 35px;
+                padding-right: 20px;
+               
+                &::before{
+                    content: '';
+                    width: 14px;
+                    height: 15px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 6px;
+                    background: url(../images/main/main-top-jingling.png)no-repeat;
+                    background-position: -950px -870px;
+                }
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: #7fc4d2;
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+}
+
+// 同人大触
+.dachu{
+    width: 100%;
+    height: 228px;
+    margin: 40px 0 70px;
+    background: url(../images/main/dachu-background.jpg) center bottom no-repeat;
+    // 标题
+    .dachu-title{
+        text-align: center;
+        font-size: 0;
+        img{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        span{
+            width: 1px;
+            height: 23px;
+            display: inline-block;
+            margin: 0 20px;
+            background: #ccc;
+            vertical-align: middle;
+        }
+        a{
+            color: #7fc4d2;
+            line-height: 22px;
+            display: inline-block;
+            margin-left: 6px;
+            vertical-align: middle;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        div{
+            margin-left: 10px;
+            display: inline-block;
+            position: relative;
+        }
+    }
+    // 轮播图
+    .dachu-box{
+        position: relative;
+        width: 1180px;
+        height: 170px;
+        .dachu-minbox{
+            position: relative;
+            width: 1180px;
+            height: 170px;
+            &>ul:first-child{
+                display: block;
+                opacity: 1;
+            }
+            ul{
+                position: absolute;
+                width: 1180px;
+                left: 0px;
+                top: 0px;
+                display: none;
+                height: 155px;
+                margin-top: 15px;
+                opacity: 0;
+                li{
+                    float: left;
+                    width: 218px;
+                    height: 155px;
+                    background: url(../images/main/dachu-lun-xinbox-background.jpg) center bottom no-repeat;
+                    margin-right: 17px;
+                    position: relative;
+                    .dachu-lun-tou{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -50px;
+                        top: 5px;
+                        overflow: hidden;
+                    }
+                    .dachu-lun-boder{
+                        background: url(../images/main/main-top-jingling.png);
+                        background-position: -239px -741px;
+                        width: 118px;
+                        height: 110px;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        margin-left: -59px;
+                        background-repeat: no-repeat;
+                    }
+                    .dachu-lun-text{
+                        font-size: 14px;
+                        margin-top: 115px;
+                        text-align: center;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        font-weight: 700;
+                        color: #000;
+                    }
+                }
+            }
+        }
+        .dachu-huan{
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            height: auto;
+            text-align: right;
+            font-size: 0;
+            height: 35px;
+            line-height: 35px;
+            padding-right: 20px;
+           
+            &::before{
+                content: '';
+                width: 14px;
+                height: 15px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 6px;
+                background: url(../images/main/main-top-jingling.png)no-repeat;
+                background-position: -950px -870px;
+            }
+            span{
+                display: inline-block;
+                vertical-align: middle;
+                color: #7fc4d2;
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
     }
 }

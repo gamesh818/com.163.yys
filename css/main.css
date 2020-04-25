@@ -1759,4 +1759,294 @@ html, body {
   margin-left: 20px;
   float: right;
 }
+
+.shouzhang .shouzhang-right .shouzhang-right-title {
+  position: relative;
+  width: 100%;
+  height: 23px;
+  overflow: hidden;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-title div {
+  background: url(../images/main/main-top-jingling.png);
+  background-position: -615px -870px;
+  width: 95px;
+  height: 23px;
+  display: block;
+  margin-left: 20px;
+  background-repeat: no-repeat;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-title ul {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  height: 12px;
+  display: block;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-title ul li {
+  float: left;
+  padding: 0 20px;
+  border-right: 1px solid #ccc;
+  height: 12px;
+  line-height: 12px;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-title ul li a {
+  color: #bf9962;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-box {
+  margin-top: 17px;
+  width: 720px;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-right-minbox {
+  position: relative;
+  width: 720px;
+  height: 447px;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-right-minbox > ul:nth-child(1) {
+  display: block;
+  opacity: 1;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-right-minbox ul {
+  position: absolute;
+  width: 720px;
+  left: 0px;
+  top: 0px;
+  display: none;
+  opacity: 0;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-right-minbox ul li {
+  float: left;
+  width: 220px;
+  height: 443px;
+  margin-left: 20px;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-right-minbox ul li .shouzhang-right-img img {
+  width: 220px;
+  height: 351px;
+  display: block;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-right-minbox ul li .shouzhang-right-text {
+  margin-top: 10px;
+  border-left: 1px solid #000;
+  padding-left: 15px;
+  margin-left: 20px;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-right-minbox ul li .shouzhang-right-text > p:nth-child(1) {
+  width: 160px;
+  margin-bottom: 2px;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p > .shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-right-minbox ul li .shouzhang-right-text:nth-child(2) {
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-right-minbox ul li .shouzhang-right-huo {
+  line-height: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 35px;
+  padding-left: 26px;
+  color: #999;
+  margin-top: 5px;
+  background: url(../images/main/main-huo.png) no-repeat;
+  height: 18px;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-huan {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  text-align: right;
+  font-size: 0;
+  height: 35px;
+  line-height: 35px;
+  padding-right: 20px;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-huan::before {
+  content: '';
+  width: 14px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+  background: url(../images/main/main-top-jingling.png) no-repeat;
+  background-position: -950px -870px;
+}
+
+.shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-huan span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #7fc4d2;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.dachu {
+  width: 100%;
+  height: 228px;
+  margin: 40px 0 70px;
+  background: url(../images/main/dachu-background.jpg) center bottom no-repeat;
+}
+
+.dachu .dachu-title {
+  text-align: center;
+  font-size: 0;
+}
+
+.dachu .dachu-title img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dachu .dachu-title span {
+  width: 1px;
+  height: 23px;
+  display: inline-block;
+  margin: 0 20px;
+  background: #ccc;
+  vertical-align: middle;
+}
+
+.dachu .dachu-title a {
+  color: #7fc4d2;
+  line-height: 22px;
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dachu .dachu-title div {
+  margin-left: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.dachu .dachu-box {
+  position: relative;
+  width: 1180px;
+  height: 170px;
+}
+
+.dachu .dachu-box .dachu-minbox {
+  position: relative;
+  width: 1180px;
+  height: 170px;
+}
+
+.dachu .dachu-box .dachu-minbox > ul:first-child {
+  display: block;
+  opacity: 1;
+}
+
+.dachu .dachu-box .dachu-minbox ul {
+  position: absolute;
+  width: 1180px;
+  left: 0px;
+  top: 0px;
+  display: none;
+  height: 155px;
+  margin-top: 15px;
+  opacity: 0;
+}
+
+.dachu .dachu-box .dachu-minbox ul li {
+  float: left;
+  width: 218px;
+  height: 155px;
+  background: url(../images/main/dachu-lun-xinbox-background.jpg) center bottom no-repeat;
+  margin-right: 17px;
+  position: relative;
+}
+
+.dachu .dachu-box .dachu-minbox ul li .dachu-lun-tou {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 5px;
+  overflow: hidden;
+}
+
+.dachu .dachu-box .dachu-minbox ul li .dachu-lun-boder {
+  background: url(../images/main/main-top-jingling.png);
+  background-position: -239px -741px;
+  width: 118px;
+  height: 110px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -59px;
+  background-repeat: no-repeat;
+}
+
+.dachu .dachu-box .dachu-minbox ul li .dachu-lun-text {
+  font-size: 14px;
+  margin-top: 115px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+  color: #000;
+}
+
+.dachu .dachu-box .dachu-huan {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  text-align: right;
+  font-size: 0;
+  height: 35px;
+  line-height: 35px;
+  padding-right: 20px;
+}
+
+.dachu .dachu-box .dachu-huan::before {
+  content: '';
+  width: 14px;
+  height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+  background: url(../images/main/main-top-jingling.png) no-repeat;
+  background-position: -950px -870px;
+}
+
+.dachu .dachu-box .dachu-huan span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #7fc4d2;
+  font-size: 12px;
+  line-height: 15px;
+}
 /*# sourceMappingURL=main.css.map */

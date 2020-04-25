@@ -444,12 +444,10 @@ function tongren_left_lun_han(){
 
 // 鼠标移入区域 停止自动轮播
 $('.shouzhang-left-minbox').on('mouseenter',function(){
-    console.log(321)
     clearInterval(tongren_left_lun)
 })
 // 鼠标离开区域 开始自动轮播
 $('.shouzhang-left-minbox').on('mouseleave',function(){
-    console.log(123)
     tongren_left_lun = setInterval(tongren_left_lun_han,5000)
 })
 // 点击tab切换图片
@@ -465,3 +463,67 @@ $('.shouzhang-left-top-tab>span').on('click',function(){
         opacity:1
     },1000)
 })
+
+// 右盒子轮播
+
+// 自动轮播函数
+let tongren_right = 0
+function tongren_right_lun_han(){
+    tongren_right+=1
+    if(tongren_right >=7){
+        tongren_right=0
+    }
+    // 图片变化
+    $('.shouzhang-right-minbox>ul').eq(tongren_right).siblings().animate({
+        opacity:0
+    },1000,function(){
+        $('.shouzhang-right-minbox>ul').eq(tongren_right).siblings().hide()
+    })
+    $('.shouzhang-right-minbox>ul').eq(tongren_right).show().animate({
+        opacity:1
+    },1000)
+}
+// 自动轮播定时器
+let tongren_right_lun =null
+tongren_right_lun = setInterval(tongren_right_lun_han,5000)
+// 鼠标移入区域 停止自动轮播
+$('.shouzhang-right').on('mouseenter',function(){
+    console.log(123)
+    clearInterval(tongren_right_lun)
+})
+// 鼠标离开区域 开始自动轮播
+$('.shouzhang-right').on('mouseleave',function(){
+    console.log(123)
+    tongren_right_lun = setInterval(tongren_right_lun_han,5000)
+})
+
+// 点击换一批 轮播一次
+$('.shouzhang-huan').on('click',function(){
+    tongren_right_lun_han()
+})
+
+
+// 同人大触
+
+// 点击换一次轮播一次
+
+$('.dachu-huan').on('click',function(){
+    dachu_lun_han()
+})
+
+let dachu_right = 0
+function dachu_lun_han(){
+    dachu_right+=1
+    if(dachu_right >=4){
+        dachu_right=0
+    }
+    // 图片变化
+    $('.dachu-minbox>ul').eq(dachu_right).siblings().animate({
+        opacity:0
+    },1000,function(){
+        $('.dachu-minbox>ul').eq(dachu_right).siblings().hide()
+    })
+    $('.dachu-minbox>ul').eq(dachu_right).show().animate({
+        opacity:1
+    },1000)
+}
