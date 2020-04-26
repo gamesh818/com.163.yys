@@ -527,3 +527,87 @@ function dachu_lun_han(){
         opacity:1
     },1000)
 }
+
+
+
+// 泛娱乐轮播图
+let yuleleft = parseInt($('.yule-minbox ul').css('left'))
+console.log(yuleleft)
+if(yuleleft >= 0){
+    $('.yule-but-left').hide()
+}
+// 左按钮
+function leftbbo(left){
+    if(left >= -230){
+        $('.yule-but-left').hide()
+        $('.yule-minbox ul').animate({
+            "left":0
+        })
+    }else{
+        $('.yule-but-left').show()
+        $('.yule-minbox ul').animate({
+            "left":left+230
+        })
+    }
+    if(left>=-920){
+        $('.yule-but-right').show()
+    }
+}
+// 右按钮
+function rightbbo(left){
+    if(left <= -920){
+        $('.yule-but-right').hide()
+        $('.yule-minbox ul').animate({
+            "left":-1150
+        })
+    }else{
+        $('.yule-but-right').show()
+        $('.yule-minbox ul').animate({
+            "left":left-230
+        })
+    }
+    if(left<=0){
+        $('.yule-but-left').show()
+    }
+}
+// 点击左按钮
+$('.yule-but-left').on('click',function(){
+    let left = parseInt($('.yule-minbox ul').css('left'))
+    console.log(left)
+    leftbbo(left)
+})
+// 点击右按钮
+$('.yule-but-right').on('click',function(){
+    let left = parseInt($('.yule-minbox ul').css('left'))
+    console.log(left)
+    rightbbo(left)
+})
+
+
+// 拖动元素
+$('.jingdu-latiao>div').mousedown(function(e){
+    var positionDiv = $(this).offset();
+    console.log(positionDiv)
+    var distenceX = e.pageX - positionDiv.left+488;
+    console.log(distenceX)
+    $(document).mousemove(function(e){
+        console.log(e.pageX)
+      var x = e.pageX - distenceX;
+    //   console.log(x)
+      if(x<0){
+        x=0;
+      }else if(x>$(".jingdu-latiao").width()-$('.jingdu-latiao>div').outerWidth(true)){
+        x = $(".jingdu-latiao").width()-$('.jingdu-latiao>div').outerWidth(true);
+      }
+      
+      $('.jingdu-latiao>div').css({
+        'left':x+'px',
+      });
+      $('.jingdu-box>ul').css({
+        'left':-x*7.51+'px',
+      });
+    });
+    $(document).mouseup(function(){
+      $(document).off('mousemove');
+    });
+  });

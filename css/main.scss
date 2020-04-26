@@ -4,6 +4,11 @@ html,body{
     margin: 0;
     padding: 0;
     background-color: #fff;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
 }
 .clearfix:before ,.clearfix:after {
 	content: "";
@@ -64,6 +69,117 @@ html,body{
         margin-left: 160px;
     }
 }
+// 视听盛宴箭头动画
+@keyframes shiting-jiantou{
+    0%{
+        margin-left: 20px;
+    }
+    11%{
+        margin-left: 30px;
+    }
+    22%{
+        margin-left: 20px;
+    }
+    33%{
+        margin-left: 25px;
+    }
+    44%{
+        margin-left: 20px;
+    }
+    55%{
+        margin-left: 30px;
+    }
+    66%{
+        margin-left: 20px;
+    }
+    77%{
+        margin-left: 25px;
+    }
+    88%{
+        margin-left: 20px;
+    }
+    99%{
+        margin-left: 30px;
+    }
+    100%{
+        margin-left: 20px;
+    }
+}
+// 泛娱乐箭头动画
+
+// 左箭头
+@keyframes yule-jiantou-left{
+    0%{
+        left: 24px;
+    }
+    11%{
+        left: 20px;
+    }
+    22%{
+       left: 24px;
+    }
+    33%{
+        left: 20px;
+    }
+    44%{
+        left: 24px;
+    }
+    55%{
+        left: 20px;
+    }
+    66%{
+        left: 24px;
+    }
+    77%{
+        left: 20px;
+    }
+    88%{
+        left: 24px;
+    }
+    99%{
+        left: 20px;
+    }
+    100%{
+        left: 24px;
+    }
+}
+// 右箭头
+@keyframes yule-jiantou-right{
+    0%{
+        left: 24px;
+    }
+    11%{
+        left: 30px;
+    }
+    22%{
+       left: 24px;
+    }
+    33%{
+        left: 30px;
+    }
+    44%{
+        left: 24px;
+    }
+    55%{
+        left: 30px;
+    }
+    66%{
+        left: 24px;
+    }
+    77%{
+        left: 30px;
+    }
+    88%{
+        left: 24px;
+    }
+    99%{
+        left: 30px;
+    }
+    100%{
+        left: 24px;
+    }
+}
+
 // 主角轮播选中tab样式
 .zjon{
     color: #c2a060;
@@ -1797,6 +1913,272 @@ html,body{
                 color: #7fc4d2;
                 font-size: 12px;
                 line-height: 15px;
+            }
+        }
+    }
+}
+
+// 视听盛宴
+.shiting{
+    height: 215px;
+    padding-bottom: 47px;
+    .shiting-title{
+        background: url(../images/main/main-top-jingling.png);
+        background-position: -812px -532px;
+        width: 55px;
+        height: 146px;
+        float: left;
+        margin-right: 35px;
+        background-repeat: no-repeat;
+    }
+    .shiting-box{
+        float: left;
+    width: 1090px;
+    height: 215px;
+    background: url(../images/main/shiting-background.jpg) left 70px no-repeat;
+    .shiting-but{
+        width: 210px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #c2a060;
+        font-size: 14px;
+        background: #fff;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        border: 1px solid #c2a060;
+        margin-top: 30px;
+        &:hover i{
+            animation: shiting-jiantou 1s infinite linear;
+        }
+        ::after{
+            content: '';
+            position: absolute;
+            background: #e0cfaf;
+            width: 1px;
+            height: 41px;
+            top: 2px;
+            right: -3px;
+            }
+        ::before{
+            content: '';
+            position: absolute;
+            background: #e0cfaf;
+            width: 213px;
+            height: 1px;
+            left: 0;
+            bottom: -3px;
+            }
+            i{
+                width: 41px;
+                height: 5px;
+                display: inline-block;
+                margin-left: 20px;
+                background: url(../images/main/main-centent-jiantou.png) no-repeat;
+            }
+        }
+        ul{
+            height: 141px;
+            li{
+                width: 250px;
+                height: 141px;
+                margin-left: 20px;
+                position: relative;
+                float: left;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                div{
+                    font-size: 16px;
+                    background: #000;
+                    padding: 5px 10px;
+                    color: #fff;
+                    position: absolute;
+                    right: -10px;
+                    bottom: -10px;
+                    i{
+                        display: inline-block;
+                        width: 16px;
+                        height: 12px;
+                        background: url(../images/main/shiitng-jiantou.png) no-repeat;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+// 泛娱乐
+.yule{
+    margin-bottom: 70px;
+    background: url(../images/main/yule-background.jpg) left 175px no-repeat;
+    .yule-title{
+        width: 120px;
+        float: left;
+        a{
+            background: url(../images/main/main-top-jingling.png);
+            background-position: -1067px -532px;
+            display: block;
+            width: 55px;
+            height: 140px;
+            background-repeat: no-repeat;
+        }
+    }
+    .yule-box{
+        position: relative;
+        float: left;
+        width: 1060px;
+        height: 516px;
+        &>a i {
+            position: absolute;
+            top: 50%;
+            left: 24px;
+            transform: translate(-28%,-50%);
+            width: 48px;
+            height: 9px;
+        }
+        // 左按钮
+       .yule-but-left{
+            display: none;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            background: #fff;
+            border: 1px solid #c2a060;
+            position: absolute;
+            top: 50%;
+            left: -36px;
+            margin-top: -35px;
+            &:hover i {
+                animation: yule-jiantou-left 1.5s infinite linear;
+            }
+            i{
+                background: url(../images/main/yule-but-jiantou-left.png)no-repeat;
+            }
+       }
+        // 右按钮
+        .yule-but-right{
+            display: block;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            background: #fff;
+            border: 1px solid #c2a060;
+            position: absolute;
+            top: 50%;
+            right: -36px;
+            margin-top: -35px;
+            &:hover i {
+                animation: yule-jiantou-right 1.5s infinite linear;
+            }
+            i{
+                background: url(../images/main/yule-but-jiantou-right.png)no-repeat;
+            }
+        }
+        // 轮播盒子
+        .yule-minbox{
+            position: relative;
+            overflow: hidden;
+            width: 1060px;
+            height: 536px;
+            ul{
+                position: absolute;
+                left: 0;
+                top: 20px;
+                height: 516px;
+                width: 2070px;
+                li{
+                    float: left;
+                    width: 220px;
+                    height: 516px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+// 京都商业街
+.jingdu{
+    margin-bottom: 44px;
+    position: relative;
+    &>a{
+         width: 53px;
+    height: 184px;
+    float: left;
+    margin-right: 67px;
+    background: url(../images/main/main-top-jingling.png);
+    background-position: -1111px -297px;
+    background-repeat: no-repeat;
+    }
+   
+    .jingdu-box{
+        width: 1060px;
+        height: 257px;
+        float: left;
+        padding-top: 20px;
+        position: relative;
+        top: -20px;
+        overflow: hidden;
+        ul{
+            position: relative;
+            width: 8000px;
+            height: 244px;
+            li{
+                float: left;
+                width: 250px;
+                height: 174px;
+                margin-right: 16px;
+                position: relative;
+                img{
+                    width: 250px;
+                    height: 150px;
+                    margin: 0 auto;
+                    display: block;
+                }
+                .jingdu-lun-solid{
+                    position: absolute;
+                    left: 30px;
+                    bottom: 0;
+                    width: 1px;
+                    height: 41px;
+                    background: #666;
+                }
+                p{
+                    font-size: 14px;
+                    margin: 7px 0 0 42px;
+                }
+            }
+        }
+        .jingdu-latiao{
+            height: 5px;
+            z-index: 11;
+            background: rgb(239, 239, 239);
+            position: absolute;
+            left: 0px;
+            bottom: 13px;
+            opacity: 1;
+            cursor: default;
+            width: 1060px;
+            display: block;
+            div{
+                position: absolute;
+                top: -12px;
+                height: 28px;
+                width: 139px;
+                background-color: rgb(255, 255, 255);
+                border: 1px solid rgb(194, 160, 96);
+                background-clip: padding-box;
+                border-radius: 0px;
+                left: 0px;
+                text-align: center;
+                line-height: 28px;
+                color: #c2a060;
+                cursor:pointer
             }
         }
     }

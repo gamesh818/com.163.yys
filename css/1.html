@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>jquery实现div拖拽</title>
+<script src="../lib/jQuery/jquery-3.4.1.js" type="text/javascript"></script>
+<style type="text/css">
+    
+#a1{
+			width:25px;
+			height:25px;
+			background:#a6e22e;
+			cursor:pointer;
+			position:absolute;
+			left:0;
+			top:0;
+		}
+</style>
+</head>
+<body>
+    <div id="a1">
+    </div>
+<script>
+    
+$(function(){
+  
+ 
+  $('#a1').mousedown(function(e){
+    
+    var positionDiv = $(this).offset();
+    var distenceX = e.pageX - positionDiv.left;
+    var distenceY = e.pageY - positionDiv.top;
+    
+    $(document).mousemove(function(e){
+      var x = e.pageX - distenceX;
+      
+      if(x<0){
+        x=0;
+      }else if(x>$(document).width()-$('#a1').outerWidth(true)){
+        x = $(document).width()-$('#a1').outerWidth(true);
+      }
+      
+      $('#a1').css({
+        'left':x+'px',
+        
+      });
+    });
+    $(document).mouseup(function(){
+      $(document).off('mousemove');
+    });
+  });
+});
+
+</script>
+</body>
+</html> 
