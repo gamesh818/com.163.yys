@@ -1,5 +1,5 @@
 html,body{
-    height: 1000%;
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -105,8 +105,6 @@ html,body{
         margin-left: 20px;
     }
 }
-// 泛娱乐箭头动画
-
 // 左箭头
 @keyframes yule-jiantou-left{
     0%{
@@ -178,6 +176,48 @@ html,body{
     100%{
         left: 24px;
     }
+}
+// 底部阳光
+@keyframes bottom-yangguang{
+    0%{
+        transform: scale(0.9);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    100%{
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    
+}
+// 底部太阳
+@keyframes bottom-taiyang{
+    0%{
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    20%{
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    70%{
+        transform: scale(0.9);
+        opacity: 0.7;
+    }
+    100%{
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    
+    
+    
 }
 
 // 主角轮播选中tab样式
@@ -2091,11 +2131,27 @@ html,body{
                 top: 20px;
                 height: 516px;
                 width: 2070px;
+                &>li:first-child{
+                    span{
+                        width: 200px;
+                        height: 200px;
+                        background: url(../images/main/yule-erwei.jpg) no-repeat;
+                        background-size: 100%;
+                        position: absolute;
+                        bottom: -200px;
+                        left: 50%;
+                        margin-left: -100px;
+                        opacity: 0;
+                    }
+                }
                 li{
                     float: left;
                     width: 220px;
                     height: 516px;
                     margin-right: 10px;
+                    position: relative;
+                    top: 0;
+                    overflow: hidden;
                 }
             }
         }
@@ -2134,6 +2190,10 @@ html,body{
                 height: 174px;
                 margin-right: 16px;
                 position: relative;
+                top: 0;
+                &:hover{
+                    animation: jingdu-tiaodong 1s 1  forwards; 
+                }
                 img{
                     width: 250px;
                     height: 150px;
@@ -2181,5 +2241,446 @@ html,body{
                 cursor:pointer
             }
         }
+    }
+}
+
+// 二维码部分
+.erwei{
+    height: 310px;
+    overflow: hidden;
+    .erwei-box{
+        margin-top: 83px;
+        width: 100%;
+        height: 167px;
+        background: #f2f2f2;
+        .code{
+            float: left;
+            margin: -26px 0 0 20px;
+        }
+        .erwei-cent{
+            margin-right: 37px;
+            .erwei-weibo-minbox{
+                width: 178px;
+                height: 146px;
+                border: 2px solid #ccc;
+                background: #fff;
+                position: relative;
+                a{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    &>p:first-child{
+                        margin-left: 15px;
+                    }
+                    p{
+                        width: 16px;
+                        float: left;
+                        line-height: 14px;
+                        font-size: 12px;
+                        margin-top: 25px;
+                        margin-right: 5px;
+                    }
+                    span{
+                        background: url(../images/main/main-top-jingling.png);
+                        background-position: -121px -870px;
+                        background-repeat: no-repeat;
+                        display: block;
+                        float: left;
+                        margin-top: 15px;
+                        width: 22px;
+                        height: 87px;
+                    }
+                    img{
+                        width: 130px;
+                        height: 130px;
+                        position: absolute;
+                        left: 104px;
+                        top: -30px;
+                        display: block;
+                    }
+                }
+            }
+            p{
+                text-align: center;
+                font-size: 14px;
+                margin-top: 10px;
+                span{
+                    color: #ccb786;
+                }
+            }
+        }
+        // 客服
+        #erwei-kefu{
+            span{
+                background-position: -153px -870px;
+            }
+            img{
+                width: 72px;
+                height: 56px;
+                background: 0 0;
+                top: 15px;
+            }
+            >p{
+                span{
+                    font-family: Georgia,"Microsoft Yahei";
+                    font-size: 20px;
+                }
+            }
+        }
+        // 微信
+        #erwei-weixin{
+            span{
+                background-position: -526px -741px;
+            }
+        }
+        // 大神
+        #erwei-dashen{
+            span{
+                background-position: -89px -870px;
+            }
+        }
+        // 神乐
+        .shenle{
+            position: relative;
+            width: 190px;
+            height: 270px;
+            background: url(../images/main/erwei-shenle.png) 68px top no-repeat;
+            margin-top: -70px;
+            cursor: pointer;
+            a{
+                position: absolute;
+                top: 52px;
+                left: 8px;
+                width: 203px;
+                height: 233px;
+                cursor: pointer;
+                z-index: 20;
+                background: url(../images/main/shenle-juese.png) no-repeat;
+                background-position: -406px 0;
+                background-size: 1015px 233px;
+                
+            }
+            .shenle-shuohua{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 203px;
+                height: 232px;
+                z-index: 10;
+                div{
+                    position: absolute;
+                    opacity: 0;
+                    display: none;
+                }
+                .shenle-1{
+                    left: -80px;
+                    top: 18px;
+                    width: 162px;
+                    height: 145px;
+                    background: url(../images/main/shenle-1.png) center bottom no-repeat;
+                    background-size: 40% 40%;
+                }
+                .shenle-2{
+                    left: -95px;
+                    top: -15px;
+                    width: 393px;
+                    height: 87px;
+                    background: url(../images/main/shenle-2.png) center bottom no-repeat;
+                    background-size: 40% 40%;
+                }
+                .shenle-3{
+                    left: 40px;
+                    top: 108px;
+                    width: 393px;
+                    height: 87px;
+                    background: url(../images/main/shenle-3.png) center bottom no-repeat;
+                    background-size: 40% 40%;
+                }
+                .shenle-4{
+                    left: -210px;
+                    top: 76px;
+                    width: 393px;
+                    height: 87px;
+                    background: url(../images/main/shenle-4.png) center bottom no-repeat;
+                    background-size: 40% 40%;
+                }
+                .shenle-5{
+                    left: -200px;
+                    top: 0;
+                    width: 393px;
+                    height: 87px;
+                    background: url(../images/main/shenle-5.png) center bottom no-repeat;
+                    background-size: 40% 40%;
+                }
+                .shenle-6{
+                    left: 80px;
+                    top: -30px;
+                    width: 319px;
+                    height: 269px;
+                    background: url(../images/main/shenle-6.png) center bottom no-repeat;
+                    background-size: 40% 40%;
+                }
+            }
+        }
+    }
+}
+
+// 底部部分
+.main-bottom{
+    width: 100%;
+    height: 927px;
+    background: url(../images/main/main-bottom-background.png) center no-repeat;
+    position: relative;
+    margin-top: -50px;
+    .bottom-container{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        // logo
+        .bottom-logo{
+            width: 71px;
+            height: 203px;
+            position: absolute;
+            top: 346px;
+            left: 235px;
+            background: url(../images/main/main-top-jingling.png);
+            background-repeat: no-repeat;
+            background-position: -1030px -297px;
+        }
+        // 动画盒子
+        .bottom-box{
+            width: 650px;
+            height: 390px;
+            position: absolute;
+            top: 206px;
+            right: 35px;
+            cursor: pointer;
+            .bottom-minbox{
+                position: relative;
+                width: 356px;
+                height: 354px;
+                margin: 34px 0 0 320px;
+                
+                .bottom-1{
+                    width: 276px;
+                    height: 276px;
+                    background: url(../images/main/main-bottom-1.png) no-repeat;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    margin-left: -138px;
+                    margin-top: -138px;
+                }
+                .bottom-2{
+                    position: absolute;
+                    left: -7px;
+                    top: -11px;
+                    width: 356px;
+                    height: 354px;
+                    background: url(../images/main/main-bottom-2.png) no-repeat;
+                    opacity: 1;
+                    transform: scale(0.6);
+                    animation: bottom-yangguang 2s linear infinite;
+                    display: none;
+                }
+                .bottom-3{
+                    position: absolute;
+                    left: -7px;
+                    top: -11px;
+                    width: 356px;
+                    height: 354px;
+                    background: url(../images/main/main-bottom-3.png) no-repeat;
+                    opacity: 0;
+                    z-index: 99;
+                    transform: scale(0.6);
+                    transition: all 1s ease-in-out
+                }
+                .erwei-da{
+                    opacity: 1;
+                    transition: all 1s ease-in-out;
+                    transform: scale(1);
+                }
+                .bottom-4{
+                    width: 276px;
+                    height: 276px;
+                    background: url(../images/main/main-bottom-4.png) no-repeat;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    margin-left: -138px;
+                    margin-top: -138px;
+                    animation: bottom-taiyang 2s linear infinite;
+                    z-index: 98;
+                }
+                .bottom-5{
+                    width: 230px;
+                    height: 230px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    margin-left: -115px;
+                    margin-top: -115px;
+                    .black{
+                    width: 276px;
+                    height: 276px;
+                    background: url(../images/main/main-bottom-5.png) no-repeat;
+                    transform: translate(9px,-55px);
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    z-index: 100;
+                    }
+                }
+            }
+        }
+    }
+    // 主页底部
+    .main-footer{
+        position: absolute;
+        height: 260px;
+        width: 100%;
+        bottom: 40px;
+        .main-footer-top{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10;
+            // width: 435px;
+            text-align: center;
+            font-size: 12px;
+            ul{
+                overflow: hidden;
+            }
+            li{
+                float: left;
+                height: 20px;
+                line-height: 20px;
+                font-size: 12px;
+                margin-right: 30px;
+                a{
+                    color: #fff;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+        .main-footer-bottom{
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1024px;
+            height: 179px;
+            .footer-bottom-one{
+                &>a{
+                    display: inline-block;
+                    font-size: 10px;
+                }
+                span{
+                    position: relative;
+                    // margin-top: 5px;
+                    height: 50px;
+                    display: inline-block;
+                    line-height: 2;
+                    p{
+                        color: #fff;
+                    }
+                    a{
+                        color: #fff;
+                        &:hover{
+                            text-decoration: solid;
+                        }
+                    }
+                    div{
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        display: inline-block;
+                        height: 26px;
+                        background-color: red;
+                    }
+                }
+            }
+            .footer-bottom-two{
+                line-height: 2.5;
+                p{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// 妖怪屋
+.yaoguaiwu{
+    position: fixed;
+    left: 0;
+    bottom: 5%;
+    z-index: 22;
+    width: 100%;
+    height: 0;
+    .yaoguaiwu{
+        left: 20px;
+        width: 195px;
+        height: 233px;
+        text-align: center;
+        display: block;
+        z-index: 12;
+        ::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+            background: url(../images/main/main-top-jingling.png);
+            background-position: -34px -741px;
+            width: 195px;
+            height: 116px;
+            background-repeat: no-repeat;
+        }
+    .yaoguai-box{
+        background: url(../images/main/yaoguaiwu.png) repeat-y center top;
+        background-size: 100% auto;
+        width: 164px;
+        height: 187px;
+        margin: 0 auto;
+        animation: yaoguaiwu steps(91,start) 3s infinite; 
+        }
+    }
+    .baiwenpai{
+        position: absolute;
+        bottom: 0;
+        right: 30px;
+        width: 230px;
+        height: 240px;
+        z-index: 12;
+        img{
+            position: absolute;
+            right: -22px;
+            top: -50px;
+            width: 210px;
+            height: auto;
+            z-index: 11;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            background: url(../images/main/main-top-jingling.png);
+            background-position: -644px -532px;
+            top: 20px;
+            width: 95px;
+            height: 195px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+// 妖怪屋动画
+@keyframes yaoguaiwu{
+    100%{
+        background-position-y: 17017px;
     }
 }

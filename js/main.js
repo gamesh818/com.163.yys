@@ -134,16 +134,6 @@ $(function () {
             if ($(this).attr('id') == pingan) {
                 let add = $(this).attr('id') + 1
                 let app = $(this).attr('id') - 1
-                // 显示当前记录id的盒子
-                // $(this).find($('.name')).animate({
-                //     "opacity":0,
-                //     "left":-200
-                // },600)
-
-                // $(this).find($('.juese')).animate({
-                //     "opacity":0,
-                //     "right":-200
-                // },600)
                 $(this).siblings().find('.name').animate({
                     "opacity": 0,
                     "left": -200
@@ -252,7 +242,7 @@ $(function () {
     })
 
     // 主角轮播图
-    let zhujue = 14
+    let zhujue = 11
     let liebiao = 0
     let zjleftname
     let zjrightname
@@ -261,8 +251,6 @@ $(function () {
         $('.zhujue-lu-box >div').each(function (i, v) {
             // 判断id是不是当前记录id
             if ($(this).attr('id') == zhujue) {
-                let add = $(this).attr('id') + 1
-                let app = $(this).attr('id') - 1
                 $(this).siblings().find('.name').animate({
                     "opacity": 0,
                     "left": -200
@@ -305,17 +293,17 @@ $(function () {
     function zjguanjian() {
         if (zjflag) {
             let num = zhujue
-            if (num == 14) {
-                zjleftname = $('#11').attr('value')
-                zjrightname = $(`#${num - 1}`).attr('value')
-            } else if (num == 11) {
-                zjrightname = $('#14').attr('value')
+            if (num == 11) {
+                zjleftname = $('#14').attr('value')
+                zjrightname = $(`#${num + 1}`).attr('value')
+            } else if (num == 14) {
+                zjrightname = $('#11').attr('value')
                 console.log(zjrightname)
-                zjleftname = $(`#${num += 1}`).attr('value')
+                zjleftname = $(`#${num - 1}`).attr('value')
                 console.log(leftname)
             } else {
-                zjleftname = $(`#${num + 1}`).attr('value')
-                zjrightname = $(`#${num - 1}`).attr('value')
+                zjleftname = $(`#${num - 1}`).attr('value')
+                zjrightname = $(`#${num + 1}`).attr('value')
             }
             $('.zhujue-lun-but-left > p').text(zjleftname)
             $('.zhujue-lun-but-right > p').text(zjrightname)
@@ -323,9 +311,6 @@ $(function () {
     }
     // 点击左按钮
     $('.zhujue-lun-but-left').on('click', function () {
-       
-
-
         // 遍历所有元素
         $('.zhujue-lu-box >div').each(function (i, v) {
             let liebiao = $('.zhujue-lu-box >div').eq(i).index()-1
@@ -336,10 +321,10 @@ $(function () {
             if ($('.zhujue-lu-box >div').eq(i).attr('id') == zhujue) {
 
                 //判断id是否为最大值 如果为最大值 改为1
-                if (zhujue >= 14) {
-                    zhujue = 11
+                if (zhujue <= 11) {
+                    zhujue = 14
                 } else {
-                    zhujue += 1
+                    zhujue -= 1
                 }
                 console.log(zhujue)
                 // 调用更改按钮关键词函数
@@ -364,10 +349,10 @@ $(function () {
                 $('.zhujue-liebiao>a>span').eq(liebiao).addClass("zjon")
              
                 //判断id是否为最小值 如果为最小值 改为14
-                if (zhujue <= 11) {
-                    zhujue = 14
+                if (zhujue >= 14) {
+                    zhujue = 11
                 } else {
-                    zhujue -= 1
+                    zhujue += 1
                 }
                 console.log(zhujue)
                 // 调用更改按钮关键词函数
@@ -378,8 +363,80 @@ $(function () {
             }
         })
     })
+// 主角录 tab点击切换关键词
+    let fzz = function(zhujue){
+        if (zjflag) {
+            let num = zhujue+11
+            if (num == 11) {
+                zjleftname = $('#14').attr('value')
+                zjrightname = $(`#${num + 1}`).attr('value')
+            } else if (num == 14) {
+                zjrightname = $('#11').attr('value')
+                console.log(zjrightname)
+                zjleftname = $(`#${num - 1}`).attr('value')
+                console.log(leftname)
+            } else {
+                zjleftname = $(`#${num - 1}`).attr('value')
+                zjrightname = $(`#${num + 1}`).attr('value')
+            }
+            $('.zhujue-lun-but-left > p').text(zjleftname)
+            $('.zhujue-lun-but-right > p').text(zjrightname)
+        }
+    }
+// 点击 按钮切换图片
+    let zzo = function (zhujue) {
+        $('.zhujue-lu-box >div').each(function (i, v) {
+            // 判断id是不是当前记录id
+            if ($(this).index() == zhujue) {
+                
+                $(this).siblings().find('.name').animate({
+                    "opacity": 0,
+                    "left": -200
+                }, 300, function () {
 
+                })
+                $(this).siblings().find('.juese').animate({
+                    "opacity": 0,
+                    "right": -200
+                }, 300, function () {
+
+                })
+
+                $(this).show()
+                $(this).find($('.name')).animate({
+                    "opacity": 1,
+                    "left": 0
+                }, 600, function () {
+                    $(this).siblings().find($('.name')).css({
+                        "opacity": 0,
+                        "left": -200
+                    })
+                })
+                $(this).find($('.juese')).animate({
+                    "opacity": 1,
+                    "right": 0
+                }, 600, function () {
+                    $(this).siblings().find($('.name')).css({
+                        "opacity": 0,
+                        "right": -200
+                    })
+                })
+                // 获取相邻id的盒子的关键词 放到按钮中
+                zjguanjian()
+            }
+        })
+    }
+
+
+$('.zhujue-liebiao>a').on('click',function(){
+    $(this).find('span').addClass("zjon")
+    $(this).siblings().find('span').removeClass('zjon')
+    let zhujue = $(this).index()
+    zzo(zhujue)
+    fzz(zhujue)
     
+    
+})
 
     // tab切换轮播图
    $('.pingan-qiehuan li').on('click',function(){
@@ -582,7 +639,27 @@ $('.yule-but-right').on('click',function(){
     console.log(left)
     rightbbo(left)
 })
+// 元素跳动
+$(".yule-minbox li").on('mouseenter',function(){
+    $(this).stop().animate({
+        top:-20
+    },300)
+    $(this).find('span').animate({
+        bottom:10,
+        opacity:1
+    },300)
+})
+$(".yule-minbox li").on('mouseleave',function(){
+    $(this).stop().animate({
+        top:0
+    },300)
+    $(this).find('span').stop().animate({
+        bottom:-200,
+        opacity:0
+    },300)
+})
 
+// 京都商业城
 
 // 拖动元素
 $('.jingdu-latiao>div').mousedown(function(e){
@@ -611,3 +688,108 @@ $('.jingdu-latiao>div').mousedown(function(e){
       $(document).off('mousemove');
     });
   });
+
+
+//   元素跳动
+
+$(".jingdu-box li").on('mouseenter',function(){
+    $(this).stop().animate({
+        top:-10
+    },300)
+})
+$(".jingdu-box li").on('mouseleave',function(){
+    $(this).stop().animate({
+        top:0
+    },300)
+})
+
+
+
+
+// 二维码部分 神乐
+$('.erwei').on('mousemove',function(e){
+    let oppp = e.pageX
+    if(oppp<=850){
+        console.log(1)
+        $('.shenle>a').css({
+            'backgroundPosition':"0 0",
+        })
+    } 
+    if(oppp>850 && oppp<=920){
+        console.log(2)
+        $('.shenle>a').css({
+            'backgroundPosition':"-203px 0",
+        })
+    } 
+    if(oppp>920 && oppp<=1040){
+        console.log(3)
+        $('.shenle>a').css({
+            'backgroundPosition':"-406px 0",
+        })
+    } 
+    if(oppp>1040 && oppp<=1110){
+        console.log(4)
+        $('.shenle>a').css({
+            'backgroundPosition':"-609px 0",
+        })
+    } 
+    if(oppp>1110){
+        console.log(5)
+        $('.shenle>a').css({
+            'backgroundPosition':"-812px 0",
+        })
+    }
+})
+
+
+// 点击神乐 神乐语言框
+let shenle_flag = true
+$('.shenle>a').on('click',function(){
+    let num = Math.floor(Math.random() * 7)
+    if(shenle_flag){
+        shenle_flag = false
+        $('.shenle-shuohua>div').eq(num).show().animate({
+            opacity:1, 
+        },1000,function(){
+            $('.shenle-shuohua>div').eq(num).animate({
+                opacity:0,
+            },2000,function(){
+                $('.shenle-shuohua>div').hide()
+                shenle_flag = true
+            })
+        })
+    }
+})
+
+
+
+// 底部部分动画群
+let bottom_timer = null
+let bottom_yiru = true
+let bottom_yikai =true
+$('.bottom-box').on('mouseenter',function(){
+    if(bottom_yiru){
+        bottom_yiru = false
+        $('.bottom-2').fadeIn()
+        $('.bottom-3').addClass('erwei-da')
+        $('.black').animate({
+            "top":-160,
+            "left":100
+        },1000,function(){
+            bottom_yiru = true
+        })
+    }
+})
+$('.bottom-box').on('mouseleave',function(){
+    if(bottom_yikai){
+        bottom_yikai = false
+        $('.bottom-3').removeClass('erwei-da')
+        $('.bottom-2').hide()
+        $('.black').animate({
+            "top":0,
+            "left":0
+        },1000,function(){
+            bottom_yikai = true
+        })
+    }
+})

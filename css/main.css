@@ -1,5 +1,5 @@
 html, body {
-  height: 1000%;
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -332,6 +332,98 @@ html, body {
   }
   100% {
     left: 24px;
+  }
+}
+
+@-webkit-keyframes bottom-yangguang {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+@keyframes bottom-yangguang {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes bottom-taiyang {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+  70% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 1;
+  }
+}
+
+@keyframes bottom-taiyang {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+  70% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 1;
   }
 }
 
@@ -2470,11 +2562,26 @@ p > .shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-right-minbox ul 
   width: 2070px;
 }
 
+.yule .yule-box .yule-minbox ul > li:first-child span {
+  width: 200px;
+  height: 200px;
+  background: url(../images/main/yule-erwei.jpg) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+}
+
 .yule .yule-box .yule-minbox ul li {
   float: left;
   width: 220px;
   height: 516px;
   margin-right: 10px;
+  position: relative;
+  top: 0;
+  overflow: hidden;
 }
 
 .jingdu {
@@ -2514,6 +2621,12 @@ p > .shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-right-minbox ul 
   height: 174px;
   margin-right: 16px;
   position: relative;
+  top: 0;
+}
+
+.jingdu .jingdu-box ul li:hover {
+  -webkit-animation: jingdu-tiaodong 1s 1  forwards;
+          animation: jingdu-tiaodong 1s 1  forwards;
 }
 
 .jingdu .jingdu-box ul li img {
@@ -2564,5 +2677,498 @@ p > .shouzhang .shouzhang-right .shouzhang-right-box .shouzhang-right-minbox ul 
   line-height: 28px;
   color: #c2a060;
   cursor: pointer;
+}
+
+.erwei {
+  height: 310px;
+  overflow: hidden;
+}
+
+.erwei .erwei-box {
+  margin-top: 83px;
+  width: 100%;
+  height: 167px;
+  background: #f2f2f2;
+}
+
+.erwei .erwei-box .code {
+  float: left;
+  margin: -26px 0 0 20px;
+}
+
+.erwei .erwei-box .erwei-cent {
+  margin-right: 37px;
+}
+
+.erwei .erwei-box .erwei-cent .erwei-weibo-minbox {
+  width: 178px;
+  height: 146px;
+  border: 2px solid #ccc;
+  background: #fff;
+  position: relative;
+}
+
+.erwei .erwei-box .erwei-cent .erwei-weibo-minbox a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.erwei .erwei-box .erwei-cent .erwei-weibo-minbox a > p:first-child {
+  margin-left: 15px;
+}
+
+.erwei .erwei-box .erwei-cent .erwei-weibo-minbox a p {
+  width: 16px;
+  float: left;
+  line-height: 14px;
+  font-size: 12px;
+  margin-top: 25px;
+  margin-right: 5px;
+}
+
+.erwei .erwei-box .erwei-cent .erwei-weibo-minbox a span {
+  background: url(../images/main/main-top-jingling.png);
+  background-position: -121px -870px;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  margin-top: 15px;
+  width: 22px;
+  height: 87px;
+}
+
+.erwei .erwei-box .erwei-cent .erwei-weibo-minbox a img {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  left: 104px;
+  top: -30px;
+  display: block;
+}
+
+.erwei .erwei-box .erwei-cent p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.erwei .erwei-box .erwei-cent p span {
+  color: #ccb786;
+}
+
+.erwei .erwei-box #erwei-kefu span {
+  background-position: -153px -870px;
+}
+
+.erwei .erwei-box #erwei-kefu img {
+  width: 72px;
+  height: 56px;
+  background: 0 0;
+  top: 15px;
+}
+
+.erwei .erwei-box #erwei-kefu > p span {
+  font-family: Georgia,"Microsoft Yahei";
+  font-size: 20px;
+}
+
+.erwei .erwei-box #erwei-weixin span {
+  background-position: -526px -741px;
+}
+
+.erwei .erwei-box #erwei-dashen span {
+  background-position: -89px -870px;
+}
+
+.erwei .erwei-box .shenle {
+  position: relative;
+  width: 190px;
+  height: 270px;
+  background: url(../images/main/erwei-shenle.png) 68px top no-repeat;
+  margin-top: -70px;
+  cursor: pointer;
+}
+
+.erwei .erwei-box .shenle a {
+  position: absolute;
+  top: 52px;
+  left: 8px;
+  width: 203px;
+  height: 233px;
+  cursor: pointer;
+  z-index: 20;
+  background: url(../images/main/shenle-juese.png) no-repeat;
+  background-position: -406px 0;
+  background-size: 1015px 233px;
+}
+
+.erwei .erwei-box .shenle .shenle-shuohua {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 203px;
+  height: 232px;
+  z-index: 10;
+}
+
+.erwei .erwei-box .shenle .shenle-shuohua div {
+  position: absolute;
+  opacity: 0;
+  display: none;
+}
+
+.erwei .erwei-box .shenle .shenle-shuohua .shenle-1 {
+  left: -80px;
+  top: 18px;
+  width: 162px;
+  height: 145px;
+  background: url(../images/main/shenle-1.png) center bottom no-repeat;
+  background-size: 40% 40%;
+}
+
+.erwei .erwei-box .shenle .shenle-shuohua .shenle-2 {
+  left: -95px;
+  top: -15px;
+  width: 393px;
+  height: 87px;
+  background: url(../images/main/shenle-2.png) center bottom no-repeat;
+  background-size: 40% 40%;
+}
+
+.erwei .erwei-box .shenle .shenle-shuohua .shenle-3 {
+  left: 40px;
+  top: 108px;
+  width: 393px;
+  height: 87px;
+  background: url(../images/main/shenle-3.png) center bottom no-repeat;
+  background-size: 40% 40%;
+}
+
+.erwei .erwei-box .shenle .shenle-shuohua .shenle-4 {
+  left: -210px;
+  top: 76px;
+  width: 393px;
+  height: 87px;
+  background: url(../images/main/shenle-4.png) center bottom no-repeat;
+  background-size: 40% 40%;
+}
+
+.erwei .erwei-box .shenle .shenle-shuohua .shenle-5 {
+  left: -200px;
+  top: 0;
+  width: 393px;
+  height: 87px;
+  background: url(../images/main/shenle-5.png) center bottom no-repeat;
+  background-size: 40% 40%;
+}
+
+.erwei .erwei-box .shenle .shenle-shuohua .shenle-6 {
+  left: 80px;
+  top: -30px;
+  width: 319px;
+  height: 269px;
+  background: url(../images/main/shenle-6.png) center bottom no-repeat;
+  background-size: 40% 40%;
+}
+
+.main-bottom {
+  width: 100%;
+  height: 927px;
+  background: url(../images/main/main-bottom-background.png) center no-repeat;
+  position: relative;
+  margin-top: -50px;
+}
+
+.main-bottom .bottom-container {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-bottom .bottom-container .bottom-logo {
+  width: 71px;
+  height: 203px;
+  position: absolute;
+  top: 346px;
+  left: 235px;
+  background: url(../images/main/main-top-jingling.png);
+  background-repeat: no-repeat;
+  background-position: -1030px -297px;
+}
+
+.main-bottom .bottom-container .bottom-box {
+  width: 650px;
+  height: 390px;
+  position: absolute;
+  top: 206px;
+  right: 35px;
+  cursor: pointer;
+}
+
+.main-bottom .bottom-container .bottom-box .bottom-minbox {
+  position: relative;
+  width: 356px;
+  height: 354px;
+  margin: 34px 0 0 320px;
+}
+
+.main-bottom .bottom-container .bottom-box .bottom-minbox .bottom-1 {
+  width: 276px;
+  height: 276px;
+  background: url(../images/main/main-bottom-1.png) no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -138px;
+  margin-top: -138px;
+}
+
+.main-bottom .bottom-container .bottom-box .bottom-minbox .bottom-2 {
+  position: absolute;
+  left: -7px;
+  top: -11px;
+  width: 356px;
+  height: 354px;
+  background: url(../images/main/main-bottom-2.png) no-repeat;
+  opacity: 1;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-animation: bottom-yangguang 2s linear infinite;
+          animation: bottom-yangguang 2s linear infinite;
+  display: none;
+}
+
+.main-bottom .bottom-container .bottom-box .bottom-minbox .bottom-3 {
+  position: absolute;
+  left: -7px;
+  top: -11px;
+  width: 356px;
+  height: 354px;
+  background: url(../images/main/main-bottom-3.png) no-repeat;
+  opacity: 0;
+  z-index: 99;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.main-bottom .bottom-container .bottom-box .bottom-minbox .erwei-da {
+  opacity: 1;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.main-bottom .bottom-container .bottom-box .bottom-minbox .bottom-4 {
+  width: 276px;
+  height: 276px;
+  background: url(../images/main/main-bottom-4.png) no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -138px;
+  margin-top: -138px;
+  -webkit-animation: bottom-taiyang 2s linear infinite;
+          animation: bottom-taiyang 2s linear infinite;
+  z-index: 98;
+}
+
+.main-bottom .bottom-container .bottom-box .bottom-minbox .bottom-5 {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -115px;
+  margin-top: -115px;
+}
+
+.main-bottom .bottom-container .bottom-box .bottom-minbox .bottom-5 .black {
+  width: 276px;
+  height: 276px;
+  background: url(../images/main/main-bottom-5.png) no-repeat;
+  -webkit-transform: translate(9px, -55px);
+          transform: translate(9px, -55px);
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.main-bottom .main-footer {
+  position: absolute;
+  height: 260px;
+  width: 100%;
+  bottom: 40px;
+}
+
+.main-bottom .main-footer .main-footer-top {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 10;
+  text-align: center;
+  font-size: 12px;
+}
+
+.main-bottom .main-footer .main-footer-top ul {
+  overflow: hidden;
+}
+
+.main-bottom .main-footer .main-footer-top li {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  margin-right: 30px;
+}
+
+.main-bottom .main-footer .main-footer-top li a {
+  color: #fff;
+}
+
+.main-bottom .main-footer .main-footer-top li a:hover {
+  color: red;
+}
+
+.main-bottom .main-footer .main-footer-bottom {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1024px;
+  height: 179px;
+}
+
+.main-bottom .main-footer .main-footer-bottom .footer-bottom-one > a {
+  display: inline-block;
+  font-size: 10px;
+}
+
+.main-bottom .main-footer .main-footer-bottom .footer-bottom-one span {
+  position: relative;
+  height: 50px;
+  display: inline-block;
+  line-height: 2;
+}
+
+.main-bottom .main-footer .main-footer-bottom .footer-bottom-one span p {
+  color: #fff;
+}
+
+.main-bottom .main-footer .main-footer-bottom .footer-bottom-one span a {
+  color: #fff;
+}
+
+.main-bottom .main-footer .main-footer-bottom .footer-bottom-one span a:hover {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.main-bottom .main-footer .main-footer-bottom .footer-bottom-one span div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  height: 26px;
+  background-color: red;
+}
+
+.main-bottom .main-footer .main-footer-bottom .footer-bottom-two {
+  line-height: 2.5;
+}
+
+.main-bottom .main-footer .main-footer-bottom .footer-bottom-two p {
+  color: #fff;
+}
+
+.yaoguaiwu {
+  position: fixed;
+  left: 0;
+  bottom: 5%;
+  z-index: 22;
+  width: 100%;
+  height: 0;
+}
+
+.yaoguaiwu .yaoguaiwu {
+  left: 20px;
+  width: 195px;
+  height: 233px;
+  text-align: center;
+  display: block;
+  z-index: 12;
+}
+
+.yaoguaiwu .yaoguaiwu ::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background: url(../images/main/main-top-jingling.png);
+  background-position: -34px -741px;
+  width: 195px;
+  height: 116px;
+  background-repeat: no-repeat;
+}
+
+.yaoguaiwu .yaoguaiwu .yaoguai-box {
+  background: url(../images/main/yaoguaiwu.png) repeat-y center top;
+  background-size: 100% auto;
+  width: 164px;
+  height: 187px;
+  margin: 0 auto;
+  -webkit-animation: yaoguaiwu steps(91, start) 3s infinite;
+          animation: yaoguaiwu steps(91, start) 3s infinite;
+}
+
+.yaoguaiwu .baiwenpai {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  width: 230px;
+  height: 240px;
+  z-index: 12;
+}
+
+.yaoguaiwu .baiwenpai img {
+  position: absolute;
+  right: -22px;
+  top: -50px;
+  width: 210px;
+  height: auto;
+  z-index: 11;
+}
+
+.yaoguaiwu .baiwenpai::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  background: url(../images/main/main-top-jingling.png);
+  background-position: -644px -532px;
+  top: 20px;
+  width: 95px;
+  height: 195px;
+  background-repeat: no-repeat;
+}
+
+@-webkit-keyframes yaoguaiwu {
+  100% {
+    background-position-y: 17017px;
+  }
+}
+
+@keyframes yaoguaiwu {
+  100% {
+    background-position-y: 17017px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
