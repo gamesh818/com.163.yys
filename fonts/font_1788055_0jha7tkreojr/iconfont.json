@@ -1,0 +1,37 @@
+{
+  "id": "1788055",
+  "name": "阴阳师",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "577323",
+      "name": "圆形选中-fill",
+      "font_class": "yuanxingxuanzhongfill",
+      "unicode": "e730",
+      "unicode_decimal": 59184
+    },
+    {
+      "icon_id": "947274",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "986186",
+      "name": "微博",
+      "font_class": "weibo-copy",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "986226",
+      "name": "微信",
+      "font_class": "weixin-copy",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    }
+  ]
+}
