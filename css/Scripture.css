@@ -5,6 +5,37 @@ html, body {
   padding: 0;
 }
 
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+@-webkit-keyframes top {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -10px;
+  }
+}
+
+@keyframes top {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -10px;
+  }
+}
+
 .top-nav {
   position: relative;
   width: 100%;
@@ -267,6 +298,7 @@ html, body {
   min-width: 1280px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  z-index: 10;
 }
 
 .main .main-top-nav .one-nav {
@@ -412,13 +444,14 @@ html, body {
   position: absolute;
   top: 100px;
   width: 100%;
-  height: 0;
+  height: 200px;
   background: #e1ebeb;
   overflow: hidden;
   right: 0;
+  display: none;
 }
 
-.main .main-top-nav .guanfang-select div {
+.main .main-top-nav .guanfang-select .select-bigbox {
   position: absolute;
   top: 0;
   left: 0;
@@ -426,7 +459,8 @@ html, body {
   width: 100%;
 }
 
-.main .main-top-nav .guanfang-select div .QQ {
+.main .main-top-nav .guanfang-select .select-bigbox .QQ {
+  position: relative;
   float: right;
   width: 320px;
   height: 104px;
@@ -434,13 +468,345 @@ html, body {
   border-left: 1px solid #c8d0d0;
 }
 
-.main .main-top-nav .guanfang-select div .QQ ul {
+.main .main-top-nav .guanfang-select .select-bigbox .QQ ul {
   margin-bottom: 10px;
 }
 
-.main .main-top-nav .guanfang-select div .QQ p {
+.main .main-top-nav .guanfang-select .select-bigbox .QQ ul li {
+  float: left;
+  color: #666;
+  font-size: 12px;
+  width: 153px;
+  line-height: 25px;
+}
+
+.main .main-top-nav .guanfang-select .select-bigbox .QQ p {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  -webkit-transform: translateX(-70%);
+          transform: translateX(-70%);
+  display: block;
   color: #666;
   font-size: 16px;
   text-align: center;
+}
+
+.main .main-top-nav .guanfang-select .select-bigbox .select-box {
+  float: right;
+  width: 222px;
+  height: 104px;
+  position: relative;
+  border-left: 1px solid #c8d0d0;
+}
+
+.main .main-top-nav .guanfang-select .select-bigbox .select-box img {
+  display: block;
+  width: 84px;
+  height: 84px;
+  border: 2px solid #666;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: -10px;
+}
+
+.main .main-top-nav .guanfang-select .select-bigbox .select-box p {
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.main .main-top-nav .guanfang-select .select-bigbox .select-box > p:last-child {
+  display: none;
+}
+
+.main .main-top-nav .guanfang-select .select-bigbox > a {
+  position: relative;
+  top: 0;
+  float: right;
+  width: 215px;
+  height: 104px;
+  border-left: 1px solid #c8d0d0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.main .main-top-nav .guanfang-select .select-bigbox > a:hover {
+  top: -15px;
+}
+
+.main .main-top-nav .guanfang-select .select-bigbox .select-tieba {
+  display: block;
+}
+
+.main .main-top-nav .guanfang-select .select-bigbox .select-tieba > span:first-child {
+  display: block;
+  margin: 0 auto;
+  background: url(../images/Scripture/shishen-jingling.png);
+  background-position: -77px -71px;
+  width: 81px;
+  height: 68px;
+  background-repeat: no-repeat;
+}
+
+.main .main-top-nav .guanfang-select .select-bigbox .select-tieba > span:last-child {
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.main .main-top-nav .guanfang-select .select-bigbox .select-luntan {
+  display: block;
+}
+
+.main .main-top-nav .guanfang-select .select-bigbox .select-luntan > span:first-child {
+  display: block;
+  margin: 0 auto;
+  background: url(../images/Scripture/shishen-jingling.png);
+  background-position: -136px 0px;
+  width: 81px;
+  height: 68px;
+  background-repeat: no-repeat;
+}
+
+.main .main-top-nav .guanfang-select .select-bigbox .select-luntan > span:last-child {
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.main .yinyang-logo {
+  position: absolute;
+  width: 100px;
+  height: 342px;
+  left: 50px;
+  top: 38px;
+}
+
+.main .yinyang-logo span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/Scripture/yinyang-logo.webp) no-repeat;
+}
+
+.main .container {
+  width: 1179px;
+  margin: 0 auto;
+}
+
+.main .container .left-box {
+  width: 188px;
+  float: left;
+  padding-top: 30px;
+}
+
+.main .container .left-box .box-logo {
+  background: url(../images/Scripture/box-jingling.png);
+  background-position: 0px 0px;
+  width: 103px;
+  height: 298px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  background-repeat: no-repeat;
+}
+
+.main .container .left-box ul {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.main .container .left-box ul li {
+  width: 100%;
+  height: 50px;
+}
+
+.main .container .left-box ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 30px;
+}
+
+.main .container .left-box ul li a:hover span {
+  left: 30px;
+  opacity: 1;
+}
+
+.main .container .left-box ul li a span {
+  position: absolute;
+  width: 31px;
+  height: 19px;
+  left: 0px;
+  top: 3px;
+  background: url(../images/Scripture/box-jingling.png) no-repeat;
+  background-position: -103px -225px;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.main .container .left-box ul li a i {
+  display: block;
+  margin: 0 auto;
+  background: url(../images/Scripture/box-jingling.png);
+  background-position: -170px -196px;
+  width: 48px;
+  height: 23px;
+  background-repeat: no-repeat;
+}
+
+.main .container .left-box ul li .box-1 i {
+  width: 53px;
+  height: 29px;
+  background-repeat: no-repeat;
+  background-position: -267px -233px;
+}
+
+.main .container .left-box ul li .box-1 span {
+  left: 30px;
+  opacity: 1;
+}
+
+.main .container .left-box ul li .box-2 i {
+  width: 48px;
+  background-repeat: no-repeat;
+  background-position: -170px -196px;
+}
+
+.main .container .left-box ul li .box-3 i {
+  width: 26px;
+  background-repeat: no-repeat;
+  background-position: -275px -204px;
+}
+
+.main .container .left-box ul li .box-4 i {
+  width: 40px;
+  background-repeat: no-repeat;
+  background-position: -299px -204px;
+}
+
+.main .container .left-box ul li .box-5 i {
+  width: 24px;
+  background-repeat: no-repeat;
+  background-position: -339px -204px;
+}
+
+.main .container .left-box ul li .box-6 i {
+  width: 12px;
+  background-repeat: no-repeat;
+  background-position: -223px -204px;
+}
+
+.main .container .left-box ul li .box-7 i {
+  width: 12px;
+  background-repeat: no-repeat;
+  background-position: -223px -233px;
+}
+
+.main .container .left-box ul li .box-8 i {
+  width: 48px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-position: -170px -173px;
+}
+
+.main .container .right-box {
+  float: left;
+  width: 980px;
+}
+
+.main .container .right-box .liebiao {
+  position: relative;
+  width: 900px;
+  height: 576px;
+  overflow: hidden;
+  margin-top: 115px;
+  margin-left: 85px;
+}
+
+.main .container .right-box .liebiao .shishen-box {
+  display: block;
+  width: 900px;
+  height: 576px;
+}
+
+.main .container .right-box .liebiao .shishen-box .ss {
+  position: relative;
+  float: left;
+  width: 148px;
+  height: 163px;
+  margin-bottom: 30px;
+}
+
+.main .container .right-box .liebiao .shishen-box .ss .shishen-img {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.main .container .right-box .liebiao .shishen-box .ss .shishen-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.main .container .right-box .liebiao .shishen-box .ss .shishen-img .shishen-boder {
+  background: url(../images/Scripture/box-jingling.png);
+  background-position: -103px 0px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.main .container .right-box .liebiao .shishen-box .ss .shishen-name {
+  display: block;
+  color: #000;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.main .container .right-box .liebiao .shishen-box .ss .shishen-zhezhao {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.main .container .right-box .liebiao .shishen-box .ss .shishen-zhezhao i {
+  position: absolute;
+  left: 50%;
+  margin-left: -22px;
+  top: 36px;
+  display: block;
+  width: 45px;
+  height: 53px;
+  background: url(../images/Scripture/box-jingling.png);
+  background-repeat: no-repeat;
+  background-position: -170px -120px;
 }
 /*# sourceMappingURL=Scripture.css.map */

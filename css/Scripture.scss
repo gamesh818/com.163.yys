@@ -5,6 +5,27 @@ html,body{
     padding: 0;
 }
 
+.clearfix:before ,.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+   *zoom: 1;  
+}
+
+
+// select 里的 元素跳动动画
+@keyframes top {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -10px;
+    }
+}
 
 // 顶部导航 
 .top-nav{
@@ -215,6 +236,7 @@ html,body{
         }
     }
 }
+
 // 主内容盒子
 .main{
     position: relative;
@@ -228,6 +250,7 @@ html,body{
         left: 0;
         background: rgba(255,255,255,.9)
     }
+    // 二级导航
     .main-top-nav{
         position: absolute;
         margin: 0 auto;
@@ -236,6 +259,7 @@ html,body{
         height: 100px;
         min-width: 1280px;
         transition: all 0.5s;
+        z-index: 10;
         .one-nav{
             display: block;
             position: absolute;
@@ -362,17 +386,19 @@ html,body{
             position: absolute;
             top: 100px;
             width: 100%;
-            height: 0;
+            height: 200px;
             background: #e1ebeb;
             overflow: hidden;
             right: 0;
-            div{
+            display: none;
+            .select-bigbox{
                 position: absolute;
                 top: 0;
                 left: 0;
                 padding-top: 33px;
                 width: 100%;
                 .QQ{
+                    position: relative;
                     float: right;
                     width: 320px;
                     height: 104px;
@@ -380,11 +406,319 @@ html,body{
                     border-left: 1px solid #c8d0d0;
                     ul{
                         margin-bottom: 10px;
+                        li{
+                            float: left;
+                            color: #666;
+                            font-size: 12px;
+                            width: 153px;
+                            line-height: 25px;
+                        }
+                    }
+                    p{
+                        position: absolute;
+                        bottom: -50px;
+                        left: 50%;
+                        transform: translateX(-70%);
+                        display: block;
+                        color: #666;
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                }
+                .select-box{
+                    float: right;
+                    width: 222px;
+                    height: 104px;
+                    position: relative;
+                    border-left: 1px solid #c8d0d0;
+                    img{
+                        display: block;
+                        width: 84px;
+                        height: 84px;
+                        border: 2px solid #666;
+                        border-radius: 5px;
+                        margin: auto;
+                        margin-top: -10px;
                     }
                     p{
                         color: #666;
                         font-size: 16px;
                         text-align: center;
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        bottom: 0;
+                        left: 0;
+                    }
+                    &>p:last-child{
+                        display: none;
+                    }
+                }
+                &>a{
+                    position: relative;
+                    top: 0;
+                    float: right;
+                    width: 215px;
+                    height: 104px;
+                    border-left: 1px solid #c8d0d0;
+                    transition: all 0.5s;
+                    &:hover{
+                        top: -15px;
+                       
+                    }
+                }
+                .select-tieba{
+                    display: block;
+                    &>span:first-child{
+                        display: block;
+                        margin: 0 auto;
+                        background: url(../images/Scripture/shishen-jingling.png);
+                        background-position: -77px -71px;
+                        width: 81px;
+                        height: 68px;
+                        background-repeat: no-repeat;
+                    }
+                    &>span:last-child{
+                        color: #666;
+                        font-size: 16px;
+                        text-align: center;
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+                .select-luntan{
+                    display: block;
+                    &>span:first-child{
+                        display: block;
+                        margin: 0 auto;
+                        background: url(../images/Scripture/shishen-jingling.png);
+                        background-position: -136px 0px;
+                        width: 81px;
+                        height: 68px;
+                        background-repeat: no-repeat;
+                    }
+                    &>span:last-child{
+                        color: #666;
+                        font-size: 16px;
+                        text-align: center;
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    // logo
+    .yinyang-logo{
+        position: absolute;
+        width: 100px;
+        height: 342px;
+        left: 50px;
+        top: 38px;
+        span{
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url(../images/Scripture/yinyang-logo.webp) no-repeat;
+        }
+    }
+    // 版心
+    .container{
+        width: 1179px;
+        margin: 0 auto;
+        // 左部分盒子
+        .left-box{
+            width: 188px;
+            float: left;
+            padding-top: 30px;
+            .box-logo{
+                background: url(../images/Scripture/box-jingling.png);
+                background-position: 0px 0px;
+                width: 103px;
+                height: 298px;
+                margin: 0 auto;
+                margin-bottom: 35px;
+                background-repeat: no-repeat;
+            }
+            ul{
+                margin-bottom: 15px;
+                width: 100%;
+                li{
+                    width: 100%;
+                    height: 50px;
+                    a{
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        height: 30px;
+                        &:hover span{
+                            left: 30px;
+                            opacity: 1;
+                        }
+                        span{
+                            position: absolute;
+                            width: 31px;
+                            height: 19px;
+                            left: 0px;
+                            top: 3px;
+                            background: url(../images/Scripture/box-jingling.png) no-repeat;
+                            background-position: -103px -225px;
+                            opacity: 0;
+                            transition: all 0.2s linear;
+                        }
+                        i{
+                            display: block;
+                            margin: 0 auto;
+                            background: url(../images/Scripture/box-jingling.png);
+                            background-position: -170px -196px;
+                            width: 48px;
+                            height: 23px;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                    .box-1{
+                        i{
+                            width: 53px;
+                            height: 29px;
+                            background-repeat: no-repeat;
+                            background-position: -267px -233px;
+                        }
+                        span{
+                            left: 30px;
+                            opacity: 1;
+                        }
+                    }
+                    .box-2{
+                        i{  
+                            width: 48px;
+                            background-repeat: no-repeat;
+                            background-position: -170px -196px;
+                        }
+                    }
+                    .box-3{
+                        i{
+                            width: 26px;
+                            background-repeat: no-repeat;
+                            background-position: -275px -204px;
+                        }
+                    }
+                    .box-4{
+                        i{
+                            width: 40px;
+                            background-repeat: no-repeat;
+                            background-position: -299px -204px;
+                        }
+                    }
+                    .box-5{
+                        i{
+                            width: 24px;
+                            background-repeat: no-repeat;
+                            background-position: -339px -204px;
+                        }
+                    }
+                    .box-6{
+                        i{
+                            width: 12px;
+                            background-repeat: no-repeat;
+                            background-position: -223px -204px;
+                        }
+                    }
+                    .box-7{
+                        i{
+                            width: 12px;
+                            background-repeat: no-repeat;
+                            background-position: -223px -233px;
+                        }
+                    }
+                    .box-8{
+                        i{
+                            width: 48px;
+                            height: 23px;
+                            background-repeat: no-repeat;
+                            background-position: -170px -173px;
+                        }
+                    }
+                }
+            }
+        }
+        // 右部分盒子
+        .right-box{
+            float: left;
+            width: 980px;
+            
+            .liebiao{
+                position: relative;
+                width: 900px;
+                height: 576px;
+                overflow: hidden;
+                margin-top: 115px;
+                margin-left: 85px;
+                .shishen-box{
+                    display: block;
+                    width: 900px;
+                    height: 576px;
+                    .ss{
+                        position: relative;
+                        float: left;
+                        width: 148px;
+                        height: 163px;
+                        margin-bottom: 30px;
+                        .shishen-img{
+                            display: block;
+                            margin: 0 auto;
+                            width: 120px;
+                            height: 120px;
+                            position: relative;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .shishen-boder{
+                                background: url(../images/Scripture/box-jingling.png);
+                                background-position: -103px 0px;
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                width: 100%;
+                                height: 100%;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                        .shishen-name{
+                            display: block;
+                            color: #000;
+                            font-size: 14px;
+                            line-height: 40px;
+                            text-align: center;
+                        }
+                        .shishen-zhezhao{
+                            display: none;
+                            position: absolute;
+                            z-index: 2;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(255,255,255,.8);
+                            i{
+                                position: absolute;
+                                left: 50%;
+                                margin-left: -22px;
+                                top: 36px;
+                                display: block;
+                                width: 45px;
+                                height: 53px;
+                                background: url(../images/Scripture/box-jingling.png);
+                                background-repeat: no-repeat;
+                                background-position: -170px -120px;
+                            }
+                        }
                     }
                 }
             }
