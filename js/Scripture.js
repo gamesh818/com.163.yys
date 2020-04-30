@@ -1,8 +1,6 @@
 // 一旦滚轮下滑 顶部导航更换样式
 
 // 官方渠道被触碰时 下拉列表出现
-
-
 $(document).on('scroll',function(){
     let num= $(this).scrollTop()
     console.log(num)
@@ -14,17 +12,47 @@ $(document).on('scroll',function(){
         $('.guanfang').on('mouseenter',function(){
             $('.guanfang-select').slideDown()
         })
-        
+        $('.main-top-nav').css({
+            "background": "rgba(255, 255, 255, 0.9)"
+        })
         $('.main-top-nav').on('mouseleave',function(){
             $('.guanfang-select').slideUp()
         })
+        $('.guanfang').off()
+        $('.main-top-nav').off()
+        $('.guanfang').on('mouseenter',function(){
+            $('.guanfang-select').slideDown()
+            $('.main-top-nav').css({
+                "background": "rgba(255, 255, 255, 0.9)"
+            })
+            $('.one-nav >li >a').css({
+                "color": "#333"
+            })
+            $('.one-nav >li >span').css({
+                "backgroundPosition": "-158px -71px"
+            })
+        })
         
+        $('.main-top-nav').on('mouseleave',function(){
+            $('.guanfang-select').slideUp()
+
+            $('.one-nav >li >a').css({
+                "color": "#fff"
+            })
+            $('.one-nav >li >span').css({
+                "backgroundPosition": "-173px -71px"
+            })
+        })
     }else{
         $('.main-top-nav').removeClass('xiala')
         $('.one-nav').fadeIn(500)
         $('.two-nav').fadeOut(500)
         $('.main-left-logo').fadeOut(500)
-
+        $('.main-top-nav').css({
+            "background": "transparent"
+        })
+        $('.guanfang').off()
+        $('.main-top-nav').off()
         $('.guanfang').on('mouseenter',function(){
             $('.guanfang-select').slideDown()
             $('.main-top-nav').css({
@@ -54,7 +82,31 @@ $(document).on('scroll',function(){
     }
 })
 
+$('.guanfang').on('mouseenter',function(){
+    $('.guanfang-select').slideDown()
+    $('.main-top-nav').css({
+        "background": "rgba(255, 255, 255, 0.9)"
+    })
+    $('.one-nav >li >a').css({
+        "color": "#333"
+    })
+    $('.one-nav >li >span').css({
+        "backgroundPosition": "-158px -71px"
+    })
+})
 
+$('.main-top-nav').on('mouseleave',function(){
+    $('.guanfang-select').slideUp()
+    $('.main-top-nav').css({
+        "background": "transparent"
+    })
+    $('.one-nav >li >a').css({
+        "color": "#fff"
+    })
+    $('.one-nav >li >span').css({
+        "backgroundPosition": "-173px -71px"
+    })
+})
 
 
 
@@ -214,4 +266,34 @@ $('.box-7').on('click',function(){
 $('.box-8').on('click',function(){
     $('.ss').hide()
     $('.gua').show()
+})
+
+
+
+// 角色按钮被触碰时 遮罩层出现
+$('.ss').on('mouseenter',function(){
+    $(this).find($('.shishen-zhezhao')).fadeIn(300)
+})
+$('.ss').on('mouseleave',function(){
+    $(this).find($('.shishen-zhezhao')).fadeOut(300)
+})
+
+
+
+// 点击二维码箭头 伸出二维码盒子 如果在伸出状态 隐藏盒子
+let erwei=true
+$('.erwei-centent>a').on('click',function(){
+   $(this).toggleClass('one')
+   $(this).toggleClass('two')
+   if(erwei){
+       erwei=false
+       $('.right-erwei').animate({
+           "right":-20
+       },500)
+   }else{
+    erwei=true
+    $('.right-erwei').animate({
+        "right":-310
+    },500)
+   }
 })

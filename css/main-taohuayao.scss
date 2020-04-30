@@ -1,0 +1,913 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+// 顶部导航 
+.top-nav{
+    position: relative;
+    width: 100%;
+    height: 54px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #fff;
+    z-index: 9999;
+    // 游戏全目录下滑列表
+    .top-nav-select{
+        display:none;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        height: 500px;
+        z-index: 10;
+        border-top: 1px solid #ccc;
+        .top-nav-select-container{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1260px; 
+            height: 100%;
+            overflow: hidden;
+        }
+        // 下滑列表上部分（标题）
+        .select-top{
+            float: left;
+            overflow: hidden;
+            li{
+                float: left;
+                b{
+                    display: block;
+                    width: 100%;
+                    height: 39px;
+                    background-color: #f7f7f8;
+                    line-height: 39px;
+                    font-size: 14px;
+                    text-indent: 20px;
+                    color: #bc2e2e;
+                }
+            }
+           &>li:nth-child(1){
+            width: 299px;
+           }
+           &>li:nth-child(2){
+            width: 828px;
+            border-left: 1px solid #eee;
+            border-right: 1px solid #eee;
+           }
+           &>li:nth-child(3){
+            float: right;
+            width: 131px;
+           }
+        }
+        // 下滑列表下部分 （内容）
+        .select-bottom{
+            float: left;
+            overflow: hidden;
+            height: 445px;
+            width: 100%;
+            li{
+                position: relative;
+                float: left;
+                height: 100%;
+                padding: 10px 0 0 14px;
+                background-color: #fdfefe;
+                box-sizing: border-box;
+                line-height: 24px;
+               &>a,.li-box>a{
+                    margin-left: 6px;
+                    display: block;
+                    &:hover{
+                        color: #bc2e2e;
+                    }
+                }
+                p{
+                    padding: 0;
+                    margin: 0;
+                    margin-left: 6px;
+                    line-height: 24px;
+                    margin-bottom: 4px;
+                    font-weight: 700;
+                    color: #626262;
+                }
+            }
+            &>li:nth-child(1){
+                width: 135px;
+            }
+            &>li:nth-child(2){
+                display: inline-block;
+                width: 165px;
+                border-right: 1px solid #eee;
+                a{
+                    width: 105px;
+                }
+            }
+            &>li:nth-child(3){
+                width: 148px; 
+            }
+            &>li:nth-child(4){
+                width: 682px;
+                border-right: 1px solid #eee;
+                div{
+                    float: left;
+                    width: 133px;
+                }
+            }
+            &>li:nth-child(5){
+                width: 117px;
+            }
+        }
+    }
+    // 下拉框添加热点标签
+    .select-no1{
+        background: url(../images/index/index-jingling.png) no-repeat;
+        background-position: right -267px;
+    }
+    .select-new{
+        background: url(../images/index/index-jingling.png) no-repeat;
+        background-position: right -206px;
+    }
+    .select-hot{
+        background: url(../images/index/index-jingling.png) no-repeat;
+        background-position: right -144px;
+    }
+    // .热门手游按钮
+    #select-but{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px!important;
+        height: 95px;
+        background-color: #bc2e2e;
+        color: #ffffff;
+        opacity: 1;
+        padding: 7px 0 0 10px;
+        &:hover{
+            opacity: 0.7;
+        }
+        width: 20px!important;
+        line-height: 1.3!important;
+        color: #fff;
+    }
+
+    // 顶部导航左边按钮
+    .top-nav-left{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 179px;
+        height: 54px;
+        background-color: #cf1132;
+        a{
+           display: block;
+            font-size: 12px;
+            line-height: 54px;
+            text-align: center;
+            color: #fff;
+        }
+        i{
+            display: inline-block;
+            width: 25px;
+            height: 11px;
+            background: url(../images/index/index-jingling.png) -90px -306px no-repeat;
+            margin-right: 8px;
+        }
+    }
+    // 顶部导航中间logo
+    .top-nav-cent{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 133px;
+        height: 54px;
+        a{
+            display: block;
+            width: 133px;
+            height: 44px;
+            margin-left: -30px;
+            margin-top: 5px;
+        }
+    }
+    // 顶部导航左边文字轮播
+    .top-nav-right{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 54px;
+        border-left: 1px solid#dadada;
+        overflow: hidden;
+        .swiper-slide{
+            width: 138px;
+            height: 52px;
+            text-align: center;
+            line-height: 52px;
+            box-sizing: border-box;
+            &:hover{
+                border-bottom: 2px solid red;
+                color: red;
+                background-color: rgba(0, 0, 0, 0.1);
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+.main{
+    position: relative;
+        // 二级导航
+        .main-top-nav{
+            position: absolute;
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: 100px;
+            min-width: 1280px;
+            transition: all 0.5s;
+            z-index: 20;
+            .one-nav{
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding-top: 35px;
+                margin-right: 15px;
+                float: right;
+                li{
+                    position: relative;
+                    float: left;
+                    width: 118px;
+                    height: 65px;
+                    a{
+                        display: block;
+                        width: 100px;
+                        height: 100%;
+                        text-align: center;
+                        line-height: 35px;
+                        color: #fff;
+                        font-size: 16px;
+                        transition: all 0.5s;
+                        &:hover{
+                            color: #cc4336;
+                        }
+                    }
+                    .xiexian{
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 8px;
+                        width: 15px;
+                        height: 24px;
+                        background: url(../images/Scripture/shishen-jingling.png);
+                        background-repeat: no-repeat;
+                        background-position: -173px -71px;
+                    }
+                }
+            }
+            .two-nav{
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding-top: 35px;
+                margin-right: 15px;
+                float: right;
+                display: none;
+                li{
+                    position: relative;
+                    float: left;
+                    width: 114px;
+                    height: 65px;
+                    a{
+                        display: block;
+                        width: 100px;
+                        height: 100%;
+                        text-align: center;
+                        line-height: 35px;
+                        color: #333;
+                        font-size: 16px;
+                    }
+                    .xiexian{
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 8px;
+                        width: 15px;
+                        height: 24px;
+                        background: url(../images/Scripture/shishen-jingling.png);
+                        background-repeat: no-repeat;
+                        background-position: -158px -71px;
+                    }
+                }
+            }
+            .main-left-logo{
+                float: left;
+                padding-left: 15px;
+                padding-top: 13px;
+                display: none;
+                >p{
+                    float: left;
+                    width: 16px;
+                    line-height: 16px;
+                    font-size: 16px;
+                    color: #000;
+                    margin-top: 3px;
+                    margin-right: 10px;
+                }
+                img{
+                    float: left;
+                    width: 74px;
+                    height: 74px;
+                    margin-right: 15px;
+                }
+                a{
+                    float: left;
+                    height: 72px;
+                    padding-left: 15px;
+                    border-left: 1px solid #ccc;
+                    span{
+                        float: left;
+                        width: 73px;
+                        height: 73px;
+                        margin-right: 14px;
+                        background: url(../images/Scripture/logo-tu.webp) 0 0 no-repeat;
+                    }
+                    .title{
+                        float: left;
+                        padding-top: 2px;
+                        
+                        h3{
+                            color: #333;
+                            font-size: 32px;
+                            padding-top: 10px;
+                        }
+                        p{
+                            color: #333;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .guanfang-select{
+                position: absolute;
+                top: 100px;
+                width: 100%;
+                height: 200px;
+                background: #e1ebeb;
+                overflow: hidden;
+                right: 0;
+                display: none;
+                .select-bigbox{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding-top: 33px;
+                    width: 100%;
+                    .QQ{
+                        position: relative;
+                        float: right;
+                        width: 320px;
+                        height: 104px;
+                        padding-left: 50px;
+                        border-left: 1px solid #c8d0d0;
+                        ul{
+                            margin-bottom: 10px;
+                            li{
+                                float: left;
+                                color: #666;
+                                font-size: 12px;
+                                width: 153px;
+                                line-height: 25px;
+                            }
+                        }
+                        p{
+                            position: absolute;
+                            bottom: -50px;
+                            left: 50%;
+                            transform: translateX(-70%);
+                            display: block;
+                            color: #666;
+                            font-size: 16px;
+                            text-align: center;
+                        }
+                    }
+                    .select-box{
+                        float: right;
+                        width: 222px;
+                        height: 104px;
+                        position: relative;
+                        border-left: 1px solid #c8d0d0;
+                        img{
+                            display: block;
+                            width: 84px;
+                            height: 84px;
+                            border: 2px solid #666;
+                            border-radius: 5px;
+                            margin: auto;
+                            margin-top: -10px;
+                        }
+                        p{
+                            color: #666;
+                            font-size: 16px;
+                            text-align: center;
+                            display: block;
+                            position: absolute;
+                            width: 100%;
+                            bottom: 0;
+                            left: 0;
+                        }
+                        &>p:last-child{
+                            display: none;
+                        }
+                    }
+                    &>a{
+                        position: relative;
+                        top: 0;
+                        float: right;
+                        width: 215px;
+                        height: 104px;
+                        border-left: 1px solid #c8d0d0;
+                        transition: all 0.5s;
+                        &:hover{
+                            top: -15px;
+                           
+                        }
+                    }
+                    .select-tieba{
+                        display: block;
+                        &>span:first-child{
+                            display: block;
+                            margin: 0 auto;
+                            background: url(../images/Scripture/shishen-jingling.png);
+                            background-position: -77px -71px;
+                            width: 81px;
+                            height: 68px;
+                            background-repeat: no-repeat;
+                        }
+                        &>span:last-child{
+                            color: #666;
+                            font-size: 16px;
+                            text-align: center;
+                            display: block;
+                            position: absolute;
+                            width: 100%;
+                            bottom: 0;
+                            left: 0;
+                        }
+                    }
+                    .select-luntan{
+                        display: block;
+                        &>span:first-child{
+                            display: block;
+                            margin: 0 auto;
+                            background: url(../images/Scripture/shishen-jingling.png);
+                            background-position: -136px 0px;
+                            width: 81px;
+                            height: 68px;
+                            background-repeat: no-repeat;
+                        }
+                        &>span:last-child{
+                            color: #666;
+                            font-size: 16px;
+                            text-align: center;
+                            display: block;
+                            position: absolute;
+                            width: 100%;
+                            bottom: 0;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        // 搜索框
+        .sou{
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            margin-left: -600px;
+            z-index: 30;
+            width: 190px;
+            height: 24px;
+            border: 1px solid #000;
+            input{
+                border: 0;
+                display: block;
+                float: left;
+                width: 144px;
+                height: 24px;
+                line-height: 24px;
+                text-indent: 10px;
+                color: #70a3b3;
+                font: 14px;
+                background: #495573;
+            }
+            a{
+                float: left;
+                width: 46px;
+                height: 100%;
+                background: #366f95;
+                color: #7dc9d7;
+                font-size: 14px;
+                text-align: center;
+                line-height: 24px;
+            }
+        }
+        // 上部分盒子
+        .shishen-top{
+            position: relative;
+            width: 100%;
+            height: 694px;
+            background: url(../images/main-taohuayao/shishen-main-background.jpg) center center no-repeat;
+            z-index: 10;
+            // 左侧阴影
+            .dark{
+                position: absolute;
+                width: 562px;
+                height: 100%;
+                background: url(../images/main-taohuayao/heimu.png) repeat;
+                left: 50%;
+                margin-left: -960px;
+            }
+            // 阴阳师logo
+            .yin-logo{
+                position: absolute;
+                z-index: 30;
+                width: 100px;
+                height: 342px;
+                left: 50px;
+                top: 38px;
+                span{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background: url(../images/main-taohuayao/logo.webp) 0 0 no-repeat;
+                }
+            }
+            // 式神logo
+            .shishen-logo{
+                background: url(../images/main-taohuayao/shishen-main-jingling.png) no-repeat;
+                background-position: 0px 0px;
+                position: absolute;
+                left: 50%;
+                margin-left: -600px;
+                top: 110px;
+                width: 173px;
+                height: 458px;
+            }
+            .centent{
+                position: absolute;
+                width: 820px;
+                height: 100%;
+                left: 50%;
+                margin-left: -295px;
+                // 左侧提示框
+                .centent-left{
+                    background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                    background-position: -1078px -458px;
+                    position: absolute;
+                    top: 165px;
+                    left: 0;
+                    width: 54px;
+                    height: 297px;
+                    z-index: 10;
+                    background-repeat: no-repeat;
+                    .centent-left-top{
+                        background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                        background-position: -1318px -458px;
+                        position: absolute;
+                        width: 80px;
+                        height: 94px;
+                        left: -12px;
+                        top: -26px;
+                        background-repeat: no-repeat;
+                    }
+                    span{
+                        position: absolute;
+                        font-size: 30px;
+                        font-weight: 700;
+                        color: #333;
+                        line-height: 36px;
+                        text-align: center;
+                        width: 43px;
+                        height: 158px;
+                        top: 65px;
+                        left: 5px;
+                    }
+                    .sr{
+                        background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                        background-position: -1212px -703px;
+                        position: absolute;
+                        bottom: 20px;
+                        left: 50%;
+                        width: 80px;
+                        margin-left: -42px;
+                        height: 50px;
+                    }
+                }
+                // 式神形象
+                .shishen-xingxiang{
+                    position: absolute;
+                    left: -20px;
+                    bottom: 0;
+                    width: 830px;
+                    height: 696px;
+                    z-index: 1;
+                    &>div{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+                    .shishen-chushi{
+                        display: block;
+                    }
+                    .shishen-juexing{
+                        display: none;
+                    }
+                    .shishen-pifu{
+                        display: none;
+                        &>div{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                        .pifu1{
+                            display: none;
+                        }
+                        .pifu2{
+                            display: none;
+                        }
+                        .pifu-name{
+                            position: absolute;
+                            color: #453121;
+                            font-size: 19px;
+                            z-index: 10;
+                            word-break: break-all;
+                            top: 210px;
+                            right: 50px;
+                            padding: 2px 1px;
+                            background: #6c4838;
+                            border: 0;
+                            div{
+                                width: 22px;
+                                padding: 12px 5px;
+                                background: #faf9c9;
+                                line-height: 24px;
+                                text-align: center;
+                                border: 1px solid #3c1e12;
+                            }
+                        }
+                    }
+                }
+                // 切换tab
+                .qiehuan-tab{
+                    position: absolute;
+                    left: 222px;
+                    bottom: 103px;
+                    width: 298px;
+                    height: 60px;
+                    background: url(../images/main-taohuayao/qiehaun-tab-background.png) no-repeat 50% 50%;
+                    z-index: 5;
+                    a{
+                        width: 120px;
+                        height: 124px;
+                        position: absolute;
+                        i{
+                            position: absolute;
+                            width: 48px;
+                            height: 29px;
+                            left: 36px;
+                            top: -7px;
+                            background: url(../images/main-taohuayao/top-tab-jiao.png) no-repeat center top;
+                            display: none;
+                        }
+                    }
+                    .chushi{
+                        left: -50px;
+                        top: -40px;
+                        background: url(../images/main-taohuayao/chushi2.png) no-repeat center 50%;
+                        i{
+                            display: block;
+                        }
+                    }
+                    .chushi-a{
+                        background: url(../images/main-taohuayao/chushi1.png) no-repeat center 50%
+                    }
+                    .juexing{
+                        left: 97px;
+                        top: -10px;
+                        background: url(../images/main-taohuayao/juexing1.png) no-repeat center 50%;
+                        cursor: pointer;
+                    }
+                    .juexing-a{
+                        background: url(../images/main-taohuayao/juexing2.png) no-repeat center 50%;
+                    }
+                    .pifu{
+                        background: url(../images/main-taohuayao/pifu1.png) no-repeat center 50%;
+                        right: -70px;
+                        top: -40px;
+                    }
+                    .pifu-a{
+                        background: url(../images/main-taohuayao/pifu2.png) no-repeat center 50%;
+                    }
+                }
+                .ziyuan-xiazai{
+                    position: absolute;
+                    width: 34px;
+                    height: 132px;
+                    background: url(../images/main-taohuayao/top-ziyaunxiazai.png) repeat;
+                    left: 35%;
+                    margin-left: -280px;
+                    top: 508px;
+                    z-index: 102;
+                }
+            }
+        }
+        // 版心
+        .container{
+            width: 1200px;
+            position: relative;
+            margin: 0 auto;
+        }
+        // 01/传记部分
+        .main-box1{
+            width: 100%;
+            padding: 70px 0;
+            h2{
+                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                background-position: -1278px -755px;
+                position: absolute;
+                width: 192px;
+                height: 86px;
+                top: -8px;
+                left: 0;
+                background-repeat: no-repeat;
+            }
+            .box1-centent{
+                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                background-position: 0px -458px;
+                position: relative;
+                width: 1078px;
+                height: 427px;
+                margin-left: 114px;
+                background-repeat: no-repeat;
+                .box1-left{
+                    position: absolute;
+                    width: 122px;
+                    height: 152px;
+                    left: 250px;
+                    top: 32px;
+                    a{
+                        background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                        background-position: -1132px -458px;
+                        float: left;
+                        width: 47px;
+                        height: 151px;
+                        .cv{
+                            display: block;
+                            width: 19px;
+                            margin: 0 auto;
+                            color: #fff;
+                            font-size: 14px;
+                            padding-top: 16px;
+                        }
+                        .name{
+                            display: block;
+                            width: 13px;
+                            margin: 0 auto;
+                            color: #fff;
+                            font-size: 14px;
+                            line-height: 14px;
+                            max-height: 75px;
+                            overflow: hidden;
+                        }
+                        i{
+                            background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                            background-position: -534px -428px;
+                            display: block;
+                            width: 25px;
+                            height: 25px;
+                            margin: 5px auto;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+                .box1-right{
+                    float: right;
+                    // 右标题
+                    h3{
+                        float: right;
+                        width: 86px;
+                        height: 369px;
+                        border-left: 1px solid #000;
+                        margin-top: 33px;
+                        em{
+                            background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                            background-position: -445px -428px;
+                            display: block;
+                            width: 45px;
+                            height: 27px;
+                            margin: 0 auto;
+                            margin-bottom: 20px;
+                            background-repeat: no-repeat;
+                        }
+                        span{
+                            display: block;
+                            width: 18px;
+                            margin: 0 auto;
+                            font-size: 16px;
+                            color: #bb391c;
+                            line-height: 16px;
+                            margin-bottom: 30px;
+                        }
+                        a{
+                            display: block;
+                            width: 18px;
+                            margin: 0 auto;
+                            font-size: 16px;
+                            color: #bb391c;
+                            line-height: 16px;
+                            text-align: center;
+                            color: #000;
+                            margin-top: 15px;
+                            font-weight: 400;
+                        }
+                        .on{
+                            color: #74a2bd;
+                            font-weight: 700;
+                        }
+                    }
+                    .box1-text{
+                        float: right;
+                        width: 577px;
+                        height: 405px;
+                        position: relative;
+                        overflow: hidden;
+                        overflow-x: auto;
+                        p{
+                            float: right;
+                            width: 52px;
+                            height: 368px;
+                            margin-top: 30px;
+                            border-left: 1px dashed #d7d7d7;
+                            span{
+                                display: block;
+                                width: 15px;
+                                word-wrap: break-word;
+                                color: #2e2114;
+                                font-size: 14px;
+                                margin: 0 auto;
+                                line-height: 14px;
+                            }
+                        }
+                        .text1{
+                            display: block;
+                        }
+                        .text2{
+                            display: none;
+                        }
+                        .text3{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        // 02/情报部分
+        .main-box2{
+            width: 100%;
+            background: #f1efe9;
+            padding-top: 90px;
+            padding-bottom: 48px;
+            h3{
+                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                background-position: -1078px -755px;
+                top: -25px;
+                width: 200px;
+                height: 90px;
+                background-repeat: no-repeat;
+            }
+            .box2-centent{
+                position: relative;
+                width: 1170px;
+                height: 585px;
+                background: url(../images/main-taohuayao/box2-centent-background.png) 0 0 no-repeat;
+                .box2-title{
+                    width: 448px;
+                    height: 160px;
+                    position: absolute;
+                    right: 157px;
+                    top: -64px;
+                }
+                .box2-shuju{
+                    padding-top: 104px;
+                    margin-left: 340px;
+                    margin-bottom: 25px;
+                    li{
+                        
+                    }
+                }
+            }
+        }
+}

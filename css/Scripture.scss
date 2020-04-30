@@ -26,7 +26,30 @@ html,body{
         top: -10px;
     }
 }
-
+// 加载提示 箭头上下跳动动画
+@keyframes tishi{
+    0%{
+        margin: 0 auto
+    }
+    50%{
+        margin: 10px auto
+    }
+    100%{
+        margin: 0 auto
+    }
+}
+// 激光扫描动画
+@keyframes jiguang{
+    0%{
+        top:0px
+    }
+    50%{
+        top:100px
+    }
+    100%{
+        top:0px
+    }
+}
 // 顶部导航 
 .top-nav{
     position: relative;
@@ -242,7 +265,7 @@ html,body{
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 892px;
+    // height: 892px;
     background: url(../images/Scripture/main-background.jpg) bottom center no-repeat;
     .xiala{
         display:fixed;
@@ -651,12 +674,11 @@ html,body{
         .right-box{
             float: left;
             width: 980px;
-            
             .liebiao{
                 position: relative;
                 width: 900px;
                 height: 576px;
-                overflow: hidden;
+                // overflow: hidden;
                 margin-top: 115px;
                 margin-left: 85px;
                 .shishen-box{
@@ -718,6 +740,188 @@ html,body{
                                 background-repeat: no-repeat;
                                 background-position: -170px -120px;
                             }
+                        }
+                    }
+                }
+                .gundong-tishi{
+                    width: 130px;
+                    margin: 26px auto;
+                    margin-bottom: 35px;
+                    p{
+                        color: #bd9f57;
+                        font-size: 14px;
+                        text-align: center;
+                        line-height: 28px;
+                    }
+                    em{
+                        display: block;
+                        width: 20px;
+                        height: 16px;
+                        margin: 0 auto;
+                        background: url(../images/Scripture/box-jingling.png);
+                        background-position: -134px -225px;
+                        animation: tishi 0.5s infinite linear;
+                    }
+                }
+            }
+             // 主页底部
+            .main-footer{
+                position: relative;
+                height: 100px;
+                width: 100%;
+                margin-top: 120px;
+        .main-footer-top{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10;
+            // width: 435px;
+            text-align: center;
+            font-size: 12px;
+            ul{
+                overflow: hidden;
+            }
+            li{
+                float: left;
+                height: 20px;
+                line-height: 20px;
+                font-size: 12px;
+                margin-right: 30px;
+                a{
+                    color: #333;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+        .main-footer-bottom{
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 960px;
+            height: 179px;
+            .footer-bottom-one{
+                &>a{
+                    display: inline-block;
+                    font-size: 10px;
+                }
+                span{
+                    position: relative;
+                    // margin-top: 5px;
+                    height: 50px;
+                    display: inline-block;
+                    line-height: 2;
+                    p{
+                        color: #333;
+                    }
+                    a{
+                        color: #333;
+                        &:hover{
+                            text-decoration: solid;
+                        }
+                    }
+                    div{
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        display: inline-block;
+                        height: 26px;
+                        background-color: #610000;
+                        a{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .footer-bottom-two{
+                line-height: 2.5;
+                p{
+                    color: #333;
+                }
+            }
+        }
+            }
+        }
+        .right-erwei{
+            position: absolute;
+            width: 350px;
+            height: 123px;
+            top: 327px;
+            right: -310px;
+            overflow: hidden;
+            z-index: 9;
+            .erwei-box{
+                width: 100%;
+                height: 100%;
+                background: #fccc00;
+                border-radius: 10px;
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+                box-shadow: 0 0 7px 4px #feeb00;
+                .erwei-centent{
+                    width: 100%;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    .one{
+                            background: url(../images/Scripture/box-jingling.png) no-repeat;
+                            background-position: -103px -120px;
+                            width: 22px;
+                            height: 105px;
+                            float: left;
+                            background-repeat: no-repeat;
+                            margin-right: 8px;
+                    }
+                    .two{
+                         background: url(../images/Scripture/box-jingling.png);
+                         background-position: -348px -233px;
+                         margin-right: 10px;
+                         float: left;
+                         width: 22px;
+                         height: 23px;
+                         background-repeat: no-repeat;
+                    }
+                    .erwei{
+                        position: relative;
+                        float: left;
+                        width: 91px;
+                        height: 91px;
+                        background: #fff;
+                        padding: 8px;
+                        border-radius: 5px;
+                        position: relative;
+                        img{
+                            width: 100%;
+                        }
+                        .jiguang{
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            animation: jiguang 3s infinite linear;
+                        }
+                    }
+                    .xiazai{
+                        float: left;
+                        width: 175px;
+                        height: 120px;
+                        margin-left: 6px;
+                        &>a:nth-child(1){
+                            background: url(../images/Scripture/box-jingling.png) no-repeat;
+                            background-position: -223px -153px;
+                            display: block;
+                            margin-bottom: 5px;
+                            width: 171px;
+                            height: 51px;
+                        }
+                        &>a:nth-child(2){
+                            background: url(../images/Scripture/box-jingling.png) no-repeat;
+                            background-position: -223px -51px;
+                            display: block;
+                            margin-bottom: 5px;
+                            width: 171px;
+                            height: 51px;
                         }
                     }
                 }

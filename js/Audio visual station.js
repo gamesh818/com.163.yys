@@ -1,7 +1,7 @@
 
 
-
-// 鼠标移入按钮 对应图片显示 隐藏
+$(function(){
+ // 鼠标移入按钮 对应图片显示 隐藏
 let num = 0
 $('.shiting-box >a').on('mouseenter',function(){
     // 显示鼠标移入的按钮 boder 和 隐藏箭头
@@ -119,6 +119,8 @@ go()
 
 
 // 播放音乐
+
+
 $('.yinyue').on('click',function(){
     music()
 })
@@ -138,3 +140,7 @@ function music(){
     }
     
 }
+// 自动播放
+// $('#music')[0].play();
+$('.yinyue').delay(1000).trigger('click')
+});
