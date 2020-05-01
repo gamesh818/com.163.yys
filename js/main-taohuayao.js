@@ -169,3 +169,37 @@ $('.zhuanji-3').on('click',function(){
     $('.box1-text>p').hide()
     $('.text3').fadeIn(500)
 })
+
+
+// 第六部分 轮播图
+let num = parseInt($('.box6-lun-minbox>ul').css('left'))
+// 右按钮
+$('.box6-right').on('click',function(){
+    num=num-1008
+    if(num <= -21168){
+        $('.box6-right').addClass('on')
+        num = parseInt($('.box6-lun-minbox>ul').css('left'))
+    }
+    $('.box6-lun-minbox>ul').animate({
+        "left":num,
+    })
+    
+    if(num<0 && num> -21168){
+        $('.box6-left').removeClass('on')
+    }
+})
+// 左按钮
+$('.box6-left').on('click',function(){
+    num=num+1008
+    if(num >= 1008 ){
+        $('.box6-left').addClass('on')
+        num = parseInt($('.box6-lun-minbox>ul').css('left'))
+    }
+    $('.box6-lun-minbox>ul').animate({
+        "left":num,
+    })
+    
+    if(num>=-21168 && num<0){
+        $('.box6-right').removeClass('on')
+    }
+})

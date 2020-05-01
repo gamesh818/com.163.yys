@@ -5,7 +5,16 @@ html,body{
     padding: 0;
 }
 
-
+.clearfix:before ,.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+   *zoom: 1;  
+}
 // 顶部导航 
 .top-nav{
     position: relative;
@@ -880,14 +889,17 @@ html,body{
             background: #f1efe9;
             padding-top: 90px;
             padding-bottom: 48px;
-            h3{
-                background: url(../images/main-taohuayao/shishen-main-jingling.png);
-                background-position: -1078px -755px;
-                top: -25px;
-                width: 200px;
-                height: 90px;
-                background-repeat: no-repeat;
-            }
+            
+            .container{
+                &>h3{
+                    background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                    background-position: -1078px -755px;
+                    top: -25px;
+                    width: 200px;
+                    height: 90px;
+                    background-repeat: no-repeat;
+                }
+            }   
             .box2-centent{
                 position: relative;
                 width: 1170px;
@@ -899,15 +911,801 @@ html,body{
                     position: absolute;
                     right: 157px;
                     top: -64px;
+                    .title1{
+                        float: left;
+                        margin-right: 222px;
+                    }
+                    .title2{
+                        float: left;
+                    }
+                    &>div{
+                        h3{
+                            color: #000;
+                            font-size: 30px;
+                            font-weight: 400;
+                            text-align: center;
+                        }
+                        div{
+                            padding: 10px;
+                            background: #fff;
+                            border: 1px solid #333;
+                        }
+                    }
+                   
                 }
                 .box2-shuju{
                     padding-top: 104px;
                     margin-left: 340px;
                     margin-bottom: 25px;
                     li{
-                        
+                        float: left;
+                    }
+                    .shuju1{
+                        div{
+                            width: 135px;
+                            height: 38px;
+                            margin-right: 55px;
+                            border-bottom: 1px dashed #999;
+                            em{
+                                float: left;
+                                width: 16px;
+                                height: 16px;
+                                margin-right: 23px;
+                                margin-top: 12px;
+                            }
+                            span{
+                                float: left;
+                                line-height: 38px;
+                                color: #000;
+                                font-size: 14px;
+                            }
+                        }
+                        .shuju1-1{
+                            em{
+                                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                                background-position: -770px -428px;
+                                width: 17px;
+                                height: 14px;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                        .shuju1-2{
+                            em{
+                                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                                background-position: -685px -428px;
+                                width: 20px;
+                                height: 18px;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                        .shuju1-3{
+                            em{
+                                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                                background-position: -664px -428px;
+                                width: 21px;
+                                height: 20px;
+                                margin-top: 9px;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                        .shuju1-4{
+                            em{
+                                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                                background-position: -737px -428px;
+                                width: 18px;
+                                height: 15px;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                        .shuju1-5{
+                            em{
+                                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                                background-position: -705px -428px;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                        .shuju1-6{
+                            em{
+                                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                                background-position: -705px -428px;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                        .shuju1-7{
+                            em{
+                                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                                background-position: -755px -428px;
+                                width: 15px;
+                                height: 14px;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                        .shuju1-8{
+                            em{
+                                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                                background-position: -721px -428px;
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                    .shuju2{
+                        div{
+                            width: 206px;
+                            line-height: 38px;
+                            color: #000;
+                            font-size: 14px;
+                            text-align: center;
+                            padding-top: 8px;
+                            height: 30px;
+                            margin-right: 136px;
+                            border-bottom: 1px dashed #999;
+                        }
+                        .S{
+                            background: url(../images/main-taohuayao/shishen-main-jingling.png) no-repeat;
+                            background-position: -608px -428px;
+                        }
+                        .A{
+                            background: url(../images/main-taohuayao/shishen-main-jingling.png) no-repeat;
+                            background-position: -515px -428px;
+                        }
+                        .B{
+                            background: url(../images/main-taohuayao/shishen-main-jingling.png) no-repeat;
+                            background-position: -645px -428px;
+                        }
+                        .C{
+                            background: url(../images/main-taohuayao/shishen-main-jingling.png) no-repeat;
+                            background-position: -625px -428px;
+                        }
+                        .D{
+                            background: url(../images/main-taohuayao/shishen-main-jingling.png) no-repeat;
+                            background-position: -589px -428px;
+                        }
+                        .shuju2-left{
+                            width: 20px;
+                            height: 22px;
+                            background-repeat: no-repeat;
+                            float: left;
+                            margin-left: 50px;
+                            margin-right: 5px;
+                        }
+                        .shuju2-right{
+                            float: left;
+                            height: 22px;
+                            line-height: 22px;
+                        }
+                    }
+                    .shuju3{
+                        div{
+                            width: 204px;
+                            height: 30px;
+                            padding-top: 8px;
+                            border-bottom: 1px dashed #999;
+                        }
+                        .S{
+                            background: url(../images/main-taohuayao/shishen-main-jingling.png) no-repeat;
+                            background-position: -608px -428px;
+                        }
+                        .A{
+                            background: url(../images/main-taohuayao/shishen-main-jingling.png) no-repeat;
+                            background-position: -515px -428px;
+                        }
+                        .B{
+                            background: url(../images/main-taohuayao/shishen-main-jingling.png) no-repeat;
+                            background-position: -645px -428px;
+                        }
+                        .C{
+                            background: url(../images/main-taohuayao/shishen-main-jingling.png) no-repeat;
+                            background-position: -625px -428px;
+                        }
+                        .D{
+                            background: url(../images/main-taohuayao/shishen-main-jingling.png) no-repeat;
+                            background-position: -589px -428px;
+                        }
+                        .shuju3-left{
+                            width: 20px;
+                            height: 22px;
+                            background-repeat: no-repeat;
+                            float: left;
+                            margin-left: 50px;
+                            margin-right: 5px;
+                        }
+                        .shuju3-cent{
+                            width: 76px;
+                            float: left;
+                            height: 22px;
+                            line-height: 22px;
+                        }
+                        .shuju3-right{
+                            float: left;
+                            color: #ca0000;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .box2-jineng{
+                    margin-left: 365px;
+                    .jineng-left{
+                        margin-right: 105px;
+                        float: left;
+                        width: 400px;
+                        &>p{
+                            line-height: 18px;
+                            background: #f0eeeb;
+                            float: left;
+                            width: 15px;
+                            height: 85px;
+                            color: #333;
+                            font-size: 16px;
+                            padding: 10px 5px 0;
+                            margin-right: 16px;
+                        }
+                        ul{
+                            float: left;
+                            li{
+                                position: relative;
+                                width: 80px;
+                                height: 106px;
+                                float: left;
+                                margin-right: 10px;
+                                a{
+                                    width: 68px;
+                                    height: 68px;
+                                    display: block;
+                                    padding: 4px;
+                                    background: #fff;
+                                    border: 1px solid #dfdfdf;
+                                    border-radius: 100%;
+                                    img{
+                                        width: 68px;
+                                        height: 68px;
+                                    }
+                                }
+                                p{
+                                    color: #000;
+                                    font-size: 12px;
+                                    text-align: center;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .jineng-right{
+                        float: left;
+                        p{
+                            line-height: 18px;
+                            background: #f0eeeb;
+                            float: left;
+                            width: 15px;
+                            height: 85px;
+                            color: #333;
+                            font-size: 16px;
+                            padding: 10px 5px 0;
+                            margin-right: 16px;
+                        }
+                        ul{
+                            float: left;
+                            li{
+                                position: relative;
+                                height: 106px;
+                                float: left;
+                                margin-right: 10px;
+                                width: 240px;
+                                line-height: 26px;
+                                padding-top: 25px;
+                                font-size: 16px;
+                            }
+                        }
                     }
                 }
             }
         }
+        // 03/玩家攻略
+        .main-box3{
+            width: 100%;
+            padding: 60px 0 70px;
+            position: relative;
+            .container{
+                padding-top: 127px;
+                h2{
+                    background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                    background-position: -646px -885px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 282px;
+                    height: 86px;
+                    background-repeat: no-repeat;
+                }
+                .box3-centent{
+                    background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                    background-position: -173px 0px;
+                    margin-left: -104px;
+                    width: 1304px;
+                    height: 428px;
+                    background-repeat: no-repeat;
+                    .box3-minbox{
+                        padding-top: 25px;
+                        margin-left: 330px;
+                        height: 400px;
+                        position: relative;
+                        .box3-text{
+                            overflow: hidden;
+                            position: relative;
+                            width: 960px;
+                            ul{
+                                float: left;
+                                width: 960px;
+                                height: 352px;
+                                li{
+                                    margin: 0 50px;
+                                    float: left;
+                                    width: 380px;
+                                    height: 48px;
+                                    padding-top: 8px;
+                                    border-bottom: 1px dashed #c3c3c3;
+                                    a{
+                                        color: #000;
+                                        font-size: 14px;
+                                        line-height: 24px;
+                                    }
+                                    p{
+                                            color: #999;
+                                            font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        .box3-but{
+                            position: absolute;
+                            width: 130px;
+                            height: 42px;
+                            left: 50%;
+                            margin-left: -66px;
+                            bottom: -15px;
+                            a{
+                                float: left;
+                                width: 42px;
+                                height: 42px;
+                                background: #efece9;
+                                margin-left: 14px;
+                                em{
+                                    display: block;
+                                    width: 27px;
+                                    height: 12px;
+                                    margin-top: 13px;
+                                    margin-left: 8px;
+                                    background-repeat: no-repeat;
+                                }
+                            }
+                            &>a:first-child em{
+                                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                                background-position: -814px -428px;
+                            }
+                            &>a:last-child em{
+                                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                                background-position: -787px -428px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 04/精选玩家同人
+        .main-box4{
+            width: 100%;
+            padding: 63px 0;
+            background: #f1efe9;
+            .container{
+                &>a{
+                    position: absolute;
+                    top: 32px;
+                    right: 0;
+                    width: 90px;
+                    height: 25px;
+                    border: 2px solid #333;
+                    background: #fff;
+                    text-align: center;
+                    line-height: 25px;
+                    color: #333;
+                    font-size: 14px;
+                }
+            }
+            h2{
+                position: relative;
+                margin-bottom: 39px;
+                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                background-position: -278px -885px;
+                top: 0;
+                width: 368px;
+                height: 86px;
+                background-repeat: no-repeat;
+            }
+            ul{
+                width: 1267px;
+                li{
+                    float: left;
+                    width: 262px;
+                    margin-right: 51px;
+                    a{
+                        display: block;
+                        width: 262px;
+                        height: 147px;
+                        margin-bottom: 15px;
+                        overflow: hidden;
+                        img{
+                            transition: all .3s;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        &:hover img{
+                            transform: scale(1.2);
+                        }
+                        p{
+                            color: #2e2114;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+        }
+        // 05/玩家评论区
+        .main-box5{
+            padding: 63px 0;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            h2{
+                position: relative;
+                margin-bottom: 40px;
+                background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                background-position: -928px -885px;
+                left: 0;
+                top: 0;
+                width: 319px;
+                height: 86px;
+                background-repeat: no-repeat;
+            }
+            .box5-minbox{
+                width: 1030px;
+                margin: 0 auto;
+                position: relative;
+                .box5-text{
+                    .box5-1{
+                        margin-bottom: 15px;
+                        position: relative;
+                        background: #fff;
+                        font-size: 14px;
+                        .box5-pinglun{
+                            overflow-y: hidden;
+                            outline: none;
+                            height: auto;
+                            width: 100%;
+                            position: relative;
+                            background: #fff;
+                            font-size: 14px;
+                            .pinglun{
+                                padding: 30px 15px 0 60px;
+                                position: relative;
+                                z-index: 1;
+                                .pinglun-name{
+                                    position: relative;
+                                    margin-bottom: 15px;
+                                    font-size: 12px;
+                                    background: url(https://yys.res.netease.com/pc/zt/20161108171335/img/name_icon_0f040c0.png) 0 center no-repeat;
+                                    padding-left: 18px;
+                                    img{
+                                        position: absolute;
+                                        left: -50px;
+                                        width: 35px;
+                                        height: 35px;
+                                    }
+                                    .pinglun-name-text{
+                                        color: #ec7d7a;
+                                        font-size: 12px;
+                                    }
+                                    .pinglun-time{
+                                        color: #c9c9c9;
+                                        font-size: 12px;
+                                        position: absolute;
+                                        right: 0;
+                                        z-index: 2;
+                                        top: 0;
+                                    }
+                                }
+                                .pinglun-neirong{
+                                    padding-bottom: 10px;
+                                    word-wrap: break-word;
+                                    word-break: break-all;
+                                    background: #f8f8f8;
+                                    border: 1px solid #eaeaea;
+                                    border-radius: 5px;
+                                    padding: 18px 30px 8px;
+                                    p{
+                                        margin-bottom: 10px;
+                                        color: #888;
+                                        font-size: 14px;
+                                    }
+                                    .neirong-huifu,.neirong-zan{
+                                        float: right;
+                                        font-size: 16px;
+                                        color: #ec7d7a;
+                                        margin-top: 5px;
+                                        margin-left: 10px;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                        .box5-but{
+                            padding: 20px 0 5px;
+                            text-align: center;
+                            position: relative;
+                            background: #fff;
+                            font-size: 14px;
+                            a{
+                                display: inline-block;
+                                zoom: 1;
+                                width: 24px;
+                                height: 24px;
+                                font-size: 14px;
+                                margin-right: 3px;
+                                margin-left: 3px;
+                                text-align: center;
+                                line-height: 24px;
+                                color: #343434;
+                            }
+                            .on{
+                                color: #fff;
+                                background: #ff6d69;
+                            }
+                        }
+                    }
+                    .box5-dengru{
+                        text-align: right;
+                        display: block;
+                        padding: 0 15px 10px 0;
+                        a{
+                            color: #ff8b88;
+                            text-align: right;
+                            font-size: 16px;
+                        }
+                    }
+                    .box5-huifu{
+                        width: 1030px;
+                        font-size: 14px;
+                        position: relative;
+                        margin: 0 auto;
+                        .huifu-text{
+                            padding: 5px;
+                            background: #f8f8f8;
+                            border: 1px solid #dedede;
+                            padding-bottom: 30px;
+                            textarea{
+                                display: block;
+                                width: 100%;
+                                height: 106px;
+                                border: 0;
+                                outline: 0;
+                                resize: none;
+                                overflow: auto;
+                                background: 0 0;
+                            }
+                        }
+                        .huifu-but{
+                            position: relative;
+                            text-align: right;
+                            padding-top: 1px;
+                            .jishu{
+                                height: 28px;
+                                font: 700 18px/28px Georgia;
+                                color: #bbb;
+                                position: absolute;
+                                left: 15px;
+                                top: -30px;
+                            }
+                            label{
+                                font-size: 12px;
+                                cursor: pointer;
+                            }
+                            .fabu{
+                                color: #fff;
+                                background: #fdafad;
+                                cursor: default;
+                                border: 0;
+                                width: 160px;
+                                height: 40px;
+                                line-height: 40px;
+                                text-align: center;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+                .shu{
+                    position: absolute;
+                    width: 235px;
+                    height: 342px;
+                    background: url(../images/main-taohuayao/pinglun-shu.png) 0 0 no-repeat;
+                    bottom: 0;
+                    right: -268px;
+                }
+            }
+        }
+        // 06/更多式神
+        .main-box6{
+            padding-top: 63px;
+            height: 552px;
+            width: 100%;
+            background: #f1efe9 url(../images/main-taohuayao/main-box6-background.png) center bottom no-repeat;
+            .container{
+                height: 100%;
+                h2{
+                    position: relative;
+                    margin-bottom: 40px;
+                    background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                    background-position: 0px -885px;
+                    top: 0;
+                    left: 0;
+                    width: 278px;
+                    height: 86px;
+                    background-repeat: no-repeat;
+                }
+                &>a{
+                    position: absolute;
+                    top: 32px;
+                    right: 0;
+                    width: 90px;
+                    height: 25px;
+                    border: 2px solid #333;
+                    background: #fff;
+                    text-align: center;
+                    line-height: 25px;
+                    color: #333;
+                    font-size: 14px;
+                }
+                .box6-lun{
+                    margin-bottom: 30px;
+                    width: 1200px;
+                    position: relative;
+                    &>a{
+                        position: absolute;
+                        width: 46px;
+                        height: 92px;
+                        top: 16px;
+                    }
+                    .box6-left{
+                        background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                        background-position: -1410px -609px;
+                        left: 0;
+                        background-repeat: no-repeat;
+                    }
+                    .box6-right{
+                        background: url(../images/main-taohuayao/shishen-main-jingling.png);
+                        background-position: -1398px -458px;
+                        right: 0;
+                        background-repeat: no-repeat;
+                    }
+                    .box6-lun-minbox{
+                        overflow: hidden;
+                        position: relative;
+                        width: 1008px;
+                        margin: 0 auto;
+
+                        ul{
+                            width: 22040px;
+                            left: 0px;
+                            position: relative;
+                            overflow: hidden;
+                            padding: 0px;
+                            margin: 0px;
+                            height: 162px;
+                            li{
+                                float: left;
+                                width: 118px;
+                                margin: 0 13px;
+                                a{
+                                    display: block;
+                                    width: 118px;
+                                    img{
+                                        width: 100%;
+                                        height: 118px;
+                                    }
+                                    span{
+                                        display: block;
+                                        color: #000;
+                                        font-size: 14px;
+                                        text-align: center;
+                                        line-height: 40px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .on{
+                        opacity: 0.3;
+                    }
+                }
+            }
+        }
+}
+// 主页底部
+.main-footer{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    margin-top: 120px;
+.main-footer-top{
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+top: -60px;
+// width: 435px;
+text-align: center;
+font-size: 12px;
+ul{
+    overflow: hidden;
+}
+li{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    margin-right: 30px;
+    a{
+        color: #333;
+        &:hover{
+            color: red;
+        }
+    }
+}
+}
+.main-footer-bottom{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 960px;
+    height: 80px;
+.footer-bottom-one{
+    &>a{
+        display: inline-block;
+        font-size: 10px;
+    }
+    span{
+        position: relative;
+        // margin-top: 5px;
+        height: 50px;
+        display: inline-block;
+        line-height: 2;
+        p{
+            color: #333;
+        }
+        a{
+            color: #333;
+            &:hover{
+                text-decoration: solid;
+            }
+        }
+        div{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: inline-block;
+            height: 26px;
+            background-color: #610000;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+.footer-bottom-two{
+    line-height: 2.5;
+    p{
+        color: #333;
+    }
+}
+}
 }

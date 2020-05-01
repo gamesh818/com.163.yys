@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,470 +14,932 @@
 
     <style>
         .icon {
-                width: 20px;
-                height: 20px;
-                vertical-align: -0.5em;
-                fill: currentColor;
-                overflow: hidden;
-            }
-        </style>
+            width: 20px;
+            height: 20px;
+            vertical-align: -0.5em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
 </head>
+
 <body>
-    
-<!-- 顶部导航 -->
-<div class="top-nav">
-    <!-- 游戏全目录下滑列表 -->
-    <div class="top-nav-select">
-        <div class="top-nav-select-container">
-            <ul class="select-top">
-                <li><b>客户端游戏</b></li>
-                <li><b>手机游戏</b></li>
-                <li><b>游戏辅助</b></li>
-            </ul>
-            <ul class="select-bottom">
-                <li>
-                    <p>角色扮演</p>
-                    <a href="javascript:void(0);" class="select-no1">梦幻西游电脑版</a>
-                    <a href="javascript:void(0);" class="select-hot">大话2经典版</a>
-                    <a href="javascript:void(0);" class="select-hot">天下3</a>
-                    <a href="javascript:void(0);" class="select-hot">新倩女幽魂</a>
-                    <a href="javascript:void(0);" class="select-hot">逆水寒</a>
-                    <a href="javascript:void(0);">天谕</a>
-                    <a href="javascript:void(0);">超激斗梦境</a>
-                    <a href="javascript:void(0);">龙魂时刻</a>
-                    <a href="javascript:void(0);" class="select-hot">泰亚史诗</a>
-                    <a href="javascript:void(0);" class="select-hot">大话2免费版</a>
-                    <a href="javascript:void(0);">新大话3经典版</a>
-                    <a href="javascript:void(0);">新大话3免费版</a>
-                    <a href="javascript:void(0);">镇魔曲</a>
-                    <a href="javascript:void(0);">镇魔曲页游</a>
-                    <a href="javascript:void(0);">大唐无双</a>
-                    <a href="javascript:void(0);">武魂2</a>
-                    <a href="javascript:void(0);">魔兽世界</a>
-                </li>
-                <li>
-                    <p>竞技/休闲</p>
-                    <a href="javascript:void(0);" class="select-new">我的世界</a>
-                    <a href="javascript:void(0);" class="select-new">守望先锋</a>
-                    <a href="javascript:void(0);" class="select-new">荒野行动Plus</a>
-                    <a href="javascript:void(0);" class="select-new">EVE Online</a>
-                    <a href="javascript:void(0);" class="select-new">突击英雄</a>
-                    <a href="javascript:void(0);" class="select-new">战意</a>
-                    <a href="javascript:void(0);" class="select-new">秘境对决</a>
-                    <a href="javascript:void(0);" class="select-new">故土Nostos</a>
-                    <a href="javascript:void(0);">风暴英雄</a>
-                    <a href="javascript:void(0);">星际争霸Ⅱ</a>
-                    <a href="javascript:void(0);">炉石传说</a>
-                    <!-- 更多热门端游按钮 -->
 
-                    <a id="select-but" href="">更多热门端游</a>
-
-                </li>
-                <li>
-                    <p>热门推荐</p>
-                    <a href="javascript:void(0);" class="select-hot">梦幻西游手游</a>
-                    <a href="javascript:void(0);" class="select-hot">大话西游手游</a>
-                    <a href="javascript:void(0);" class="select-hot">倩女幽魂手游</a>
-                    <a href="javascript:void(0);" class="select-hot">阴阳师</a>
-                    <a href="javascript:void(0);" class="select-hot">率土之滨</a>
-                    <a href="javascript:void(0);" class="select-hot">天下手游</a>
-                    <a href="javascript:void(0);" class="select-hot">镇魔曲手游</a>
-                    <a href="javascript:void(0);" class="select-hot">一梦江湖</a>
-                    <a href="javascript:void(0);" class="select-hot">决战！平安京</a>
-                    <a href="javascript:void(0);" class="select-hot">明日之后</a>
-                    <a href="javascript:void(0);" class="select-hot">荒野行动</a>
-                    <a href="javascript:void(0);" class="select-hot">第五人格</a>
-                    <a href="javascript:void(0);" class="select-hot">神都夜行录</a>
-                    <a href="javascript:void(0);">终结战场</a>
-                    <a href="javascript:void(0);">我的世界Minecraft</a>
-                    <a href="javascript:void(0);">大唐无双唯美篇</a>
-                    <a href="javascript:void(0);">光明大陆</a>
-                </li>
-                <li>
-                    <p>新品推荐</p>
-                    <div class="li-box">
-                        <a href="javascript:void(0);" class="select-new">梦幻西游三维版</a>
-                        <a href="javascript:void(0);" class="select-new">海岛纪元</a>
-                        <a href="javascript:void(0);" class="select-new">风云岛行动</a>
-                        <a href="javascript:void(0);" class="select-new">一起优诺</a>
-                        <a href="javascript:void(0);" class="select-new">重装上阵</a>
-                        <a href="javascript:void(0);" class="select-new">猎手之王</a>
-                        <a href="javascript:void(0);" class="select-new">花与剑</a>
-                        <a href="javascript:void(0);" class="select-new">实况足球</a>
-                        <a href="javascript:void(0);" class="select-new">阴阳师：百闻牌</a>
-                        <a href="javascript:void(0);" class="select-new">忘川风华录</a>
-                        <a href="javascript:void(0);" class="select-new">轩辕剑龙舞云山</a>
-                        <a href="javascript:void(0);" class="select-new">量子特攻</a>
-                        <a href="javascript:void(0);" class="select-new">遇见逆水寒</a>
-                        <a href="javascript:void(0);" class="select-new">陈情令</a>
-                        <a href="javascript:void(0);" class="select-new">绿茵之巅</a>
-                        <a href="javascript:void(0);" class="select-new">最后的秘密</a>
-                        <a href="javascript:void(0);" class="select-new">堡垒前线</a>
-                    </div>
-                    <div class="li-box">
-                        <a href="javascript:void(0);" class="select-new">第九所</a>
-                        <a href="javascript:void(0);" class="select-new">梦幻西游网页版</a>
-                        <a href="javascript:void(0);" class="select-new">河狸计划</a>
-                        <a href="javascript:void(0);" class="select-new">时空中的绘旅人</a>
-                        <a href="javascript:void(0);" class="select-new">暗黑破坏神：不朽</a>
-                        <a href="javascript:void(0);" class="select-new">阴阳师：妖怪屋</a>
-                        <a href="javascript:void(0);" class="select-new">宝可梦大探险</a>
-                        <a href="javascript:void(0);" class="select-new">黑潮之上</a>
-                        <a href="javascript:void(0);" class="select-new">绘真·妙笔千山</a>
-                        <a href="javascript:void(0);" class="select-new">光·遇</a>
-                        <a href="javascript:void(0);" class="select-new">流星群侠传</a>
-                        <a href="javascript:void(0);" class="select-new">有杀气童话2</a>
-                        <a href="javascript:void(0);" class="select-new">完售物语</a>
-                        <a href="javascript:void(0);" class="select-new">天谕手游</a>
-                        <a href="javascript:void(0);" class="select-new">Disorder</a>
-                        <a href="javascript:void(0);" class="select-new">机动都市阿尔法</a>
-                        <a href="javascript:void(0);" class="select-new">幻书启世录</a>
-                    </div>
-                    <div class="li-box">
-                        <a href="javascript:void(0);">青璃</a>
-                        <a href="javascript:void(0);">孤岛先锋</a>
-                        <a href="javascript:void(0);">逗斗火柴人</a>
-                        <a href="javascript:void(0);">游戏王：决斗链接</a>
-                        <a href="javascript:void(0);">节奏空间</a>
-                        <a href="javascript:void(0);">隐世录</a>
-                        <a href="javascript:void(0);">荒野潜伏者</a>
-                        <a href="javascript:void(0);">迷室The Room</a>
-                        <a href="javascript:void(0);">永远的7日之都</a>
-                        <a href="javascript:void(0);">舰无虚发：暗星</a>
-                        <a href="javascript:void(0);">实况：王者集结</a>
-                        <a href="javascript:void(0);">战舰世界闪击战</a>
-                        <a href="javascript:void(0);">坦克世界闪击战</a>
-                        <a href="javascript:void(0);">战争怒吼</a>
-                        <a href="javascript:void(0);">极客战记(教育类)</a>
-                        <a href="javascript:void(0);">权力与纷争</a>
-                        <a href="javascript:void(0);">非人学园</a>
-                    </div>
-                    <div class="li-box">
-                        <a href="javascript:void(0);">战国志</a>
-                        <a href="javascript:void(0);">边境之旅</a>
-                        <a href="javascript:void(0);">星战前夜:无烬星河</a>
-                        <a href="javascript:void(0);">三国如龙传</a>
-                        <a href="javascript:void(0);">网易棋牌</a>
-                        <a href="javascript:void(0);">神谕文明</a>
-                        <a href="javascript:void(0);">风暴对决</a>
-                        <a href="javascript:void(0);">猎魂觉醒</a>
-                        <a href="javascript:void(0);">狼人杀</a>
-                        <a href="javascript:void(0);">魔法禁书目录</a>
-                        <a href="javascript:void(0);">秘境对决</a>
-                        <a href="javascript:void(0);">影之诗</a>
-                        <a href="javascript:void(0);">潮人篮球</a>
-                        <a href="javascript:void(0);">三国诛将录</a>
-                        <a href="javascript:void(0);">重装突击</a>
-                        <a href="javascript:void(0);">劲舞团</a>
-                        <a href="javascript:void(0);">坦克连</a>
-                    </div>
-                    <div class="li-box">
-                        <a href="javascript:void(0);">大话西游热血版</a>
-                        <a href="javascript:void(0);">大航海之路</a>
-                        <a href="javascript:void(0);">萌王EX</a>
-                        <a href="javascript:void(0);">秘宝猎人</a>
-                        <a href="javascript:void(0);">天下×天下</a>
-                        <a href="javascript:void(0);">永恒边境</a>
-                        <a href="javascript:void(0);">花语月</a>
-                        <a href="javascript:void(0);">乱斗西游2</a>
-                        <a href="javascript:void(0);">惊梦</a>
-                        <a href="javascript:void(0);">迷你西游</a>
-                        <a href="javascript:void(0);">实况俱乐部</a>
-                        <a href="javascript:void(0);">大唐游仙记</a>
-                        <a href="javascript:void(0);">天下HD</a>
-                        <a href="javascript:void(0);">西游神魔决</a>
-                        <a href="javascript:void(0);">有杀气童话</a>
-                        <a href="javascript:void(0);">猫和老鼠官方手游</a>
-                    </div>
-                    <!-- 更多热门手游按钮 -->
-                    <a href="" id="select-but">更多热门手游</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" class="select-hot">游品位</a>
-                    <a href="javascript:void(0);" class="select-hot">网易MuMu</a>
-                    <a href="javascript:void(0);" class="select-hot">会员俱乐部</a>
-                    <a href="javascript:void(0);" class="select-new">网易大神</a>
-                    <a href="javascript:void(0);" class="select-new">网易BUFF</a>
-                    <a href="javascript:void(0);">网易游戏印象</a>
-                    <a href="javascript:void(0);">网易游戏平台</a>
-                    <a href="javascript:void(0);" class="select-new">网易游戏助手</a>
-                    <a href="javascript:void(0);" class="select-hot">易次元</a>
-                    <a href="javascript:void(0);">手机将军令</a>
-                    <a href="javascript:void(0);">将军令</a>
-                    <a href="javascript:void(0);">藏宝阁</a>
-                    <a href="javascript:void(0);">网易CC</a>
-                    <a href="javascript:void(0);">自助百宝箱</a>
-                    <a href="javascript:void(0);">网易UU加速器</a>
-                    <a href="javascript:void(0);">网易白金卡</a>
-                    <a href="javascript:void(0);">客服中心</a>
-                    <!-- logo -->
-                    <a href="javascript:void(0);"></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- 顶部导航左边按钮 -->
-    <div class="top-nav-left">
-        <a href="#">
-            <i></i>
-            游戏全目录
-        </a>
-    </div>
-    <!-- 顶部导航中间logo -->
-    <div class="top-nav-cent">
-        <a href="">
-            <img src="./images/index/index-top-nav-logo.png" alt="">
-        </a>
-    </div>
-    <!-- 顶部导航左边文字轮播 -->
-    <div class="top-nav-right">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">限时领取免费课程</div>
-                <div class="swiper-slide">25元专属卷限时领</div>
-            </div>
-            <!-- 如果需要分页器 -->
-            <!-- <div class="swiper-pagination"></div> -->
-        </div>
-    </div>
-</div>
-<div class="main">
-<!-- 顶部二级导航 -->
-<div class="main-top-nav">
-    <ul class="one-nav">
-        <li><a href="">首页官网</a><span class="xiexian"></span></li>
-        <li><a href="">新闻资讯</a><span class="xiexian"></span></li>
-        <li><a href="">游戏攻略</a><span class="xiexian"></span></li>
-        <li><a href="">同人社区</a><span class="xiexian"></span></li>
-        <li class="guanfang"><a href="">官方渠道</a><span class="xiexian"></span></li>
-        <li><a href="">周边商城</a><span class="xiexian"></span></li>
-        <li><a href="">藏宝阁</a><span class="xiexian"></span></li>
-        <li><a href="">网易大神</a></li>
-    </ul>
-    <ul class="two-nav">
-        <li><a href="">首页官网</a><span class="xiexian"></span></li>
-        <li><a href="">新闻资讯</a><span class="xiexian"></span></li>
-        <li><a href="">线下活动</a><span class="xiexian"></span></li>
-        <li><a href="">游戏攻略</a><span class="xiexian"></span></li>
-        <li><a href="">式神录</a><span class="xiexian"></span></li>
-        <li><a href="">主角录</a><span class="xiexian"></span></li>
-        <li><a href="">同人社区</a><span class="xiexian"></span></li>
-        <li class="guanfang"><a href="">官方渠道</a><span class="xiexian"></span></li>
-        <li><a href="">周边商城</a><span class="xiexian"></span></li>
-        <li><a href="">藏宝阁</a><span class="xiexian"></span></li>
-        <li><a href="">网易大神</a></li>
-    </ul>
-    <div class="main-left-logo">
-        <p>扫码下载</p>
-        <img src="./images/Scripture/nav-erwei.png" alt="">
-        <a href="">
-            <span></span>
-            <div class="title">
-                <h3>阴阳师</h3>
-                <p>网易和风匠心巨制</p>
-            </div>
-        </a>
-    </div>
-    <!-- 官方下拉列表 -->
-    <div class="guanfang-select">
-        <div class="select-bigbox">
-            <div class="QQ">
-                <ul>
-                    <li>204422345（1群）</li>
-                    <li>586180977（6群）</li>
-                    <li>540687051（2群）</li>
-                    <li>477094979（7群）</li>
-                    <li>546653739（3群）</li>
-                    <li>239033695（8群）</li>
-                    <li>546027375（4群）</li>
-                    <li>478814406（9群）</li>
-                    <li>344590267（5群）</li>
-                    <li>478027123（10群）</li>
+    <!-- 顶部导航 -->
+    <div class="top-nav">
+        <!-- 游戏全目录下滑列表 -->
+        <div class="top-nav-select">
+            <div class="top-nav-select-container">
+                <ul class="select-top">
+                    <li><b>客户端游戏</b></li>
+                    <li><b>手机游戏</b></li>
+                    <li><b>游戏辅助</b></li>
                 </ul>
-                <p>官方QQ群</p>
+                <ul class="select-bottom">
+                    <li>
+                        <p>角色扮演</p>
+                        <a href="javascript:void(0);" class="select-no1">梦幻西游电脑版</a>
+                        <a href="javascript:void(0);" class="select-hot">大话2经典版</a>
+                        <a href="javascript:void(0);" class="select-hot">天下3</a>
+                        <a href="javascript:void(0);" class="select-hot">新倩女幽魂</a>
+                        <a href="javascript:void(0);" class="select-hot">逆水寒</a>
+                        <a href="javascript:void(0);">天谕</a>
+                        <a href="javascript:void(0);">超激斗梦境</a>
+                        <a href="javascript:void(0);">龙魂时刻</a>
+                        <a href="javascript:void(0);" class="select-hot">泰亚史诗</a>
+                        <a href="javascript:void(0);" class="select-hot">大话2免费版</a>
+                        <a href="javascript:void(0);">新大话3经典版</a>
+                        <a href="javascript:void(0);">新大话3免费版</a>
+                        <a href="javascript:void(0);">镇魔曲</a>
+                        <a href="javascript:void(0);">镇魔曲页游</a>
+                        <a href="javascript:void(0);">大唐无双</a>
+                        <a href="javascript:void(0);">武魂2</a>
+                        <a href="javascript:void(0);">魔兽世界</a>
+                    </li>
+                    <li>
+                        <p>竞技/休闲</p>
+                        <a href="javascript:void(0);" class="select-new">我的世界</a>
+                        <a href="javascript:void(0);" class="select-new">守望先锋</a>
+                        <a href="javascript:void(0);" class="select-new">荒野行动Plus</a>
+                        <a href="javascript:void(0);" class="select-new">EVE Online</a>
+                        <a href="javascript:void(0);" class="select-new">突击英雄</a>
+                        <a href="javascript:void(0);" class="select-new">战意</a>
+                        <a href="javascript:void(0);" class="select-new">秘境对决</a>
+                        <a href="javascript:void(0);" class="select-new">故土Nostos</a>
+                        <a href="javascript:void(0);">风暴英雄</a>
+                        <a href="javascript:void(0);">星际争霸Ⅱ</a>
+                        <a href="javascript:void(0);">炉石传说</a>
+                        <!-- 更多热门端游按钮 -->
+
+                        <a id="select-but" href="">更多热门端游</a>
+
+                    </li>
+                    <li>
+                        <p>热门推荐</p>
+                        <a href="javascript:void(0);" class="select-hot">梦幻西游手游</a>
+                        <a href="javascript:void(0);" class="select-hot">大话西游手游</a>
+                        <a href="javascript:void(0);" class="select-hot">倩女幽魂手游</a>
+                        <a href="javascript:void(0);" class="select-hot">阴阳师</a>
+                        <a href="javascript:void(0);" class="select-hot">率土之滨</a>
+                        <a href="javascript:void(0);" class="select-hot">天下手游</a>
+                        <a href="javascript:void(0);" class="select-hot">镇魔曲手游</a>
+                        <a href="javascript:void(0);" class="select-hot">一梦江湖</a>
+                        <a href="javascript:void(0);" class="select-hot">决战！平安京</a>
+                        <a href="javascript:void(0);" class="select-hot">明日之后</a>
+                        <a href="javascript:void(0);" class="select-hot">荒野行动</a>
+                        <a href="javascript:void(0);" class="select-hot">第五人格</a>
+                        <a href="javascript:void(0);" class="select-hot">神都夜行录</a>
+                        <a href="javascript:void(0);">终结战场</a>
+                        <a href="javascript:void(0);">我的世界Minecraft</a>
+                        <a href="javascript:void(0);">大唐无双唯美篇</a>
+                        <a href="javascript:void(0);">光明大陆</a>
+                    </li>
+                    <li>
+                        <p>新品推荐</p>
+                        <div class="li-box">
+                            <a href="javascript:void(0);" class="select-new">梦幻西游三维版</a>
+                            <a href="javascript:void(0);" class="select-new">海岛纪元</a>
+                            <a href="javascript:void(0);" class="select-new">风云岛行动</a>
+                            <a href="javascript:void(0);" class="select-new">一起优诺</a>
+                            <a href="javascript:void(0);" class="select-new">重装上阵</a>
+                            <a href="javascript:void(0);" class="select-new">猎手之王</a>
+                            <a href="javascript:void(0);" class="select-new">花与剑</a>
+                            <a href="javascript:void(0);" class="select-new">实况足球</a>
+                            <a href="javascript:void(0);" class="select-new">阴阳师：百闻牌</a>
+                            <a href="javascript:void(0);" class="select-new">忘川风华录</a>
+                            <a href="javascript:void(0);" class="select-new">轩辕剑龙舞云山</a>
+                            <a href="javascript:void(0);" class="select-new">量子特攻</a>
+                            <a href="javascript:void(0);" class="select-new">遇见逆水寒</a>
+                            <a href="javascript:void(0);" class="select-new">陈情令</a>
+                            <a href="javascript:void(0);" class="select-new">绿茵之巅</a>
+                            <a href="javascript:void(0);" class="select-new">最后的秘密</a>
+                            <a href="javascript:void(0);" class="select-new">堡垒前线</a>
+                        </div>
+                        <div class="li-box">
+                            <a href="javascript:void(0);" class="select-new">第九所</a>
+                            <a href="javascript:void(0);" class="select-new">梦幻西游网页版</a>
+                            <a href="javascript:void(0);" class="select-new">河狸计划</a>
+                            <a href="javascript:void(0);" class="select-new">时空中的绘旅人</a>
+                            <a href="javascript:void(0);" class="select-new">暗黑破坏神：不朽</a>
+                            <a href="javascript:void(0);" class="select-new">阴阳师：妖怪屋</a>
+                            <a href="javascript:void(0);" class="select-new">宝可梦大探险</a>
+                            <a href="javascript:void(0);" class="select-new">黑潮之上</a>
+                            <a href="javascript:void(0);" class="select-new">绘真·妙笔千山</a>
+                            <a href="javascript:void(0);" class="select-new">光·遇</a>
+                            <a href="javascript:void(0);" class="select-new">流星群侠传</a>
+                            <a href="javascript:void(0);" class="select-new">有杀气童话2</a>
+                            <a href="javascript:void(0);" class="select-new">完售物语</a>
+                            <a href="javascript:void(0);" class="select-new">天谕手游</a>
+                            <a href="javascript:void(0);" class="select-new">Disorder</a>
+                            <a href="javascript:void(0);" class="select-new">机动都市阿尔法</a>
+                            <a href="javascript:void(0);" class="select-new">幻书启世录</a>
+                        </div>
+                        <div class="li-box">
+                            <a href="javascript:void(0);">青璃</a>
+                            <a href="javascript:void(0);">孤岛先锋</a>
+                            <a href="javascript:void(0);">逗斗火柴人</a>
+                            <a href="javascript:void(0);">游戏王：决斗链接</a>
+                            <a href="javascript:void(0);">节奏空间</a>
+                            <a href="javascript:void(0);">隐世录</a>
+                            <a href="javascript:void(0);">荒野潜伏者</a>
+                            <a href="javascript:void(0);">迷室The Room</a>
+                            <a href="javascript:void(0);">永远的7日之都</a>
+                            <a href="javascript:void(0);">舰无虚发：暗星</a>
+                            <a href="javascript:void(0);">实况：王者集结</a>
+                            <a href="javascript:void(0);">战舰世界闪击战</a>
+                            <a href="javascript:void(0);">坦克世界闪击战</a>
+                            <a href="javascript:void(0);">战争怒吼</a>
+                            <a href="javascript:void(0);">极客战记(教育类)</a>
+                            <a href="javascript:void(0);">权力与纷争</a>
+                            <a href="javascript:void(0);">非人学园</a>
+                        </div>
+                        <div class="li-box">
+                            <a href="javascript:void(0);">战国志</a>
+                            <a href="javascript:void(0);">边境之旅</a>
+                            <a href="javascript:void(0);">星战前夜:无烬星河</a>
+                            <a href="javascript:void(0);">三国如龙传</a>
+                            <a href="javascript:void(0);">网易棋牌</a>
+                            <a href="javascript:void(0);">神谕文明</a>
+                            <a href="javascript:void(0);">风暴对决</a>
+                            <a href="javascript:void(0);">猎魂觉醒</a>
+                            <a href="javascript:void(0);">狼人杀</a>
+                            <a href="javascript:void(0);">魔法禁书目录</a>
+                            <a href="javascript:void(0);">秘境对决</a>
+                            <a href="javascript:void(0);">影之诗</a>
+                            <a href="javascript:void(0);">潮人篮球</a>
+                            <a href="javascript:void(0);">三国诛将录</a>
+                            <a href="javascript:void(0);">重装突击</a>
+                            <a href="javascript:void(0);">劲舞团</a>
+                            <a href="javascript:void(0);">坦克连</a>
+                        </div>
+                        <div class="li-box">
+                            <a href="javascript:void(0);">大话西游热血版</a>
+                            <a href="javascript:void(0);">大航海之路</a>
+                            <a href="javascript:void(0);">萌王EX</a>
+                            <a href="javascript:void(0);">秘宝猎人</a>
+                            <a href="javascript:void(0);">天下×天下</a>
+                            <a href="javascript:void(0);">永恒边境</a>
+                            <a href="javascript:void(0);">花语月</a>
+                            <a href="javascript:void(0);">乱斗西游2</a>
+                            <a href="javascript:void(0);">惊梦</a>
+                            <a href="javascript:void(0);">迷你西游</a>
+                            <a href="javascript:void(0);">实况俱乐部</a>
+                            <a href="javascript:void(0);">大唐游仙记</a>
+                            <a href="javascript:void(0);">天下HD</a>
+                            <a href="javascript:void(0);">西游神魔决</a>
+                            <a href="javascript:void(0);">有杀气童话</a>
+                            <a href="javascript:void(0);">猫和老鼠官方手游</a>
+                        </div>
+                        <!-- 更多热门手游按钮 -->
+                        <a href="" id="select-but">更多热门手游</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="select-hot">游品位</a>
+                        <a href="javascript:void(0);" class="select-hot">网易MuMu</a>
+                        <a href="javascript:void(0);" class="select-hot">会员俱乐部</a>
+                        <a href="javascript:void(0);" class="select-new">网易大神</a>
+                        <a href="javascript:void(0);" class="select-new">网易BUFF</a>
+                        <a href="javascript:void(0);">网易游戏印象</a>
+                        <a href="javascript:void(0);">网易游戏平台</a>
+                        <a href="javascript:void(0);" class="select-new">网易游戏助手</a>
+                        <a href="javascript:void(0);" class="select-hot">易次元</a>
+                        <a href="javascript:void(0);">手机将军令</a>
+                        <a href="javascript:void(0);">将军令</a>
+                        <a href="javascript:void(0);">藏宝阁</a>
+                        <a href="javascript:void(0);">网易CC</a>
+                        <a href="javascript:void(0);">自助百宝箱</a>
+                        <a href="javascript:void(0);">网易UU加速器</a>
+                        <a href="javascript:void(0);">网易白金卡</a>
+                        <a href="javascript:void(0);">客服中心</a>
+                        <!-- logo -->
+                        <a href="javascript:void(0);"></a>
+                    </li>
+                </ul>
             </div>
-            <div class="select-box">
-                <img src="./images/Scripture/select-weixin.jpg" alt="">
-                <p class="weixin-in">官方微信</p>
-                <p class="weixin-on">网易阴阳师手游</p>
-            </div>
-            <div class="select-box">
-                <img src="./images/Scripture/select-weibo.png" alt="">
-                <p class="weixin-in">官方微博</p>
-                <p class="weixin-on">网易阴阳师手游</p>
-            </div>
-            <a href="">
-                <span class="select-tieba">
-                    <span></span>
-                    <span>百度贴吧</span>
-                </span>
+        </div>
+        <!-- 顶部导航左边按钮 -->
+        <div class="top-nav-left">
+            <a href="#">
+                <i></i>
+                游戏全目录
             </a>
+        </div>
+        <!-- 顶部导航中间logo -->
+        <div class="top-nav-cent">
             <a href="">
-                <span class="select-luntan">
-                    <span></span>
-                    <span>官方论坛</span>
-                </span>
+                <img src="./images/index/index-top-nav-logo.png" alt="">
             </a>
+        </div>
+        <!-- 顶部导航左边文字轮播 -->
+        <div class="top-nav-right">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">限时领取免费课程</div>
+                    <div class="swiper-slide">25元专属卷限时领</div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
         </div>
     </div>
-</div>
-<!-- 搜索框 -->
-<div class="sou">
-    <input type="text" value="莹草">
-    <a href="">搜索</a>
-</div>
-<!-- 上部分 -->
-<div class="shishen-top">
-    <!-- 阴影 -->
-    <div class="dark"></div>
-    <!-- 阴阳师logo -->
-    <a href="" class="yin-logo"><span></span></a>
-    <!-- 式神logo -->
-    <div class="shishen-logo"></div>
-    <!-- 中部内容 -->
-    <div class="centent">
-        <!-- 左侧小提示框 -->
-        <div class="centent-left">
-            <a href="" class="centent-left-top"></a>
-            <span>桃花妖</span>
-            <div class="sr"></div>
-        </div>
-        <!-- 式神形象 -->
-        <div class="shishen-xingxiang">
-            <div class="shishen-chushi">
-                <img src="./images/main-taohuayao/taohua-chushi.png" alt="">
-            </div>
-            <div class="shishen-juexing">
-                <img src="./images/main-taohuayao/taohua-juexing.png" alt="">
-            </div>
-            
-            <div class="shishen-pifu">
-                <div class="pifu1">
-                    <img src="./images/main-taohuayao/taohua-pifu1.png" alt="">
-                    <div class="pifu-name"><div>落英缤纷</div> </div>
-                </div>
-                <div class="pifu2">
-                    <img src="./images/main-taohuayao/taohua-pifu2.png" alt="">
-                    <div class="pifu-name"><div>清香摇影</div> </div>
-                </div>
-            </div>
-        </div>
-        <!-- 切换tab -->
-        <div class="qiehuan-tab">
-            <a href="javascript:void(0);" class="chushi"> <i></i></a>
-            <a href="javascript:void(0);" class="juexing"><i></i></a>
-            <a href="javascript:void(0);" class="pifu">   <i></i></a>
-        </div>
-        <a href="" class="ziyuan-xiazai"></a>
-    </div>
-</div>
-<!-- 01/传记部分 -->
-<div class="main-box1">
-    <div class="container">
-        <h2></h2>
-        <div class="box1-centent">
-            <!-- 左部分 -->
-            <div class="box1-left">
+    <div class="main">
+        <!-- 顶部二级导航 -->
+        <div class="main-top-nav">
+            <ul class="one-nav">
+                <li><a href="">首页官网</a><span class="xiexian"></span></li>
+                <li><a href="">新闻资讯</a><span class="xiexian"></span></li>
+                <li><a href="">游戏攻略</a><span class="xiexian"></span></li>
+                <li><a href="">同人社区</a><span class="xiexian"></span></li>
+                <li class="guanfang"><a href="">官方渠道</a><span class="xiexian"></span></li>
+                <li><a href="">周边商城</a><span class="xiexian"></span></li>
+                <li><a href="">藏宝阁</a><span class="xiexian"></span></li>
+                <li><a href="">网易大神</a></li>
+            </ul>
+            <ul class="two-nav">
+                <li><a href="">首页官网</a><span class="xiexian"></span></li>
+                <li><a href="">新闻资讯</a><span class="xiexian"></span></li>
+                <li><a href="">线下活动</a><span class="xiexian"></span></li>
+                <li><a href="">游戏攻略</a><span class="xiexian"></span></li>
+                <li><a href="">式神录</a><span class="xiexian"></span></li>
+                <li><a href="">主角录</a><span class="xiexian"></span></li>
+                <li><a href="">同人社区</a><span class="xiexian"></span></li>
+                <li class="guanfang"><a href="">官方渠道</a><span class="xiexian"></span></li>
+                <li><a href="">周边商城</a><span class="xiexian"></span></li>
+                <li><a href="">藏宝阁</a><span class="xiexian"></span></li>
+                <li><a href="">网易大神</a></li>
+            </ul>
+            <div class="main-left-logo">
+                <p>扫码下载</p>
+                <img src="./images/Scripture/nav-erwei.png" alt="">
                 <a href="">
-                    <span class="cv">CV</span>
-                    <span class="name">水树奈奈</span>
-                    <i></i>
+                    <span></span>
+                    <div class="title">
+                        <h3>阴阳师</h3>
+                        <p>网易和风匠心巨制</p>
+                    </div>
                 </a>
             </div>
-            <!-- 右部分 -->
-            <div class="box1-right">
-                <h3>
-                    <em></em>
-                    <span>桃花妖</span>
-                    <a href="javascript:void(0);" class="zhuanji-1 on">传记一</a>
-                    <a href="javascript:void(0);" class="zhuanji-2">传记二</a>
-                    <a href="javascript:void(0);" class="zhuanji-3">传记三</a>
-                </h3>
-                <!-- 内容盒子 -->
-                <div class="box1-text">
-                    <p class="text1"><span>我的名字是 ﹁ 桃花 ﹂ ，是桃花的妖怪。</span> </p>
-                    <p class="text1"><span>当我还是桃花树的时候，就经常被认成樱花。所以在化成</span> </p>
-                    <p class="text1"><span>人形的时候，特地变成了和 ﹁ 樱 ﹂ 完全不一样的</span> </p>
-                    <p class="text1"><span>样子。</span> </p>
-                    <p class="text1"><span>我不是讨厌 ﹁ 樱 ﹂ 哦 ！ 可是她居然爱上人类</span> </p>
-                    <p class="text1"><span>，她还是早点放弃比较好 ！</span> </p>
-                    <p class="text1"><span>因为， ﹁ 想要和人类结成夫妇 ﹂ 什么的，怎么可</span> </p>
-                    <p class="text1"><span>能啦 ~ ~ ！</span> </p>
-                    <p class="text2"><span>樱她最后，也一定会因为这个受到伤害的。</span></p>
-                    <p class="text2"><span>~ ~ 诶 ？ 如果 ﹁ 妖怪能和人类结成夫妇</span></p>
-                    <p class="text2"><span>﹂ 的话 ？</span></p>
-                    <p class="text2"><span>我又不是什么不讲理的恶鬼，如果真的出现那种奇迹的话</span></p>
-                    <p class="text2"><span>，我也会好好地、真心真意地祝福她。</span></p>
-                    <p class="text2"><span>但这只是 ﹁ 妖怪能和人类结成夫妇 ﹂ 的假设而已!</span></p>
-                    <p class="text2"><span>不过如果樱是真的想要和那个人在一起的话，我也不得不</span></p>
-                    <p class="text2"><span>认真起来了。</span></p>
-                    <p class="text2"><span>因为樱她真的只知道一根筋地努力向前，那个笨蛋 ~ ~ !</span></p>
-                    <p class="text3"><span>我必须看好她，帮她善后。因为她真的好让人放心不下啊</span></p>
-                    <p class="text3"><span>！</span></p>
-                    <p class="text3"><span>~ ~ 嗯，我变成什么样都可以，没关系的。</span></p>
-                    <p class="text3"><span>而且以后不跟樱在一起，我就再也不用担心被认错了，整</span></p>
-                    <p class="text3"><span>个人都轻松起来了 ！</span></p>
-                    <p class="text3"><span>~ ~ 樱，你一定要幸福啊。</span></p>
-                    <p class="text3"><span></span></p>
-                    <p class="text3"><span></span></p>
-                
-                
-                
+            <!-- 官方下拉列表 -->
+            <div class="guanfang-select">
+                <div class="select-bigbox">
+                    <div class="QQ">
+                        <ul>
+                            <li>204422345（1群）</li>
+                            <li>586180977（6群）</li>
+                            <li>540687051（2群）</li>
+                            <li>477094979（7群）</li>
+                            <li>546653739（3群）</li>
+                            <li>239033695（8群）</li>
+                            <li>546027375（4群）</li>
+                            <li>478814406（9群）</li>
+                            <li>344590267（5群）</li>
+                            <li>478027123（10群）</li>
+                        </ul>
+                        <p>官方QQ群</p>
+                    </div>
+                    <div class="select-box">
+                        <img src="./images/Scripture/select-weixin.jpg" alt="">
+                        <p class="weixin-in">官方微信</p>
+                        <p class="weixin-on">网易阴阳师手游</p>
+                    </div>
+                    <div class="select-box">
+                        <img src="./images/Scripture/select-weibo.png" alt="">
+                        <p class="weixin-in">官方微博</p>
+                        <p class="weixin-on">网易阴阳师手游</p>
+                    </div>
+                    <a href="">
+                        <span class="select-tieba">
+                            <span></span>
+                            <span>百度贴吧</span>
+                        </span>
+                    </a>
+                    <a href="">
+                        <span class="select-luntan">
+                            <span></span>
+                            <span>官方论坛</span>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
-        
-    </div>
-</div>
-<!-- 02/情报部分 -->
-<div class="main-box2">
-    <div class="container">
-        <h3></h3>
-        <div class="box2-centent">
-            <div class="box2-title"></div>
-            <ul class="box2-shuju">
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        <!-- 搜索框 -->
+        <div class="sou">
+            <input type="text" value="莹草">
+            <a href="">搜索</a>
         </div>
+        <!-- 上部分 -->
+        <div class="shishen-top">
+            <!-- 阴影 -->
+            <div class="dark"></div>
+            <!-- 阴阳师logo -->
+            <a href="" class="yin-logo"><span></span></a>
+            <!-- 式神logo -->
+            <div class="shishen-logo"></div>
+            <!-- 中部内容 -->
+            <div class="centent">
+                <!-- 左侧小提示框 -->
+                <div class="centent-left">
+                    <a href="" class="centent-left-top"></a>
+                    <span>桃花妖</span>
+                    <div class="sr"></div>
+                </div>
+                <!-- 式神形象 -->
+                <div class="shishen-xingxiang">
+                    <div class="shishen-chushi">
+                        <img src="./images/main-taohuayao/taohua-chushi.png" alt="">
+                    </div>
+                    <div class="shishen-juexing">
+                        <img src="./images/main-taohuayao/taohua-juexing.png" alt="">
+                    </div>
+
+                    <div class="shishen-pifu">
+                        <div class="pifu1">
+                            <img src="./images/main-taohuayao/taohua-pifu1.png" alt="">
+                            <div class="pifu-name">
+                                <div>落英缤纷</div>
+                            </div>
+                        </div>
+                        <div class="pifu2">
+                            <img src="./images/main-taohuayao/taohua-pifu2.png" alt="">
+                            <div class="pifu-name">
+                                <div>清香摇影</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 切换tab -->
+                <div class="qiehuan-tab">
+                    <a href="javascript:void(0);" class="chushi"> <i></i></a>
+                    <a href="javascript:void(0);" class="juexing"><i></i></a>
+                    <a href="javascript:void(0);" class="pifu"> <i></i></a>
+                </div>
+                <a href="" class="ziyuan-xiazai"></a>
+            </div>
+        </div>
+        <!-- 01/传记部分 -->
+        <div class="main-box1">
+            <div class="container">
+                <h2></h2>
+                <div class="box1-centent">
+                    <!-- 左部分 -->
+                    <div class="box1-left">
+                        <a href="">
+                            <span class="cv">CV</span>
+                            <span class="name">水树奈奈</span>
+                            <i></i>
+                        </a>
+                    </div>
+                    <!-- 右部分 -->
+                    <div class="box1-right">
+                        <h3>
+                            <em></em>
+                            <span>桃花妖</span>
+                            <a href="javascript:void(0);" class="zhuanji-1 on">传记一</a>
+                            <a href="javascript:void(0);" class="zhuanji-2">传记二</a>
+                            <a href="javascript:void(0);" class="zhuanji-3">传记三</a>
+                        </h3>
+                        <!-- 内容盒子 -->
+                        <div class="box1-text">
+                            <p class="text1"><span>我的名字是 ﹁ 桃花 ﹂ ，是桃花的妖怪。</span> </p>
+                            <p class="text1"><span>当我还是桃花树的时候，就经常被认成樱花。所以在化成</span> </p>
+                            <p class="text1"><span>人形的时候，特地变成了和 ﹁ 樱 ﹂ 完全不一样的</span> </p>
+                            <p class="text1"><span>样子。</span> </p>
+                            <p class="text1"><span>我不是讨厌 ﹁ 樱 ﹂ 哦 ！ 可是她居然爱上人类</span> </p>
+                            <p class="text1"><span>，她还是早点放弃比较好 ！</span> </p>
+                            <p class="text1"><span>因为， ﹁ 想要和人类结成夫妇 ﹂ 什么的，怎么可</span> </p>
+                            <p class="text1"><span>能啦 ~ ~ ！</span> </p>
+                            <p class="text2"><span>樱她最后，也一定会因为这个受到伤害的。</span></p>
+                            <p class="text2"><span>~ ~ 诶 ？ 如果 ﹁ 妖怪能和人类结成夫妇</span></p>
+                            <p class="text2"><span>﹂ 的话 ？</span></p>
+                            <p class="text2"><span>我又不是什么不讲理的恶鬼，如果真的出现那种奇迹的话</span></p>
+                            <p class="text2"><span>，我也会好好地、真心真意地祝福她。</span></p>
+                            <p class="text2"><span>但这只是 ﹁ 妖怪能和人类结成夫妇 ﹂ 的假设而已!</span></p>
+                            <p class="text2"><span>不过如果樱是真的想要和那个人在一起的话，我也不得不</span></p>
+                            <p class="text2"><span>认真起来了。</span></p>
+                            <p class="text2"><span>因为樱她真的只知道一根筋地努力向前，那个笨蛋 ~ ~ !</span></p>
+                            <p class="text3"><span>我必须看好她，帮她善后。因为她真的好让人放心不下啊</span></p>
+                            <p class="text3"><span>！</span></p>
+                            <p class="text3"><span>~ ~ 嗯，我变成什么样都可以，没关系的。</span></p>
+                            <p class="text3"><span>而且以后不跟樱在一起，我就再也不用担心被认错了，整</span></p>
+                            <p class="text3"><span>个人都轻松起来了 ！</span></p>
+                            <p class="text3"><span>~ ~ 樱，你一定要幸福啊。</span></p>
+                            <p class="text3"><span></span></p>
+                            <p class="text3"><span></span></p>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 02/情报部分 -->
+        <div class="main-box2">
+            <div class="container">
+                <h3></h3>
+                <div class="box2-centent clearfix">
+                    <div class="box2-title">
+                        <div class="title1">
+                            <h3>觉醒前</h3>
+                            <div><img src="./images/main-taohuayao/taohua-qingbao1.jpg" alt=""></div>
+                        </div>
+                        <div class="title2">
+                            <h3>觉醒后</h3>
+                            <div><img src="./images/main-taohuayao/taohua-qingbao2.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <ul class="box2-shuju clearfix">
+                        <li class="shuju1">
+                            <div class="clearfix shuju1-1"><em></em><span>攻击</span></div>
+                            <div class="clearfix shuju1-2"><em></em><span>生命</span></div>
+                            <div class="clearfix shuju1-3"><em></em><span>防御</span></div>
+                            <div class="clearfix shuju1-4"><em></em><span>速度</span></div>
+                            <div class="clearfix shuju1-5"><em></em><span>暴击</span></div>
+                            <div class="clearfix shuju1-6"><em></em><span>暴击伤害</span></div>
+                            <div class="clearfix shuju1-7"><em></em><span>效果命中</span></div>
+                            <div class="clearfix shuju1-8"><em></em><span>效果抵抗</span></div>
+                        </li>
+                        <li class="shuju2">
+                            <div class="shuju2-1"><span class="shuju2-left C"></span>  <span class="shuju2-right">(102)</span></div>
+                            <div class="shuju2-2"><span class="shuju2-left B"></span>  <span class="shuju2-right">(960)</span></div>
+                            <div class="shuju2-3"><span class="shuju2-left A"></span>  <span class="shuju2-right">(75)</span></div>
+                            <div class="shuju2-4"><span class="shuju2-left D"></span>  <span class="shuju2-right">(90)</span></div>
+                            <div class="shuju2-5"><span class="shuju2-left B"></span>  <span class="shuju2-right">(5%)</span></div>
+                            <div class="shuju2-6"><span class="shuju2-left "></span>   <span class="shuju2-right">(150%)</span></div>
+                            <div class="shuju2-7"><span class="shuju2-left "></span>   <span class="shuju2-right">(0%)</span></div>
+                            <div class="shuju2-8"><span class="shuju2-left "></span>   <span class="shuju2-right">(0%)</span></div>
+                        </li>
+                        <li class="shuju3">
+                            <div class="shuju3-1">
+                                <span class="shuju3-left C"></span>
+                                <span class="shuju3-cent">(113)</span>
+                                <span class="shuju3-right">+11</span>
+                            </div>
+                            <div class="shuju3-2">
+                                <span class="shuju3-left A"></span>
+                                <span class="shuju3-cent">(1174)</span>
+                                <span class="shuju3-right">+213</span>
+                            </div>
+                            <div class="shuju3-3">
+                                <span class="shuju3-left S"></span>
+                                <span class="shuju3-cent">(83)</span>
+                                <span class="shuju3-right">+8</span>
+                            </div>
+                            <div class="shuju3-4">
+                                <span class="shuju3-left B"></span>
+                                <span class="shuju3-cent">(100)</span>
+                                <span class="shuju3-right">+10</span>
+                            </div>
+                            <div class="shuju3-5">
+                                <span class="shuju3-left B"></span>
+                                <span class="shuju3-cent">(5%)</span>
+                                <span class="shuju3-right">+0%</span>
+                            </div>
+                            <div class="shuju3-6">
+                                <span class="shuju3-left"></span>
+                                <span class="shuju3-cent">(150%)</span>
+                                <span class="shuju3-right">+0%</span>
+                            </div>
+                            <div class="shuju3-7">
+                                <span class="shuju3-left"></span>
+                                <span class="shuju3-cent">(0%)</span>
+                                <span class="shuju3-right">+0%</span>
+                            </div>
+                            <div class="shuju3-8">
+                                <span class="shuju3-left"></span>
+                                <span class="shuju3-cent">(0%)</span>
+                                <span class="shuju3-right">+0%</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="box2-jineng clearfix">
+                        <div class="jineng-left">
+                            <p>基本技能</p>
+                            <ul>
+                                <li>
+                                    <a href=""><img src="./images/main-taohuayao/taohua-jineng1.png" alt=""></a>
+                                    <p>花舞</p>
+                                </li>
+                                 <li>
+                                    <a href=""><img src="./images/main-taohuayao/taohua-jineng2.png" alt=""></a>
+                                    <p>花之馨息</p>
+                                </li>
+                                 <li>
+                                    <a href=""><img src="./images/main-taohuayao/taohua-jineng3.png" alt=""></a>
+                                    <p>桃花灼灼</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="jineng-right">
+                            <p>觉醒技能</p>
+                            <ul>
+                                <li>属性增强:生命加成增加10%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 03/玩家攻略 -->
+        <div class="main-box3">
+            <div class="container">
+                <h2></h2>
+                <div class="box3-centent">
+                    <div class="box3-minbox">
+                        <div class="box3-text">
+                            <ul>
+                                <li><a href="">阴阳师主流四治疗大盘点！</a><p>作者：秋瓷的好爸爸</p></li>
+                                <li><a href="">有奶便是娘！热门治疗式神推荐</a><p>作者：itmo爱萌游戏</p></li>
+                                <li><a href="">【惠比寿】VS【桃花妖】~花瓣与旗，治疗之争~！</a><p>作者：小光</p></li>
+                                <li><a href="">【反击流】椒图核心领导下的式神搭配！</a><p>作者：黑耀SAMA</p></li>
+                                <li><a href="">将治疗发挥到极致，高性价比桃花妖御魂套装！</a><p>作者：白雨</p></li>
+                                <li><a href="">阴阳师雨雪流阵容4600分登顶斗技第一</a><p>作者：龙珠丶未闻橘</p></li>
+                                <li><a href="">总有一个适合你，八大回血奶式神攻略！</a><p>作者：鬼计南瓜灯</p></li>
+                                <li><a href="">踩着木屐少女 桃花妖的暴击之路</a><p>作者：红豆饼</p></li>
+                                <li><a href="">斗技面面观之反伤流</a><p>作者：红豆饼</p></li>
+                                <li><a href="">斗技面面观之反击流</a><p>作者：红豆饼</p></li>
+                                <li><a href="">斗技面面观之不死小强流</a><p>作者：红豆饼</p></li>
+                                <li><a href="">阴阳师手游桃花妖阵容搭配 御魂搭配推荐</a><p>作者：小k</p></li>
+                            </ul>
+                        </div>
+                        <div class="box3-but">
+                            <a href=""><em></em></a>
+                            <a href=""><em></em></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 04/精选玩家同人 -->
+        <div class="main-box4">
+            <div class="container">
+                <h2></h2>
+                <a href="">查看全部</a>
+                <ul class="clearfix">
+                    <li><a href=""><img src="./images/main-taohuayao/taohua-jingxuan1.jpg" alt=""></a><p>作者：Yuki呦雪君&齐天-静儿</p></li>
+                    <li><a href=""><img src="./images/main-taohuayao/taohua-jingxuan2.jpg" alt=""></a><p>作者：白西瓜SY&陆彻彻-</p></li>
+                    <li><a href=""><img src="./images/main-taohuayao/taohua-jingxuan3.jpg" alt=""></a><p>作者：是我木十哒</p></li>
+                    <li><a href=""><img src="./images/main-taohuayao/taohua-jingxuan4.jpg" alt=""></a><p>作者：大宝SODD_Double</p></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 05/玩家评论区 -->
+        <div class="main-box5">
+            <div class="container">
+                <h2></h2>
+                <div class="box5-minbox">
+                    <div class="box5-text">
+                        <div class="box5-1">
+                            <div class="box5-pinglun">
+                                <div class="pinglun">
+                                    <div class="pinglun-name">
+                                        <img src="./images/main-taohuayao/pinglun-name-tu.jpg" alt="">
+                                        <span class="pinglun-name-text">qi***@163.com</span>
+                                        <span class="pinglun-time">2018-01-28 11:52:17</span>
+                                    </div>
+                                    <div class="pinglun-neirong clearfix">
+                                        <p>求求求，求奶妈的爱！！！</p>
+                                        <a href="" class="neirong-huifu">回复</a>
+                                        <a href="" class="neirong-zan">赞(<span>25</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="pinglun">
+                                    <div class="pinglun-name">
+                                        <img src="./images/main-taohuayao/pinglun-name-tu.jpg" alt="">
+                                        <span class="pinglun-name-text">yu***@163.com</span>
+                                        <span class="pinglun-time">2018-01-14 13:26:42</span>
+                                    </div>
+                                    <div class="pinglun-neirong clearfix">
+                                        <p>桃花妖大宝贝！！momo！！</p>
+                                        <a href="" class="neirong-huifu">回复</a>
+                                        <a href="" class="neirong-zan">赞(<span>15</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="pinglun">
+                                    <div class="pinglun-name">
+                                        <img src="./images/main-taohuayao/pinglun-name-tu.jpg" alt="">
+                                        <span class="pinglun-name-text">n2***@163.com</span>
+                                        <span class="pinglun-time">2018-01-07 06:05:09</span>
+                                    </div>
+                                    <div class="pinglun-neirong clearfix">
+                                        <p>嗨</p>
+                                        <a href="" class="neirong-huifu">回复</a>
+                                        <a href="" class="neirong-zan">赞(<span>9</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="pinglun">
+                                    <div class="pinglun-name">
+                                        <img src="./images/main-taohuayao/pinglun-name-tu.jpg" alt="">
+                                        <span class="pinglun-name-text">15***@qq.com</span>
+                                        <span class="pinglun-time">2017-07-15 13:16:19</span>
+                                    </div>
+                                    <div class="pinglun-neirong clearfix">
+                                        <p>我就是因为声优是水树奈奈所以我才留到现在的！</p>
+                                        <a href="" class="neirong-huifu">回复</a>
+                                        <a href="" class="neirong-zan">赞(<span>71</span>)</a>
+                                    </div>
+                                </div>
+                                <div class="pinglun">
+                                    <div class="pinglun-name">
+                                        <img src="./images/main-taohuayao/pinglun-name-tu.jpg" alt="">
+                                        <span class="pinglun-name-text">m1***@163.com</span>
+                                        <span class="pinglun-time">2017-05-26 18:26:32</span>
+                                    </div>
+                                    <div class="pinglun-neirong clearfix">
+                                        <p>之前觉得没什么用就送神龛里去了，现在抽不到，无限懊悔.....</p>
+                                        <a href="" class="neirong-huifu">回复</a>
+                                        <a href="" class="neirong-zan">赞(<span>91</span>)</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box5-but">
+                                <a href="" class="box5-but1 on">1</a>
+                                <a href="" class="box5-but2">2</a>
+                                <a href="" class="box5-but3">3</a>
+                                <a href="" class="box5-but4">4</a>
+                            </div>
+                        </div>
+                        <div class="box5-dengru">
+                            <a href="">登入</a>
+                        </div>
+                        <div class="box5-huifu">
+                            <form action="">
+                                <div class="huifu-text">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="huifu-but">
+                                    <div class="jishu">300</div>
+                                    <label for="">
+                                        <input type="checkbox" name="" id="">
+                                        我要穿马甲
+                                    </label>
+                                    <input type="submit" value="发布" class="fabu">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="shu"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 06/更多式神 -->
+        <div class="main-box6">
+            <div class="container">
+                <h2></h2>
+                <a href="">查看更多</a>
+                <div class="box6-lun">
+                    <a href="javascript:void(0);" class="box6-left on"></a>
+                    <a href="javascript:void(0);" class="box6-right"></a>
+                    <div class="box6-lun-minbox">
+                        <ul>
+                            <li><a href=""><img src="./images/Scripture/1.png" alt=""><span>桃花妖</span></a></li>
+                            <li><a href=""><img src="./images/Scripture/2.png" alt=""> <span>雪女</span></a>  </li>
+                            <li><a href=""><img src="./images/Scripture/3.png" alt=""> <span>三尾狐</span></a>  </li>
+                            <li><a href=""><img src="./images/Scripture/4.png" alt=""> <span>灯笼鬼</span></a>  </li>
+                            <li><a href=""><img src="./images/Scripture/5.png" alt=""> <span>座敖童子</span></a>  </li>
+                            <li><a href=""><img src="./images/Scripture/6.png" alt=""> <span>鲤鱼精</span></a>  </li>
+                            <li><a href=""><img src="./images/Scripture/7.png" alt=""> <span>九命猫</span></a>  </li>
+                            <li><a href=""><img src="./images/Scripture/8.png" alt=""> <span>狸猫</span></a>  </li>
+                            <li><a href=""><img src="./images/Scripture/9.png" alt=""> <span>河童</span></a>  </li>
+                            <li><a href=""><img src="./images/Scripture/10.png" alt=""><span>鬼使白</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/11.png" alt=""><span>鬼使黑</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/12.png" alt=""><span>童男</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/13.png" alt=""><span>童女</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/14.png" alt=""><span>饿鬼</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/15.png" alt=""><span>孟婆</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/16.png" alt=""><span>巫蛊师</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/17.png" alt=""><span>大天狗</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/18.png" alt=""><span>鸦天狗</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/19.png" alt=""><span>酒吞童子</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/20.png" alt=""><span>犬神</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/21.png" alt=""><span>食发鬼</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/22.png" alt=""><span>武士之灵</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/23.png" alt=""><span>骨女</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/24.png" alt=""><span>雨女</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/25.png" alt=""><span>跳跳弟弟</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/26.png" alt=""><span>跳跳妹妹</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/27.png" alt=""><span>兵佣</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/28.png" alt=""><span>丑时之女</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/29.png" alt=""><span>独眼小僧</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/30.png" alt=""><span>鬼女红叶</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/31.png" alt=""><span>铁鼠</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/32.png" alt=""><span>跳跳哥哥</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/33.png" alt=""><span>椒图</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/34.png" alt=""><span>管狐</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/35.png" alt=""><span>山兔</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/36.png" alt=""><span>莹草</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/37.png" alt=""><span>蝴蝶精</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/38.png" alt=""><span>傀儡师</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/39.png" alt=""><span>山童</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/40.png" alt=""><span>首无</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/41.png" alt=""><span>提灯小僧</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/42.png" alt=""><span>赤舌</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/43.png" alt=""><span>海坊主</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/44.png" alt=""><span>荒川之主</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/45.png" alt=""><span>觉</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/46.png" alt=""><span>青蛙瓷器</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/47.png" alt=""><span>判官</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/48.png" alt=""><span>凤凰火</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/49.png" alt=""><span>吸血姬</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/50.png" alt=""><span>妖狐</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/51.png" alt=""><span>阎魔</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/52.png" alt=""><span>妖琴师</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/53.png" alt=""><span>食梦貘</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/54.png" alt=""><span>两面佛</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/55.png" alt=""><span>小鹿男</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/56.png" alt=""><span>清姬</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/57.png" alt=""><span>镰鼬</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/58.png" alt=""><span>姑获鸟</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/59.png" alt=""><span>二口女</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/60.png" alt=""><span>白狼</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/61.png" alt=""><span>茨木童子</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/62.png" alt=""><span>青行灯</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/63.png" alt=""><span>樱花妖</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/64.png" alt=""><span>惠比寿</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/65.png" alt=""><span>妖刀姬</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/66.png" alt=""><span>络新妇</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/67.png" alt=""><span>般若</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/68.png" alt=""><span>一目连</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/69.png" alt=""><span>青坊主</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/70.png" alt=""><span>古笼火</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/71.png" alt=""><span>万年竹</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/72.png" alt=""><span>夜叉</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/73.png" alt=""><span>黑童子</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/74.png" alt=""><span>白童子</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/75.png" alt=""><span>花鸟卷</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/76.png" alt=""><span>辉夜姬</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/77.png" alt=""><span>烟烟罗</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/78.png" alt=""><span>金鱼姬</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/79.png" alt=""><span>荒</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/80.png" alt=""><span>鸠</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/81.png" alt=""><span>以津真天</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/82.png" alt=""><span>匣中少女</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/83.png" alt=""><span>彼岸花</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/84.png" alt=""><span>兔丸</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/85.png" alt=""><span>小松丸</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/86.png" alt=""><span>书翁</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/87.png" alt=""><span>雪童子</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/88.png" alt=""><span>百目鬼</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/89.png" alt=""><span>奴良陆生</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/90.png" alt=""><span>追月神</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/91.png" alt=""><span>山风</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/92.png" alt=""><span>日和坊</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/93.png" alt=""><span>熏</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/94.png" alt=""><span>玉藻前</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/95.png" alt=""><span>数珠</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/96.png" alt=""><span>小袖之手</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/97.png" alt=""><span>弈</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/98.png" alt=""><span>御馔津</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/99.png" alt=""><span>卖药郎</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/100.png" alt=""><span>虫师</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/101.png" alt=""><span>猫掌柜</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/102.png" alt=""><span>鬼灯</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/103.png" alt=""><span>阿香</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/104.png" alt=""><span>蜜桃&芥子</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/105.png" alt=""><span>面灵气</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/106.png" alt=""><span>鬼切</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/107.png" alt=""><span>犬夜叉</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/108.png" alt=""><span>杀生丸</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/109.png" alt=""><span>少羽大天狗</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/110.png" alt=""><span>白藏主</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/111.png" alt=""><span>人面树</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/112.png" alt=""><span>於菊虫</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/113.png" alt=""><span>桔梗</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/114.png" alt=""><span>一反木绵</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/115.png" alt=""><span>入殓师</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/116.png" alt=""><span>炼狱茨木童子</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/117.png" alt=""><span>天井下</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/118.png" alt=""><span>化鲸</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/119.png" alt=""><span>八岐大蛇</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/120.png" alt=""><span>稻荷神御馔津</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/121.png" alt=""><span>苍风一目连</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/122.png" alt=""><span>赤影妖刀姬</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/123.png" alt=""><span>海忍</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/165.png" alt=""><span>不知火</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/124.png" alt=""><span>御怨般若</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/125.png" alt=""><span>御久次良</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/126.png" alt=""><span>大岳丸</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/127.png" alt=""><span>骁浪荒川之主</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/166.png" alt=""><span>蟹姬</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/128.png" alt=""><span>朽木露琪亚</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/129.png" alt=""><span>黑崎一护</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/130.png" alt=""><span>泷夜叉姬</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/131.png" alt=""><span>烬天玉藻前</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/132.png" alt=""><span>纸舞</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/133.png" alt=""><span>鬼王酒吞童子</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/134.png" alt=""><span>星熊童子</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/135.png" alt=""><span>天剑韧心鬼切</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/136.png" alt=""><span>云外镜</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/137.png" alt=""><span>鬼童丸</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/138.png" alt=""><span>聆海金鱼姬</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/139.png" alt=""><span>缘结神</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/140.png" alt=""><span>浮世青行灯</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/141.png" alt=""><span>盗墓小鬼</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/142.png" alt=""><span>寄生魂</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/143.png" alt=""><span>唐纸伞妖</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/144.png" alt=""><span>天邪鬼绿</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/145.png" alt=""><span>天邪鬼赤</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/146.png" alt=""><span>天邪鬼黄</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/147.png" alt=""><span>天邪鬼青</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/148.png" alt=""><span>帚神</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/149.png" alt=""><span>涂壁</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/150.png" alt=""><span>大天狗呱</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/151.png" alt=""><span>酒吞呱</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/152.png" alt=""><span>荒川呱</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/153.png" alt=""><span>阎魔呱</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/154.png" alt=""><span>两面佛呱</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/155.png" alt=""><span>小鹿男呱</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/156.png" alt=""><span>茨木呱</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/157.png" alt=""><span>青行灯呱</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/158.png" alt=""><span>妖刀姬呱</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/159.png" alt=""><span>一目连呱</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/160.png" alt=""><span>花鸟卷呱</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/161.png" alt=""><span>辉夜姬呱</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/162.png" alt=""><span>荒呱</span></a> </li>
+                            <li><a href=""><img src="./images/Scripture/163.png" alt=""><span>彼岸花呱</span></a> </li>
+                        </ul>
+                    </div>
+                    <!-- 主页底部 -->
+                    <div class="main-footer">
+                        <div class="main-footer-top">
+                            <ul>
+                                <li><a href="javascript:void(0);">分享到: </a> </li>
+                                <li><a href="javascript:void(0);">微信    
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-weixin-copy"></use>
+                                    </svg>
+                                </a> </li>
+                                <li><a href="javascript:void(0);">易信    
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-yuanxingxuanzhongfill"></use>
+                                    </svg>
+                                </a> </li>
+                                <li><a href="javascript:void(0);">新浪微博
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-weibo-copy"></use>
+                                    </svg>
+                                </a> </li>
+                                <li><a href="javascript:void(0);">QQ空间  
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-jia"></use>
+                                    </svg>
+                                </a> </li>
+                                <li><a href="javascript:void(0);">更多    </a> </li>
+                            </ul>
+                        </div>
+                        <div class="main-footer-bottom">
+                            <div class="footer-bottom-one">
+                                <a href=""><img src="./images/Audio/wangyi-logo-hei.png" alt=""></a>
+                                <a href=""><img src="./images/Audio/wangyeyouxi-logo-hei.png" alt=""></a>
+                                <a href=""><img src="./images/index/index-main-footer-dd3.png" alt=""></a>
+                                <a href=""><img src="./images/index/index-main-footer-dd4.png" alt=""></a>
+                                <span>
+                                   <a href="">公司简介</a> - <a href="">客户服务</a>-<a href="">网易集团隐私政策及儿童个人信息保护规则</a> - <a href="">网易游戏</a>  - <a href="">联系我们</a>  - <a href="">商务合作</a>  - <a href="">加入我们</a>  - <a href="">用户协议</a> </br> 
+                                   <p>网易公司版权所有 ©1997-2020</p>
+                                   <div>
+                                       <a href="">点击查看家长关爱平台 ></a>
+                                   </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
-</div>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-<script src="./lib/jQuery/jquery-3.4.1.js"></script>
+    <script src="./lib/jQuery/jquery-3.4.1.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/main-taohuayao.js"></script>
     <!-- 引用swiper轮播图插件 -->
@@ -496,10 +959,11 @@
                   },*/
                 direction: 'vertical', //竖屏切换
             });
-				$(".shishen-box").mCustomScrollbar({
-					theme:"minimal"
-				});
+            $(".shishen-box").mCustomScrollbar({
+                theme: "minimal"
+            });
         })
     </script>
 </body>
+
 </html>
