@@ -1,0 +1,489 @@
+html,body{
+    width: 100%;
+    height: 1000%;
+    margin: 0;
+    padding: 0;
+}
+.clearfix:before ,.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+   *zoom: 1;  
+}
+
+// 顶部导航 
+.top-nav{
+    position: relative;
+    width: 100%;
+    height: 54px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #fff;
+    z-index: 9999;
+    // 游戏全目录下滑列表
+    .top-nav-select{
+        display:none;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        height: 500px;
+        z-index: 10;
+        border-top: 1px solid #ccc;
+        .top-nav-select-container{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1260px; 
+            height: 100%;
+            overflow: hidden;
+        }
+        // 下滑列表上部分（标题）
+        .select-top{
+            float: left;
+            overflow: hidden;
+            li{
+                float: left;
+                b{
+                    display: block;
+                    width: 100%;
+                    height: 39px;
+                    background-color: #f7f7f8;
+                    line-height: 39px;
+                    font-size: 14px;
+                    text-indent: 20px;
+                    color: #bc2e2e;
+                }
+            }
+           &>li:nth-child(1){
+            width: 299px;
+           }
+           &>li:nth-child(2){
+            width: 828px;
+            border-left: 1px solid #eee;
+            border-right: 1px solid #eee;
+           }
+           &>li:nth-child(3){
+            float: right;
+            width: 131px;
+           }
+        }
+        // 下滑列表下部分 （内容）
+        .select-bottom{
+            float: left;
+            overflow: hidden;
+            height: 445px;
+            width: 100%;
+            li{
+                position: relative;
+                float: left;
+                height: 100%;
+                padding: 10px 0 0 14px;
+                background-color: #fdfefe;
+                box-sizing: border-box;
+                line-height: 24px;
+               &>a,.li-box>a{
+                    margin-left: 6px;
+                    display: block;
+                    &:hover{
+                        color: #bc2e2e;
+                    }
+                }
+                p{
+                    padding: 0;
+                    margin: 0;
+                    margin-left: 6px;
+                    line-height: 24px;
+                    margin-bottom: 4px;
+                    font-weight: 700;
+                    color: #626262;
+                }
+            }
+            &>li:nth-child(1){
+                width: 135px;
+            }
+            &>li:nth-child(2){
+                display: inline-block;
+                width: 165px;
+                border-right: 1px solid #eee;
+                a{
+                    width: 105px;
+                }
+            }
+            &>li:nth-child(3){
+                width: 148px; 
+            }
+            &>li:nth-child(4){
+                width: 682px;
+                border-right: 1px solid #eee;
+                div{
+                    float: left;
+                    width: 133px;
+                }
+            }
+            &>li:nth-child(5){
+                width: 117px;
+            }
+        }
+    }
+    // 下拉框添加热点标签
+    .select-no1{
+        background: url(../images/index/index-jingling.png) no-repeat;
+        background-position: right -267px;
+    }
+    .select-new{
+        background: url(../images/index/index-jingling.png) no-repeat;
+        background-position: right -206px;
+    }
+    .select-hot{
+        background: url(../images/index/index-jingling.png) no-repeat;
+        background-position: right -144px;
+    }
+    // .热门手游按钮
+    #select-but{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px!important;
+        height: 95px;
+        background-color: #bc2e2e;
+        color: #ffffff;
+        opacity: 1;
+        padding: 7px 0 0 10px;
+        &:hover{
+            opacity: 0.7;
+        }
+        width: 20px!important;
+        line-height: 1.3!important;
+        color: #fff;
+    }
+
+    // 顶部导航左边按钮
+    .top-nav-left{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 179px;
+        height: 54px;
+        background-color: #cf1132;
+        a{
+           display: block;
+            font-size: 12px;
+            line-height: 54px;
+            text-align: center;
+            color: #fff;
+        }
+        i{
+            display: inline-block;
+            width: 25px;
+            height: 11px;
+            background: url(../images/index/index-jingling.png) -90px -306px no-repeat;
+            margin-right: 8px;
+        }
+    }
+    // 顶部导航中间logo
+    .top-nav-cent{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 133px;
+        height: 54px;
+        a{
+            display: block;
+            width: 133px;
+            height: 44px;
+            margin-left: -30px;
+            margin-top: 5px;
+        }
+    }
+    // 顶部导航左边文字轮播
+    .top-nav-right{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 54px;
+        border-left: 1px solid#dadada;
+        overflow: hidden;
+        .swiper-slide{
+            width: 138px;
+            height: 52px;
+            text-align: center;
+            line-height: 52px;
+            box-sizing: border-box;
+            &:hover{
+                border-bottom: 2px solid red;
+                color: red;
+                background-color: rgba(0, 0, 0, 0.1);
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+// 二级导航
+.erji-nav{
+    width: 100%;
+    min-width: 1440px;
+    height: 70px;
+    position: relative;
+    background-image: url(../images/main-baiwenpai/top-nav-background.png);
+    box-sizing: border-box;
+    padding-left: 30px;
+    border-bottom: 2px solid #352ea2;
+    z-index: 15;
+    .erji-left{
+        width: 260px;
+        float: left;
+        a{
+            display: block;
+            width: 77px;
+            height: 77px;
+            background-image: url(../images/main-baiwenpai/baiwen-logo.webp);
+            background-size: cover;
+            position: absolute;
+            top: 10px;
+            z-index: 2;
+        }
+        div{
+            float: right;
+            margin-top: 9px;
+            h3{
+                font-size: 28px;
+                color: #d9d9d9;
+                line-height: 36px;
+            }
+            p{
+                font-size: 14px;
+                color: #d9d9d9;
+            }
+        }
+    }
+    .erji-right{
+        float: right;
+        position: relative;
+        top: 25px;
+        z-index: 3;
+        li{
+            width: 38px;
+            height: 30px;
+            float: left;
+            position: relative;
+            &:hover div{
+                display: block;
+            }
+            a{
+                position: relative;
+                display: block;
+                color: #FFF;
+                font-size: 14px;
+                z-index: 2;
+            }
+            i{
+                position: relative;
+                float: left;
+                display: block;
+                width: 22px;
+                height: 14px;
+                overflow: hidden;
+                z-index: 10;
+                cursor: pointer;
+                strong{
+                    display: block;
+                    float: left;
+                    width: 2px;
+                    height: 4px;
+                    background: #fff;
+                    position: absolute;
+                    bottom: 0;
+                }
+                .miuse1{
+                    height: 10px;
+                    animation-delay: .4s;
+                }
+                .miuse2{
+                    height: 17px;
+                    left: 5px;
+                }
+                .miuse3{
+                    height: 5px;
+                    animation-delay: .8s;
+                    left: 10px;
+                }
+                .miuse4{
+                    height: 14px;
+                    animation-delay: .6s;
+                    left: 15px;
+                }
+                .miuse5{
+                    height: 10px;
+                    animation-delay: .2s;
+                    left: 20px;
+                }
+            }
+            div{
+                display: none;
+                width: 181px;
+                height: 251px;
+                background-image: url(../images/main-baiwenpai/erji-tab-1.png);
+                position: absolute;
+                top: -9px;
+                left: -109px;
+                img{
+                    display: block;
+                    width: 98px;
+                    margin: 68px auto 5px;
+                }
+                p{
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+        }
+        .erji-QQ{
+            .erji-xia-box{
+                width: 507px;
+                height: 261px;
+                background-image: url(../images/main-baiwenpai/erji-tab-2.png);
+                position: absolute;
+                top: -9px;
+                left: -436px;
+                ul{
+                    padding: 70px 40px 32px;
+                    width: 507px;
+                    height: 261px;
+                    box-sizing: border-box;
+                    li{
+                        position: relative;
+                        width: 48%;
+                        color: #b6b3e6;
+                        line-height: 24px;
+                        height: 24px;
+                        float: left;
+                        margin-left: 2%;
+                        a{
+                            display: block;
+                            color: #b6b3e6;
+                            line-height: 24px;
+                            height: 24px;
+                        }
+                    }
+                    &>li:last-child{
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .erji-dashen{
+            p{
+                height: 32px;
+                line-height: 64px;
+            }
+        }
+    }
+    .erji-cent{
+        position: relative;
+        z-index: 2;
+        float: right;
+        li{
+            width: 120px;
+            height: 70px;
+            float: left;
+            position: relative;
+            &::after{
+                z-index: 1;
+                opacity: 0;
+                display: block;
+                content: '';
+                clear: both;
+                width: 132px;
+                height: 84px;
+                position: absolute;
+                top: 0;
+                left: -3px;
+                margin-top: -70px;
+                background-image: url(../images/main-baiwenpai/erji-nav-cent-on.png);
+                background-repeat: no-repeat;
+                transition: margin-top .4s;
+            }
+            &:hover::after{
+                opacity: 1;
+                display: block;
+                margin-top: 0;
+            }
+            &:hover a{
+                color: #695187;
+            }
+            a{
+                display: block;
+                font-size: 20px;
+                color: #b9b7cc;
+                position: relative;
+                line-height: 70px;
+                text-align: center;
+                z-index: 2;
+            }
+        }
+        &>li:last-child {
+            &::after{
+                content: none;
+            }
+            &::before{
+                position: absolute;
+                display: block;
+                width: 8px;
+                height: 8px;
+                content: '';
+                border-radius: 50%;
+                background: #b10b0b;
+                top: 47%;
+                right: 4px;
+            }
+            width: 95px;
+            margin-right: 15px;
+        }
+    }
+}
+// 主页部分
+.main{
+    // 板块通用样式
+    .main-box{
+        width: 100%;
+        min-width: 1200px;
+        overflow: hidden;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    // 版头部分
+    .main-box0{
+        height: 1170px;
+        background-image: url(../images/main-baiwenpai/main-box0-background.jpg);
+        // 视频
+        .box0-video{
+            width: 1920px;
+            height: 974px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -960px;
+        }
+        // logo
+        .box0-logo{
+            width: 200px;
+            height: 402px;
+            background-image: url(../images/main-baiwenpai/box0-logo.webp);
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            margin-left: -100px;
+            opacity: 1;
+            margin-top: -20px;
+            transition: all .8s;
+        }
+    }
+}
