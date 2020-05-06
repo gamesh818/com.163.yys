@@ -15,6 +15,31 @@ html,body{
    *zoom: 1;  
 }
 
+// 音乐跳动动画
+@keyframes miuse {
+    0%{
+        height: 4px;
+    }
+    50%{
+        height: 10px;
+    }
+    100%{
+        height: 4px;
+    }
+}
+// box0 箭头上下跳动动画
+@keyframes box0-jiantou{
+    0%{
+        top: 946px;
+    }
+    50%{
+        top: 976px;
+    }
+    100%{
+        top: 946px;
+    }
+}
+
 // 顶部导航 
 .top-nav{
     position: relative;
@@ -291,6 +316,9 @@ html,body{
                 overflow: hidden;
                 z-index: 10;
                 cursor: pointer;
+                .i-miuse{
+                    animation: miuse 0.5s linear infinite;
+                }
                 strong{
                     display: block;
                     float: left;
@@ -301,25 +329,25 @@ html,body{
                     bottom: 0;
                 }
                 .miuse1{
-                    height: 10px;
+                    
                     animation-delay: .4s;
                 }
                 .miuse2{
-                    height: 17px;
+                    
                     left: 5px;
                 }
                 .miuse3{
-                    height: 5px;
+                    
                     animation-delay: .8s;
                     left: 10px;
                 }
                 .miuse4{
-                    height: 14px;
+                   
                     animation-delay: .6s;
                     left: 15px;
                 }
                 .miuse5{
-                    height: 10px;
+                    
                     animation-delay: .2s;
                     left: 20px;
                 }
@@ -482,8 +510,290 @@ html,body{
             left: 50%;
             margin-left: -100px;
             opacity: 1;
-            margin-top: -20px;
+            // margin-top: -20px;
             transition: all .8s;
+        }
+        .box0-erwei{
+            display: block;
+            width: 396px;
+            height: 107px;
+            position: absolute;
+            top: 483px;
+            left: 50%;
+            margin-left: -198px;
+            // opacity: 0;
+            // margin-top: -20px;
+            transition: all .8s;
+            .box0-erwei-left{
+                width: 103px;
+                height: 103px;
+                float: left;
+                margin-right: 6px;
+                img{
+                    width: 100%;
+                }
+            }
+            .box0-erwei-cent{
+                float: left;
+                margin-right: 6px;
+                a{
+                    display: block;
+                    width: 161px;
+                    height: 49px;
+                    cursor: pointer;
+                }
+                .top{
+                    margin-bottom: 5px;
+                    background-image: url(../images/main-baiwenpai/box0-erwei2.png);
+                }
+                .bottom{
+                    background-image: url(../images/main-baiwenpai/box0-erwei3.png);
+                }
+                
+            }
+            .box0-erwei-right{
+                float: left;
+                width: 116px;
+                height: 103px;
+                position: relative;
+                a{
+                    float: left;
+                    width: 116px;
+                    height: 103px;
+                    background: url(../images/main-baiwenpai/box0-erwei4.png) no-repeat center center;
+                    background-size: 100% 100%;
+                }
+            }
+        }
+        .box0-jiantou{
+            width: 134px;
+            height: 191px;
+            position: absolute;
+            top: 946px;
+            left: 50%;
+            margin-left: -67px;
+            // opacity: 1;
+            // margin-top: -20px;
+            transition: all .8s;
+            background-image: url(../images/main-baiwenpai/box0-jiantou.png);
+            background-repeat: no-repeat;
+            animation: box0-jiantou 3s linear infinite;
+        }
+    }
+    // 第一板块
+    .main-box1{
+        height: 847px;
+        background-image: url(../images/main-baiwenpai/main-box1-background.jpg);
+        .title{
+            width: 148px;
+            height: 172px;
+            margin: -18px auto 0 auto;
+            position: relative;
+            background-repeat: no-repeat;
+            .bac{
+                width: 148px;
+                height: 149px;
+                background-image: url(../images/main-baiwenpai/box1-title-yuelianng.png);
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin-left: -74px;
+            }
+            .title-box{
+                width: 66px;
+                height: 112px;
+                background-image: url(../images/main-baiwenpai/box1-title.png);
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                margin-left: -19px;
+            }
+        }
+        .box1-new{
+            width: 1200px;
+            height: 375px;
+            position: relative;
+            margin: 70px auto 0;
+            .box1-new-background{
+                width: 990px;
+                height: 320px;
+                background-image: url(../images/main-baiwenpai/box1-new-background.png);
+                position: absolute;
+                top: 40px;
+                left: 201px;
+            }
+            .box1-left{
+                width: 695px;
+                height: 375px;
+                position: absolute;
+                top: 20px;
+                left: 0;
+                // margin-top: -30px;
+                // margin-left: 30px;
+                // opacity: 0;
+                transition: all .6s;
+                overflow: hidden;
+                ul{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 375px;
+                    width: 2780px;
+                    li{
+                        float: left;
+                        width: 695px;
+                        height: 375px;
+                        a{
+                            width: 100%;
+                            height: 100%;
+                            div{
+                                width: 695px;
+                                height: 320px;
+                                box-sizing: border-box;
+                                border: 5px solid #3c36b3;
+                                overflow: hidden;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    transition: all .8s;
+                                    &:hover{
+                                        transform: scale(1.2);
+                                    }
+                                }
+                            }
+                            p{
+                                width: 470px;
+                                float: right;
+                                text-align: right;
+                                font-size: 18px;
+                                color: #bab6bc;
+                                margin-top: 10px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        }
+                    }   
+                }
+            }
+            .box1-left-but{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transition: all .6s .5s;
+                span{
+                    display: inline-block;
+                    width: 25px;
+                    height: 25px;
+                    background-image: url(../images/main-baiwenpai/box1-left-but.png);
+                    margin-right: 10px;
+                    background-color: transparent;
+                    opacity: 1;
+                    cursor: pointer;
+                }
+                .on{
+                    background-image: url(../images/main-baiwenpai/box1-left-but-on.png);
+                }
+            }
+            .box1-right{
+                width: 468px;
+                height: 375px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                // margin-top: -30px;
+                // margin-left: 30px;
+                // opacity: 0;
+                transition: all .6s;
+                .box1-right-top{
+                    position: absolute;
+                    right: 38px;
+                    top: 15px;
+                    li{
+                        float: left;
+                        font-size: 24px;
+                        color: #b7b3b9;
+                        width: 24px;
+                        margin-right: 30px;
+                        position: relative;
+                        cursor: pointer;
+                        z-index: 2;
+                        &:hover span{
+                            opacity: 1;
+                            top: -10px;
+                        }
+                        .on{
+                            opacity: 1;
+                            top: -10px;
+                        }
+                        span{
+                            opacity: 0;
+                            clear: both;
+                            width: 18px;
+                            height: 50px;
+                            position: absolute;
+                            top: -50px;
+                            right: -5px;
+                            z-index: -1;
+                            transition: all .6s;
+                            background-image: url(../images/main-baiwenpai/box1-right-but-back.png);
+                        }
+                        a{
+                            color: #b7b3b9;
+                        }
+                    }
+                }
+                .box1-right-cent{
+                    display: block;
+                    width: 420px;
+                    height: 33px;
+                    background-image: url(../images/main-baiwenpai/box1-right-cent-background.png);
+                    text-align: center;
+                    font-size: 20px;
+                    color: #bab6bc;
+                    position: absolute;
+                    top: 98px;
+                    box-sizing: border-box;
+                    padding: 0 50px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .box1-right-bottom{
+                    width: 420px;
+                    height: 173px;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 155px;
+                    &>ul:first-child{
+                        display: block;
+                    }
+                    ul{
+                        display: none;
+                        li{
+                            height: 40px;
+                            line-height: 40px;
+                            border-bottom: 1px dotted #484854;
+                            a{
+                                &>span:first-child {
+                                    width: 350px;
+                                    float: left;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                                &>span:last-child {
+                                    float: right;
+                                }
+                                span{
+                                    font-size: 14px;
+                                    color: #979499;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
