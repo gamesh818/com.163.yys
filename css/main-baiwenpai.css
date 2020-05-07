@@ -1,6 +1,6 @@
 html, body {
   width: 100%;
-  height: 1000%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -905,6 +905,10 @@ html, body {
   border-bottom: 1px dotted #484854;
 }
 
+.main .main-box1 .box1-new .box1-right .box1-right-bottom ul li a:hover span {
+  color: #fff;
+}
+
 .main .main-box1 .box1-new .box1-right .box1-right-bottom ul li a > span:first-child {
   width: 350px;
   float: left;
@@ -920,5 +924,740 @@ html, body {
 .main .main-box1 .box1-new .box1-right .box1-right-bottom ul li a span {
   font-size: 14px;
   color: #979499;
+}
+
+.main .main-box2 {
+  height: 971px;
+  background-image: url(../images/main-baiwenpai/main-box2-background.jpg);
+}
+
+.main .main-box2 .title {
+  width: 148px;
+  height: 172px;
+  margin: -18px auto 0 auto;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.main .main-box2 .title .bac {
+  width: 148px;
+  height: 149px;
+  background-image: url(../images/main-baiwenpai/box1-title-yuelianng.png);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -74px;
+}
+
+.main .main-box2 .title .title-box {
+  width: 66px;
+  height: 112px;
+  background-image: url(../images/main-baiwenpai/box2-title.png);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -19px;
+}
+
+.main .main-box2 .box2-lun {
+  margin: -16px auto 0 auto;
+  opacity: 1;
+  width: 1200px;
+  height: 760px;
+  position: relative;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.main .main-box2 .box2-lun .box2-lun-box {
+  width: 830px;
+  height: 600px;
+  position: absolute;
+  left: 364px;
+  top: 0;
+  overflow: hidden;
+}
+
+.main .main-box2 .box2-lun .box2-lun-box .box2-lun-ul {
+  position: absolute;
+  width: 30710px;
+  height: 100%;
+  left: 0;
+}
+
+.main .main-box2 .box2-lun .box2-lun-box .lun-minbox {
+  position: relative;
+  float: left;
+  width: 830px;
+  height: 100%;
+}
+
+.main .main-box2 .box2-lun .box2-lun-box .lun-minbox .left-img {
+  position: absolute;
+  top: 0;
+  left: 105px;
+  display: block;
+}
+
+.main .main-box2 .box2-lun .box2-lun-box .lun-minbox .right-img {
+  position: absolute;
+  top: 22px;
+  right: 0;
+  display: block;
+}
+
+.main .main-box2 .box2-left-but {
+  width: 117px;
+  height: 42px;
+  position: absolute;
+  top: 348px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/main-baiwenpai/box2-left-but.png);
+  -webkit-transition: all .8s linear;
+  transition: all .8s linear;
+  left: 20px;
+  z-index: 12;
+}
+
+.main .main-box2 .box2-right-but {
+  width: 117px;
+  height: 42px;
+  position: absolute;
+  top: 348px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/main-baiwenpai/box2-right-but.png);
+  -webkit-transition: all .8s linear;
+  transition: all .8s linear;
+  right: 20px;
+  z-index: 12;
+}
+
+.main .main-box2 .box2-tab {
+  width: 323px;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  left: 0;
+  top: 177px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 20px;
+}
+
+.main .main-box2 .box2-tab .box2-tab-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  left: 0;
+}
+
+.main .main-box2 .box2-tab .box2-tab-box .on {
+  width: 33px;
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+}
+
+.main .main-box2 .box2-tab .box2-tab-box .on i {
+  display: block;
+}
+
+.main .main-box2 .box2-tab span {
+  display: inline-block;
+  width: 22px;
+  color: #8f8e99;
+  font-size: 18px;
+  margin-right: 13px;
+  border-radius: inherit;
+  background: 0 0;
+  opacity: 1;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  position: relative;
+  background-repeat: no-repeat;
+  z-index: 2;
+  padding-top: 37px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  cursor: pointer;
+  height: 8px;
+}
+
+.main .main-box2 .box2-tab span i {
+  display: none;
+  clear: both;
+  width: 33px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 98px;
+  background-image: url(../images/main-baiwenpai/box2-tab-on.png);
+}
+
+.main .main-box3 {
+  height: 683px;
+  background-image: url(../images/main-baiwenpai/main-box3-background.jpg);
+}
+
+.main .main-box3 .title {
+  width: 148px;
+  height: 172px;
+  margin: -18px auto 0 auto;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.main .main-box3 .title .bac {
+  width: 148px;
+  height: 149px;
+  background-image: url(../images/main-baiwenpai/box1-title-yuelianng.png);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -74px;
+}
+
+.main .main-box3 .title .title-box {
+  width: 66px;
+  height: 112px;
+  background-image: url(../images/main-baiwenpai/box3-title.png);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -19px;
+}
+
+.main .main-box3 .box3-centen {
+  width: 1200px;
+  height: 330px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+.main .main-box3 .box3-centen .box3-leftbox {
+  width: 602px;
+  height: 330px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  margin-top: 0;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.main .main-box3 .box3-centen .box3-leftbox .box3-left-title {
+  width: 48px;
+  height: 133px;
+  background-image: url(../images/main-baiwenpai/box3-leftbox-title.png);
+  position: absolute;
+  top: 23px;
+  left: 0;
+}
+
+.main .main-box3 .box3-centen .box3-leftbox ul {
+  width: 544px;
+  height: 213px;
+  position: absolute;
+  top: 53px;
+  right: 0;
+  background-image: url(../images/main-baiwenpai/box3-left-background.png);
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 6px 43px 20px 25px;
+}
+
+.main .main-box3 .box3-centen .box3-leftbox ul li {
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px dotted #484854;
+}
+
+.main .main-box3 .box3-centen .box3-leftbox ul li a:hover span {
+  color: #fff;
+}
+
+.main .main-box3 .box3-centen .box3-leftbox ul li a > span:first-child {
+  width: 350px;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main .main-box3 .box3-centen .box3-leftbox ul li a > span:last-child {
+  float: right;
+}
+
+.main .main-box3 .box3-centen .box3-leftbox ul li a span {
+  font-size: 14px;
+  color: #979499;
+}
+
+.main .main-box3 .box3-centen .box3-leftbox .bottom-a {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  bottom: 25px;
+  right: 0px;
+  text-decoration: underline;
+}
+
+.main .main-box3 .box3-centen .box3-rightbox {
+  width: 590px;
+  height: 330px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  margin-top: 0;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.main .main-box3 .box3-centen .box3-rightbox .box3-right-title {
+  width: 48px;
+  height: 133px;
+  background-image: url(../images/main-baiwenpai/box3-rightbox-title.png);
+  position: absolute;
+  top: 23px;
+  left: 0;
+}
+
+.main .main-box3 .box3-centen .box3-rightbox ul {
+  width: 316px;
+  height: 220px;
+  position: absolute;
+  left: 61px;
+  top: 52px;
+  overflow: hidden;
+}
+
+.main .main-box3 .box3-centen .box3-rightbox ul li {
+  float: left;
+  margin-right: 10px;
+  width: 69px;
+  height: 210px;
+  margin-bottom: 10px;
+  background-image: url(../images/main-baiwenpai/box3-right-box-li.png);
+}
+
+.main .main-box3 .box3-centen .box3-rightbox ul li .on {
+  background-image: url(../images/main-baiwenpai/box3-right-box-li-on.png);
+}
+
+.main .main-box3 .box3-centen .box3-rightbox ul li:hover a {
+  background-image: url(../images/main-baiwenpai/box3-right-box-li-on.png);
+}
+
+.main .main-box3 .box3-centen .box3-rightbox ul li a {
+  width: 69px;
+  height: 210px;
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  line-height: 70px;
+  text-align: center;
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+}
+
+.main .main-box3 .box3-centen .box3-rightbox .hide {
+  display: none;
+}
+
+.main .main-box3 .box3-centen .box3-rightbox .box3-right-gif {
+  width: 222px;
+  height: 296px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.main .main-box3 .box3-centen .box3-rightbox .box3-right-gif .right-gif-background {
+  width: 177px;
+  height: 248px;
+  background-image: url(../images/main-baiwenpai/box3-gif-background.png);
+  position: absolute;
+  top: 25px;
+  left: -4px;
+}
+
+.main .main-box3 .box3-centen .box3-rightbox .box3-right-gif img {
+  width: 200px;
+  position: absolute;
+  left: -26px;
+}
+
+.main .main-box3 .box3-centen .box3-rightbox .box3-right-gif .right-gif-jinjie {
+  width: 105px;
+  height: 52px;
+  background-image: url(../images/main-baiwenpai/box3-jinjie.png);
+  position: absolute;
+  top: -9px;
+  right: -28px;
+}
+
+.main .main-box3 .box3-centen .box3-rightbox .bottom-a {
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  bottom: 25px;
+  right: 62px;
+  text-decoration: underline;
+}
+
+.main .main-box4 {
+  height: 1410px;
+  background-image: url(../images/main-baiwenpai/main-box4-background.jpg);
+}
+
+.main .main-box4 .title {
+  width: 148px;
+  height: 172px;
+  margin: -18px auto 0 auto;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.main .main-box4 .title .bac {
+  width: 148px;
+  height: 149px;
+  background-image: url(../images/main-baiwenpai/box1-title-yuelianng.png);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -74px;
+}
+
+.main .main-box4 .title .title-box {
+  width: 66px;
+  height: 112px;
+  background-image: url(../images/main-baiwenpai/box4-title.png);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -19px;
+}
+
+.main .main-box4 .banner_box .left_btn {
+  position: relative;
+  top: -350px;
+  height: 100px;
+  width: 80px;
+  z-index: 10;
+}
+
+.main .main-box4 .banner_box ._left_btn:hover {
+  cursor: pointer;
+}
+
+.main .main-box4 .banner_box .right_btn {
+  float: right;
+  position: relative;
+  top: -350px;
+  right: 0;
+  height: 100px;
+  width: 80px;
+  z-index: 10;
+}
+
+.main .main-box4 .banner_box .right_btn:hover {
+  cursor: pointer;
+}
+
+.main .main-box4 .banner_box {
+  max-width: 1600px;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+.main .main-box4 .box {
+  width: 1300px;
+  height: 455px;
+  margin: 0 auto;
+}
+
+.main .main-box4 .carousel {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.main .main-box4 .carousel .img {
+  position: absolute;
+  -webkit-transition: width 0.4s,height 0.4s,top 0.4s,left 0.4s,z-index 0.4s;
+  transition: width 0.4s,height 0.4s,top 0.4s,left 0.4s,z-index 0.4s;
+  background-color: #595f5e;
+}
+
+.main .main-box4 .carousel .img .img-title {
+  position: absolute;
+  left: 20px;
+  top: -10px;
+  z-index: 2;
+}
+
+.main .main-box4 .carousel .img .on {
+  position: absolute;
+  left: 20px;
+  top: -10px;
+  z-index: 2;
+}
+
+.main .main-box4 .carousel .img .on p {
+  width: 50px;
+  height: 200px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 19px;
+  background-color: #352ea2;
+  padding: 18px 0 60px;
+}
+
+.main .main-box4 .carousel .img .on a {
+  width: 76px;
+  height: 78px;
+  background-image: url(../images/main-baiwenpai/box4-lun-yue.png);
+  top: 196px;
+  left: -21px;
+}
+
+.main .main-box4 .carousel .img p {
+  line-height: 30px;
+  height: 128px;
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+  background-color: #000;
+  color: #b4b5ca;
+  font-size: 13px;
+  padding: 8px 0 30px;
+}
+
+.main .main-box4 .carousel .img a {
+  display: block;
+  width: 10px;
+  height: 14px;
+  background-image: url(../images/main-baiwenpai/box4-lun-bo.png);
+  position: absolute;
+  top: 130px;
+  left: 13px;
+}
+
+.main .main-box4 .carousel .img:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main .main-box4 .carousel .img img {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  width: calc(100% - 14px);
+  height: calc(100% - 14px);
+  margin: 7px;
+}
+
+.main .main-box4 .carousel .img1 {
+  width: 0px;
+  height: 0px;
+  top: 30%;
+  left: -50%;
+  z-index: 1;
+}
+
+.main .main-box4 .carousel .img1 .img-title {
+  opacity: 0;
+}
+
+.main .main-box4 .carousel .img2 {
+  width: 317px;
+  height: 178px;
+  top: 45%;
+  left: 1%;
+  z-index: 2;
+}
+
+.main .main-box4 .carousel .img3 {
+  width: 582px;
+  height: 327px;
+  top: 20%;
+  left: 28%;
+  z-index: 3;
+}
+
+.main .main-box4 .carousel .img4 {
+  width: 317px;
+  height: 178px;
+  top: 45%;
+  left: 75%;
+  z-index: 2;
+}
+
+.main .main-box4 .carousel .img5 {
+  width: 0px;
+  height: 0px;
+  top: 30%;
+  left: 110%;
+  z-index: 1;
+}
+
+.main .main-box4 .carousel .img5 .img-title {
+  opacity: 0;
+}
+
+.main .main-box4 .lun-but-left {
+  width: 98px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -140px;
+  z-index: 10;
+  cursor: pointer;
+  background: url(../images/index-baiwenpai/box5-lun-left.png) no-repeat center;
+  margin-left: -640px;
+}
+
+.main .main-box4 .lun-but-right {
+  width: 98px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -140px;
+  z-index: 10;
+  cursor: pointer;
+  background: url(../images/index-baiwenpai/box5-lun-right.png) no-repeat center;
+  margin-left: 547px;
+}
+
+.main .main-box4 .lun-but-box {
+  height: 26px;
+  text-align: center;
+  margin-top: 37px;
+  z-index: 10;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+.main .main-box4 .lun-but-box span {
+  display: inline-block;
+  border-radius: 100%;
+  width: 26px;
+  height: 26px;
+  background: url(../images/index-baiwenpai/but-no.png) no-repeat center;
+  margin: 0 4px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.main .main-box4 .lun-but-box .on {
+  background: url(../images/index-baiwenpai/but-on.png) no-repeat center;
+}
+
+.main .main-footer {
+  position: absolute;
+  bottom: 400px;
+  height: 260px;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.main .main-footer .main-footer-top {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 10;
+  text-align: center;
+  font-size: 12px;
+}
+
+.main .main-footer .main-footer-top ul {
+  overflow: hidden;
+}
+
+.main .main-footer .main-footer-top li {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  margin-right: 30px;
+}
+
+.main .main-footer .main-footer-top li a {
+  color: #fff;
+}
+
+.main .main-footer .main-footer-top li a:hover {
+  color: red;
+}
+
+.main .main-footer .main-footer-bottom {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1024px;
+  height: 179px;
+}
+
+.main .main-footer .main-footer-bottom .footer-bottom-one > a {
+  display: inline-block;
+  font-size: 10px;
+}
+
+.main .main-footer .main-footer-bottom .footer-bottom-one span {
+  position: relative;
+  height: 50px;
+  display: inline-block;
+  line-height: 2;
+}
+
+.main .main-footer .main-footer-bottom .footer-bottom-one span p {
+  color: #fff;
+}
+
+.main .main-footer .main-footer-bottom .footer-bottom-one span a {
+  color: #fff;
+}
+
+.main .main-footer .main-footer-bottom .footer-bottom-one span a:hover {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.main .main-footer .main-footer-bottom .footer-bottom-one span div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  height: 26px;
+  background-color: red;
+}
+
+.main .main-footer .main-footer-bottom .footer-bottom-two {
+  line-height: 2.5;
+}
+
+.main .main-footer .main-footer-bottom .footer-bottom-two p {
+  color: #fff;
 }
 /*# sourceMappingURL=main-baiwenpai.css.map */
