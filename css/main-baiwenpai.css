@@ -730,6 +730,9 @@ html, body {
   position: absolute;
   top: 20px;
   left: 0;
+  margin-top: -30px;
+  margin-left: 30px;
+  opacity: 0;
   -webkit-transition: all .6s;
   transition: all .6s;
   overflow: hidden;
@@ -816,6 +819,9 @@ html, body {
   position: absolute;
   top: 0;
   right: 0;
+  margin-top: -30px;
+  margin-left: 30px;
+  opacity: 0;
   -webkit-transition: all .6s;
   transition: all .6s;
 }
@@ -960,11 +966,11 @@ html, body {
 }
 
 .main .main-box2 .box2-lun {
-  margin: -16px auto 0 auto;
-  opacity: 1;
   width: 1200px;
   height: 760px;
   position: relative;
+  margin: -36px auto 0 auto;
+  opacity: 0;
   -webkit-transition: all .6s;
   transition: all .6s;
 }
@@ -1150,8 +1156,8 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 1;
-  margin-top: 0;
+  margin-top: -20px;
+  opacity: 0;
   -webkit-transition: all .6s;
   transition: all .6s;
 }
@@ -1220,8 +1226,8 @@ html, body {
   position: absolute;
   top: 0;
   right: 0;
-  opacity: 1;
-  margin-top: 0;
+  margin-top: -20px;
+  opacity: 0;
   -webkit-transition: all .8s;
   transition: all .8s;
 }
@@ -1388,7 +1394,10 @@ html, body {
 .main .main-box4 .box {
   width: 1300px;
   height: 455px;
-  margin: 0 auto;
+  margin: -3px auto;
+  opacity: 0;
+  -webkit-transition: all .8s;
+  transition: all .8s;
 }
 
 .main .main-box4 .carousel {
@@ -1402,7 +1411,7 @@ html, body {
   position: absolute;
   -webkit-transition: width 0.4s,height 0.4s,top 0.4s,left 0.4s,z-index 0.4s;
   transition: width 0.4s,height 0.4s,top 0.4s,left 0.4s,z-index 0.4s;
-  background-color: #595f5e;
+  background-color: #3c36b3;
 }
 
 .main .main-box4 .carousel .img .img-title {

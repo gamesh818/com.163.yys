@@ -628,9 +628,9 @@ html,body{
                 position: absolute;
                 top: 20px;
                 left: 0;
-                // margin-top: -30px;
-                // margin-left: 30px;
-                // opacity: 0;
+                margin-top: -30px;
+                margin-left: 30px;
+                opacity: 0;
                 transition: all .6s;
                 overflow: hidden;
                 ul{
@@ -701,9 +701,9 @@ html,body{
                 position: absolute;
                 top: 0;
                 right: 0;
-                // margin-top: -30px;
-                // margin-left: 30px;
-                // opacity: 0;
+                margin-top: -30px;
+                margin-left: 30px;
+                opacity: 0;
                 transition: all .6s;
                 .box1-right-top{
                     position: absolute;
@@ -830,13 +830,11 @@ html,body{
         }
 
         .box2-lun{
-            margin: -16px auto 0 auto;
-            opacity: 1;
             width: 1200px;
             height: 760px;
             position: relative;
-            // margin: -36px auto 0 auto;
-            // opacity: 0;
+            margin: -36px auto 0 auto;
+            opacity: 0;
             transition: all .6s;
 
             .box2-lun-box{
@@ -995,10 +993,10 @@ html,body{
                 position: absolute;
                 top: 0;
                 left: 0;
-                // margin-top: -20px;
-                // opacity: 0;
-                opacity: 1;
-                margin-top: 0;
+                margin-top: -20px;
+                opacity: 0;
+                // opacity: 1;
+                // margin-top: 0;
                 transition: all .6s;
                 .box3-left-title{
                     width: 48px;
@@ -1058,10 +1056,10 @@ html,body{
                 position: absolute;
                 top: 0;
                 right: 0;
-                // margin-top: -20px;
-                // opacity: 0;
-                opacity: 1;
-                margin-top: 0;
+                margin-top: -20px;
+                opacity: 0;
+                // opacity: 1;
+                // margin-top: 0;
                 transition: all .8s;
                 .box3-right-title{
                     width: 48px;
@@ -1211,7 +1209,9 @@ html,body{
         .box {
             width: 1300px;
             height: 455px;
-            margin: 0 auto;
+            margin: -3px auto;
+            opacity: 0;
+            transition: all .8s;
         }
     
         .carousel{
@@ -1223,7 +1223,7 @@ html,body{
                 // overflow: hidden;
                 position: absolute;
                 transition: width 0.4s,height 0.4s,top 0.4s,left 0.4s,z-index 0.4s;
-                background-color: #595f5e;
+                background-color: #3c36b3;
                 .img-title{
                     position: absolute;
                     left: 20px;

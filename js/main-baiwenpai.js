@@ -45,7 +45,14 @@ $('.miuse-but').on('click',function(){
     }
 })
 
-
+function playMusic() {
+    var player = $("#audio")[0]; /*jquery对象转换成js对象*/
+    if (player.paused){ /*如果已经暂停*/
+        player.play(); /*播放*/
+    }else {
+        player.pause();/*暂停*/
+    }
+}
 
 // box1 轮播图  box1按钮点击后按钮改变样式 对应轮播图出现
 
@@ -292,3 +299,45 @@ function add (){
     
 
 }
+
+// 页面滚动到指定位置时 当前板块内容出现
+$(document).on('scroll',function(){
+    let num = $("html").scrollTop()
+    console.log(num)
+    if(num >=1000 && num <1850){
+        $('.box1-left').css({
+            "marginTop": "0px",
+            "marginLeft": "0px",
+            "opacity": "1"
+        })
+        $('.box1-right').css({
+            "marginTop": "0px",
+            "marginLeft": "0px",
+            "opacity": "1"
+        })
+    }
+    if(num >=1850 && num<2800){
+        $('.box2-lun').css({
+            "margin": "-16px auto 0 auto",
+            "opacity": "1"
+        })
+        
+    }
+    if(num >=2800 && num<3540){
+        $('.box3-leftbox').css({
+            "marginTop": "0px",
+            "opacity": "1"
+        })
+        $('.box3-rightbox').css({
+            "marginTop": "0px",
+            "opacity": "1"
+        })
+    }
+    if(num >=3540){
+        $('.box').css({
+            "margin": "-33px auto",
+            "opacity": "1"
+        })
+        
+    }
+})
